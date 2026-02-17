@@ -1,0 +1,20 @@
+{
+	"nodes":[
+		{"id":"174d78f8d7585442","type":"group","x":-680,"y":-420,"width":660,"height":920,"color":"3","label":"drugs"},
+		{"id":"64a413dd6424f345","x":40,"y":-20,"width":480,"height":400,"color":"3","type":"group","label":"AEs"},
+		{"id":"f3102a9168d3b0ba","type":"group","x":40,"y":-420,"width":480,"height":340,"color":"3","label":"FAERS_quarters"},
+		{"id":"8a8cd4d3118256a4","type":"text","text":"drugs/chemotherapies.csv\nhttps://en.wikipedia.org/wiki/List_of_chemotherapeutic_agents (accessed 2-27-25)","x":-660,"y":-400,"width":580,"height":100},
+		{"id":"182385af4027993d","type":"text","text":"drugs/ici_class.csv\n?\n?","x":-660,"y":-280,"width":580,"height":80},
+		{"id":"0c606778fd45c301","type":"text","text":"drugs/immunotherapies.csv\nhttps://www.cancerresearch.org/immunotherapy-by-treatment-types\n(accessed 2-27-25)","x":-660,"y":-180,"width":580,"height":100},
+		{"id":"407d19363a696701","type":"text","text":"drugs/MedicationAdministration.csv\nbox file\n?","x":-660,"y":-60,"width":580,"height":80},
+		{"id":"dc2b18af75d4a8c9","type":"text","text":"drugs/targeted_antibodies.csv\nhttps://www.cancerresearch.org/treatment-types/targeted-antibodies\n(accessed 2-27-25)","x":-660,"y":40,"width":580,"height":100},
+		{"id":"6330980c767f04cb","type":"text","text":"drugs/targeted.txt\nhttps://www.cancer.gov/about-cancer/treatment/types/targeted-therapies/approved-drug-list\n(accessed 2-27-25)","x":-660,"y":160,"width":580,"height":120},
+		{"id":"64cb29836ffb579f","type":"text","text":"drugs/hormone_therapies.txt\nhttps://www.cancer.org/cancer/managing-cancer/treatment-types/hormone-therapy.html\nhttps://www.cancer.gov/about-cancer/treatment/types/hormone-therapy\n(accessed 2-27-25)","x":-660,"y":300,"width":580,"height":160},
+		{"id":"a133c4242318711d","type":"text","text":"20\\_\\_q\\_\\/*\nhttps://fis.fda.gov\n(accessed 2-20-25)","x":60,"y":-400,"width":250,"height":100},
+		{"id":"f71a15bb9a594b00","x":60,"y":10,"width":420,"height":150,"type":"text","text":"AEs/2021-ICPi-Summary-of-Recs-Table.pdf\nhttps://cdn.bfldr.com/KOIHB2Q3/as/3w39xfp5qw8cv7zh5f63xn9/2021-ICPi-Summary-of-Recs-Table\n(accessed 5-1-25)"},
+		{"id":"6e58d5d0fc7ecea6","x":60,"y":220,"width":420,"height":60,"type":"text","text":"AEs/ASCO.csv\nChatGPT pulled the table from that pdf for me"}
+	],
+	"edges":[
+		{"id":"daddf325b016cb37","fromNode":"f71a15bb9a594b00","fromSide":"bottom","toNode":"6e58d5d0fc7ecea6","toSide":"top"}
+	]
+}

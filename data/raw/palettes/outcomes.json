@@ -1,0 +1,7 @@
+{
+    "Death": "#FF0000",
+   "Hospitalization": "#FF8C00",
+   "Life Threatening": "#DAA520",
+   "NA": "#C0C0C0",
+   "Other": "#808080" 
+   }

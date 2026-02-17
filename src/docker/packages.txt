@@ -1,0 +1,12 @@
+install.packages(c('shiny', 'shinycssloaders', 'shinyBS', 'shinyjs', 'future', 'promises', 'data.table', 'ggplot2', 'jsonlite', 'networkD3', 'ggrepel', 'systemfonts', 'sortable', 'orca', 'plotly', 'webshot2', 'ggiraph', 'DT', 'colourpicker'))
+apt-get update
+apt-get install -y libglpk40 libglpk-dev fonts-dejavu fonts-liberation ttf-mscorefonts-installer
+
+docker exec $CONTAINER_ID apt-get install -y wget gnupg2 fonts-liberation libu2f-udev
+
+docker exec $CONTAINER_ID bash -c "wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | apt-key add -"
+docker exec $CONTAINER_ID bash -c "echo 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' > /etc/apt/sources.list.d/google-chrome.list"
+docker exec $CONTAINER_ID apt-get update
+docker exec $CONTAINER_ID apt-get install -y google-chrome-stable
+
+docker exec $CONTAINER_ID Rscript -e "Sys.setenv(CHROMOTE_CHROME='/usr/bin/google-chrome')"

@@ -1,0 +1,23 @@
+{
+ "Infections and infestations": "#30123BFF",
+"Multiple AE Categories": "#3E378FFF",
+"Cardiac disorders": "#455BCDFF",
+"Blood and lymphatic system disorders": "#477CF3FF",
+"Gastrointestinal disorders": "#3E9BFEFF",
+"Eye disorders": "#28BBECFF",
+"Nervous system disorders": "#18D6CBFF",
+"Reproductive system and breast disorders": "#20EAABFF",
+"Respiratory thoracic and mediastinal disorders": "#46F884FF",
+"Skin and subcutaneous tissue disorders": "#78FE5AFF",
+"Neoplasms benign malignant and unspecified (incl cysts and polyps)": "#A2FC3CFF",
+"Vascular disorders": "#C4F134FF",
+"Hepatobiliary disorders": "#E1DD37FF",
+"Musculoskeletal and connective tissue disorders": "#F6C33AFF",
+"Renal and urinary disorders": "#FEA632FF",
+"Immune system disorders": "#FB8022FF",
+"Psychiatric disorders": "#F05B12FF",
+"General disorders and administration site conditions": "#DD3D08FF",
+"Metabolism and nutrition disorders": "#C42503FF",
+"Ear and labyrinth disorders": "#A31301FF",
+"Endocrine disorders": "#7A0403FF" 
+}

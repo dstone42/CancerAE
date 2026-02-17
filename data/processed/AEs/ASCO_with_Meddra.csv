@@ -1,0 +1,42 @@
+Site,Adverse Event,Meddra Term
+Cutaneous Toxicities,Rash,Rash
+Cutaneous Toxicities,Dermatitis,Dermatitis
+Cutaneous Toxicities,Dermatoses,Dermatosis
+Cutaneous Toxicities,Severe Cutaneous Adverse Reactions,Severe cutaneous adverse reaction
+Gastrointestinal Toxicities,Colitis,Colitis
+Gastrointestinal Toxicities,Hepatitis,Hepatitis
+Lung Toxicities,Pneumonitis,Pneumonitis
+Endocrine Toxicities,Hypothyroidism,Hypothyroidism
+Endocrine Toxicities,Thyrotoxic crisis,Thyrotoxic crisis
+Endocrine Toxicities,Adrenal Insufficiency,Adrenal insufficiency
+Endocrine Toxicities,Hypophysitis,Hypophysitis
+Endocrine Toxicities,Diabetes Mellitus,Diabetes mellitus
+Musculoskeletal Toxicities,Arthritis,Arthritis
+Musculoskeletal Toxicities,Myositis,Myositis
+Musculoskeletal Toxicities,Polymyalgia,Myalgia
+Renal Toxicities,Nephritis,Nephritis
+Renal Toxicities,Acute Kidney Injury,Acute kidney injury
+Nervous System Toxicities,Myasthenia Gravis,Myasthenia gravis
+Nervous System Toxicities,Guillain-Barre Syndrome,Guillain-Barre syndrome
+Nervous System Toxicities,Peripheral Neuropathy,Neuropathy peripheral
+Nervous System Toxicities,Autonomic Neuropathy,Autonomic neuropathy
+Nervous System Toxicities,Aseptic Meningitis,Meningitis aseptic
+Nervous System Toxicities,Encephalitis,Encephalitis
+Nervous System Toxicities,Demyelinating Diseases,Autoimmune demyelinating disease
+Hematologic Toxicities,Hemolytic Anemia,Haemolytic anaemia
+Hematologic Toxicities,Thrombotic Thrombocytopenic Purpura,Thrombotic thrombocytopenic purpura
+Hematologic Toxicities,Hemolytic Uremic Syndrome,Haemolytic uraemic syndrome
+Hematologic Toxicities,Aplastic Anemia,Aplastic anaemia
+Hematologic Toxicities,Lymphopenia,Lymphopenia
+Hematologic Toxicities,Immune Thrombocytopenia,Immune thrombocytopenia
+Hematologic Toxicities,Hemophilia A,Haemophilia
+Cardiovascular Toxicities,Myocarditis,Myocarditis
+Cardiovascular Toxicities,Pericarditis,Pericarditis
+Cardiovascular Toxicities,Arrhythmias,Arrhythmia
+Cardiovascular Toxicities,Ventricular Dysfunction,Ventricular dysfunction
+Cardiovascular Toxicities,Vasculitis,Vasculitis
+Cardiovascular Toxicities,Venous Thromboembolism,Venous thrombosis
+Ocular Toxicities,Uveitis,Uveitis
+Ocular Toxicities,Iritis,Iritis
+Ocular Toxicities,Episcleritis,Episcleritis
+Systemic Toxicities,Infusion-Related Reactions,Infusion site reaction
