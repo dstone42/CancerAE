@@ -1,0 +1,14 @@
+Benchmark run: 2026-02-18T20:06:09-0700
+Command: sh src/run_all.sh
+Exit code: 0
+Elapsed seconds: 104425
+Sample interval seconds: 1
+Peak CPU% (sampled, process tree): 1140.70
+Peak RAM MB (sampled, process tree): 21898.52
+Peak RAM (/usr/bin/time -l max resident set size, raw units): 11080974336
+Peak RAM MB (/usr/bin/time -l value interpreted as bytes): 10567.64
+Files:
+  - data/logs/benchmarks/20260217_150544/samples.csv
+  - data/logs/benchmarks/20260217_150544/summary.txt
+  - data/logs/benchmarks/20260217_150544/command.log
+  - data/logs/benchmarks/20260217_150544/time.txt
