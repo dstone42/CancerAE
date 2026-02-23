@@ -1,0 +1,1224 @@
+Starting data preparation...
+Downloading data...
+Downloading https://fis.fda.gov/content/Exports/faers_ascii_2012q4.zip to data/raw/FAERS_quarters/2012q4...
+Unzipping data/raw/FAERS_quarters/2012q4/faers_ascii_2012q4.zip...
+Archive:  data/raw/FAERS_quarters/2012q4/faers_ascii_2012q4.zip
+   creating: data/raw/FAERS_quarters/2012q4/ascii/
+  inflating: data/raw/FAERS_quarters/2012q4/ascii/ASC_NTS.doc  
+  inflating: data/raw/FAERS_quarters/2012q4/ascii/demo12q4.pdf  
+  inflating: data/raw/FAERS_quarters/2012q4/ascii/demo12q4.txt  
+  inflating: data/raw/FAERS_quarters/2012q4/ascii/drug12q4.pdf  
+  inflating: data/raw/FAERS_quarters/2012q4/ascii/drug12q4.txt  
+  inflating: data/raw/FAERS_quarters/2012q4/ascii/indi12q4.pdf  
+  inflating: data/raw/FAERS_quarters/2012q4/ascii/indi12q4.txt  
+  inflating: data/raw/FAERS_quarters/2012q4/ascii/outc12q4.pdf  
+  inflating: data/raw/FAERS_quarters/2012q4/ascii/outc12q4.txt  
+  inflating: data/raw/FAERS_quarters/2012q4/ascii/reac12q4.pdf  
+  inflating: data/raw/FAERS_quarters/2012q4/ascii/reac12q4.txt  
+  inflating: data/raw/FAERS_quarters/2012q4/ascii/rpsr12q4.pdf  
+  inflating: data/raw/FAERS_quarters/2012q4/ascii/rpsr12q4.txt  
+  inflating: data/raw/FAERS_quarters/2012q4/ascii/ther12q4.pdf  
+  inflating: data/raw/FAERS_quarters/2012q4/ascii/ther12q4.txt  
+  inflating: data/raw/FAERS_quarters/2012q4/FAQs.doc  
+  inflating: data/raw/FAERS_quarters/2012q4/README.doc  
+Removing data/raw/FAERS_quarters/2012q4/faers_ascii_2012q4.zip...
+Downloading https://fis.fda.gov/content/Exports/faers_ascii_2013q1.zip to data/raw/FAERS_quarters/2013q1...
+Unzipping data/raw/FAERS_quarters/2013q1/faers_ascii_2013q1.zip...
+Archive:  data/raw/FAERS_quarters/2013q1/faers_ascii_2013q1.zip
+   creating: data/raw/FAERS_quarters/2013q1/ascii/
+  inflating: data/raw/FAERS_quarters/2013q1/ascii/ASC_NT.pdf  
+  inflating: data/raw/FAERS_quarters/2013q1/ascii/demo13q1.pdf  
+  inflating: data/raw/FAERS_quarters/2013q1/ascii/DEMO13Q1.txt  
+  inflating: data/raw/FAERS_quarters/2013q1/ascii/drug13q1.pdf  
+  inflating: data/raw/FAERS_quarters/2013q1/ascii/DRUG13Q1.txt  
+  inflating: data/raw/FAERS_quarters/2013q1/ascii/indi13q1.pdf  
+  inflating: data/raw/FAERS_quarters/2013q1/ascii/INDI13Q1.txt  
+  inflating: data/raw/FAERS_quarters/2013q1/ascii/outc13q1.pdf  
+  inflating: data/raw/FAERS_quarters/2013q1/ascii/OUTC13Q1.txt  
+  inflating: data/raw/FAERS_quarters/2013q1/ascii/reac13q1.pdf  
+  inflating: data/raw/FAERS_quarters/2013q1/ascii/REAC13Q1.txt  
+  inflating: data/raw/FAERS_quarters/2013q1/ascii/rpsr13q1.pdf  
+  inflating: data/raw/FAERS_quarters/2013q1/ascii/RPSR13Q1.txt  
+  inflating: data/raw/FAERS_quarters/2013q1/ascii/ther13q1.pdf  
+  inflating: data/raw/FAERS_quarters/2013q1/ascii/THER13Q1.txt  
+  inflating: data/raw/FAERS_quarters/2013q1/FAQs.doc  
+  inflating: data/raw/FAERS_quarters/2013q1/Readme.doc  
+Removing data/raw/FAERS_quarters/2013q1/faers_ascii_2013q1.zip...
+Downloading https://fis.fda.gov/content/Exports/faers_ascii_2013q2.zip to data/raw/FAERS_quarters/2013q2...
+Unzipping data/raw/FAERS_quarters/2013q2/faers_ascii_2013q2.zip...
+Archive:  data/raw/FAERS_quarters/2013q2/faers_ascii_2013q2.zip
+   creating: data/raw/FAERS_quarters/2013q2/ascii/
+  inflating: data/raw/FAERS_quarters/2013q2/ascii/ASC_NTS.doc  
+  inflating: data/raw/FAERS_quarters/2013q2/ascii/demo13q2.pdf  
+  inflating: data/raw/FAERS_quarters/2013q2/ascii/DEMO13Q2.txt  
+  inflating: data/raw/FAERS_quarters/2013q2/ascii/drug13q2.pdf  
+  inflating: data/raw/FAERS_quarters/2013q2/ascii/DRUG13Q2.txt  
+  inflating: data/raw/FAERS_quarters/2013q2/ascii/indi13q2.pdf  
+  inflating: data/raw/FAERS_quarters/2013q2/ascii/INDI13Q2.txt  
+  inflating: data/raw/FAERS_quarters/2013q2/ascii/outc13q2.pdf  
+  inflating: data/raw/FAERS_quarters/2013q2/ascii/OUTC13Q2.txt  
+  inflating: data/raw/FAERS_quarters/2013q2/ascii/reac13q2.pdf  
+  inflating: data/raw/FAERS_quarters/2013q2/ascii/REAC13Q2.txt  
+  inflating: data/raw/FAERS_quarters/2013q2/ascii/rpsr13q2.pdf  
+  inflating: data/raw/FAERS_quarters/2013q2/ascii/RPSR13Q2.txt  
+  inflating: data/raw/FAERS_quarters/2013q2/ascii/ther13q2.pdf  
+  inflating: data/raw/FAERS_quarters/2013q2/ascii/THER13Q2.txt  
+  inflating: data/raw/FAERS_quarters/2013q2/FAQs.doc  
+  inflating: data/raw/FAERS_quarters/2013q2/Readme.doc  
+Removing data/raw/FAERS_quarters/2013q2/faers_ascii_2013q2.zip...
+Downloading https://fis.fda.gov/content/Exports/faers_ascii_2013q3.zip to data/raw/FAERS_quarters/2013q3...
+Unzipping data/raw/FAERS_quarters/2013q3/faers_ascii_2013q3.zip...
+Archive:  data/raw/FAERS_quarters/2013q3/faers_ascii_2013q3.zip
+   creating: data/raw/FAERS_quarters/2013q3/ASCII/
+  inflating: data/raw/FAERS_quarters/2013q3/ASCII/ASC_NTS.doc  
+  inflating: data/raw/FAERS_quarters/2013q3/ASCII/demo13q3-508.pdf  
+  inflating: data/raw/FAERS_quarters/2013q3/ASCII/DEMO13Q3.txt  
+  inflating: data/raw/FAERS_quarters/2013q3/ASCII/drug13q3-508.pdf  
+  inflating: data/raw/FAERS_quarters/2013q3/ASCII/DRUG13Q3.txt  
+  inflating: data/raw/FAERS_quarters/2013q3/ASCII/indi13q3-508.pdf  
+  inflating: data/raw/FAERS_quarters/2013q3/ASCII/INDI13Q3.txt  
+  inflating: data/raw/FAERS_quarters/2013q3/ASCII/outc13q3-508.pdf  
+  inflating: data/raw/FAERS_quarters/2013q3/ASCII/OUTC13Q3.txt  
+  inflating: data/raw/FAERS_quarters/2013q3/ASCII/reac13q3-508.pdf  
+  inflating: data/raw/FAERS_quarters/2013q3/ASCII/REAC13Q3.txt  
+  inflating: data/raw/FAERS_quarters/2013q3/ASCII/rpsr13q3-508.pdf  
+  inflating: data/raw/FAERS_quarters/2013q3/ASCII/RPSR13Q3.txt  
+  inflating: data/raw/FAERS_quarters/2013q3/ASCII/ther13q3-508.pdf  
+  inflating: data/raw/FAERS_quarters/2013q3/ASCII/THER13Q3.txt  
+  inflating: data/raw/FAERS_quarters/2013q3/FAQs.doc  
+  inflating: data/raw/FAERS_quarters/2013q3/Readme.doc  
+Removing data/raw/FAERS_quarters/2013q3/faers_ascii_2013q3.zip...
+Downloading https://fis.fda.gov/content/Exports/faers_ascii_2013q4.zip to data/raw/FAERS_quarters/2013q4...
+Unzipping data/raw/FAERS_quarters/2013q4/faers_ascii_2013q4.zip...
+Archive:  data/raw/FAERS_quarters/2013q4/faers_ascii_2013q4.zip
+   creating: data/raw/FAERS_quarters/2013q4/ascii/
+  inflating: data/raw/FAERS_quarters/2013q4/ascii/ASC_NTS.doc  
+  inflating: data/raw/FAERS_quarters/2013q4/ascii/demo13q4.pdf  
+  inflating: data/raw/FAERS_quarters/2013q4/ascii/DEMO13Q4.txt  
+  inflating: data/raw/FAERS_quarters/2013q4/ascii/drug13q4.pdf  
+  inflating: data/raw/FAERS_quarters/2013q4/ascii/DRUG13Q4.txt  
+  inflating: data/raw/FAERS_quarters/2013q4/ascii/indi13q4.pdf  
+  inflating: data/raw/FAERS_quarters/2013q4/ascii/INDI13Q4.txt  
+  inflating: data/raw/FAERS_quarters/2013q4/ascii/outc13q4.pdf  
+  inflating: data/raw/FAERS_quarters/2013q4/ascii/OUTC13Q4.txt  
+  inflating: data/raw/FAERS_quarters/2013q4/ascii/reac13q4.pdf  
+  inflating: data/raw/FAERS_quarters/2013q4/ascii/REAC13Q4.txt  
+  inflating: data/raw/FAERS_quarters/2013q4/ascii/rpsr13q4.pdf  
+  inflating: data/raw/FAERS_quarters/2013q4/ascii/RPSR13Q4.txt  
+  inflating: data/raw/FAERS_quarters/2013q4/ascii/ther13q4.pdf  
+  inflating: data/raw/FAERS_quarters/2013q4/ascii/THER13Q4.txt  
+  inflating: data/raw/FAERS_quarters/2013q4/FAQs.doc  
+  inflating: data/raw/FAERS_quarters/2013q4/Readme.doc  
+Removing data/raw/FAERS_quarters/2013q4/faers_ascii_2013q4.zip...
+Downloading https://fis.fda.gov/content/Exports/faers_ascii_2014q1.zip to data/raw/FAERS_quarters/2014q1...
+Unzipping data/raw/FAERS_quarters/2014q1/faers_ascii_2014q1.zip...
+Archive:  data/raw/FAERS_quarters/2014q1/faers_ascii_2014q1.zip
+   creating: data/raw/FAERS_quarters/2014q1/ascii/
+  inflating: data/raw/FAERS_quarters/2014q1/ascii/ASC_NTS.doc  
+  inflating: data/raw/FAERS_quarters/2014q1/ascii/demo14q1.pdf  
+  inflating: data/raw/FAERS_quarters/2014q1/ascii/DEMO14Q1.txt  
+  inflating: data/raw/FAERS_quarters/2014q1/ascii/drug14q1.pdf  
+  inflating: data/raw/FAERS_quarters/2014q1/ascii/DRUG14Q1.txt  
+  inflating: data/raw/FAERS_quarters/2014q1/ascii/indi14q1.pdf  
+  inflating: data/raw/FAERS_quarters/2014q1/ascii/INDI14Q1.txt  
+  inflating: data/raw/FAERS_quarters/2014q1/ascii/outc14q1.pdf  
+  inflating: data/raw/FAERS_quarters/2014q1/ascii/OUTC14Q1.txt  
+  inflating: data/raw/FAERS_quarters/2014q1/ascii/reac14q1.pdf  
+  inflating: data/raw/FAERS_quarters/2014q1/ascii/REAC14Q1.txt  
+  inflating: data/raw/FAERS_quarters/2014q1/ascii/rpsr14q1.pdf  
+  inflating: data/raw/FAERS_quarters/2014q1/ascii/RPSR14Q1.txt  
+  inflating: data/raw/FAERS_quarters/2014q1/ascii/ther14q1.pdf  
+  inflating: data/raw/FAERS_quarters/2014q1/ascii/THER14Q1.txt  
+  inflating: data/raw/FAERS_quarters/2014q1/FAQs.doc  
+  inflating: data/raw/FAERS_quarters/2014q1/Readme.doc  
+Removing data/raw/FAERS_quarters/2014q1/faers_ascii_2014q1.zip...
+Downloading https://fis.fda.gov/content/Exports/faers_ascii_2014q2.zip to data/raw/FAERS_quarters/2014q2...
+Unzipping data/raw/FAERS_quarters/2014q2/faers_ascii_2014q2.zip...
+Archive:  data/raw/FAERS_quarters/2014q2/faers_ascii_2014q2.zip
+   creating: data/raw/FAERS_quarters/2014q2/ascii/
+  inflating: data/raw/FAERS_quarters/2014q2/ascii/ASC_NTS.doc  
+  inflating: data/raw/FAERS_quarters/2014q2/ascii/demo14q2.pdf  
+  inflating: data/raw/FAERS_quarters/2014q2/ascii/DEMO14Q2.txt  
+  inflating: data/raw/FAERS_quarters/2014q2/ascii/drug14q2.pdf  
+  inflating: data/raw/FAERS_quarters/2014q2/ascii/DRUG14Q2.txt  
+  inflating: data/raw/FAERS_quarters/2014q2/ascii/indi14q2.pdf  
+  inflating: data/raw/FAERS_quarters/2014q2/ascii/INDI14Q2.txt  
+  inflating: data/raw/FAERS_quarters/2014q2/ascii/outc14q2.pdf  
+  inflating: data/raw/FAERS_quarters/2014q2/ascii/OUTC14Q2.txt  
+  inflating: data/raw/FAERS_quarters/2014q2/ascii/reac14q2.pdf  
+  inflating: data/raw/FAERS_quarters/2014q2/ascii/REAC14Q2.txt  
+  inflating: data/raw/FAERS_quarters/2014q2/ascii/rpsr14q2.pdf  
+  inflating: data/raw/FAERS_quarters/2014q2/ascii/RPSR14Q2.txt  
+  inflating: data/raw/FAERS_quarters/2014q2/ascii/ther14q2.pdf  
+  inflating: data/raw/FAERS_quarters/2014q2/ascii/THER14Q2.txt  
+  inflating: data/raw/FAERS_quarters/2014q2/FAQs.doc  
+  inflating: data/raw/FAERS_quarters/2014q2/Readme.doc  
+Removing data/raw/FAERS_quarters/2014q2/faers_ascii_2014q2.zip...
+Downloading https://fis.fda.gov/content/Exports/faers_ascii_2014q3.zip to data/raw/FAERS_quarters/2014q3...
+Unzipping data/raw/FAERS_quarters/2014q3/faers_ascii_2014q3.zip...
+Archive:  data/raw/FAERS_quarters/2014q3/faers_ascii_2014q3.zip
+   creating: data/raw/FAERS_quarters/2014q3/ascii/
+  inflating: data/raw/FAERS_quarters/2014q3/ascii/ASC_NTS.pdf  
+  inflating: data/raw/FAERS_quarters/2014q3/ascii/demo14q3.pdf  
+  inflating: data/raw/FAERS_quarters/2014q3/ascii/DEMO14Q3.txt  
+  inflating: data/raw/FAERS_quarters/2014q3/ascii/drug14q3.pdf  
+  inflating: data/raw/FAERS_quarters/2014q3/ascii/DRUG14Q3.txt  
+  inflating: data/raw/FAERS_quarters/2014q3/ascii/indi14q3.pdf  
+  inflating: data/raw/FAERS_quarters/2014q3/ascii/INDI14Q3.txt  
+  inflating: data/raw/FAERS_quarters/2014q3/ascii/outc14q3.pdf  
+  inflating: data/raw/FAERS_quarters/2014q3/ascii/OUTC14Q3.txt  
+  inflating: data/raw/FAERS_quarters/2014q3/ascii/reac14q3.pdf  
+  inflating: data/raw/FAERS_quarters/2014q3/ascii/REAC14Q3.txt  
+  inflating: data/raw/FAERS_quarters/2014q3/ascii/rpsr14q3.pdf  
+  inflating: data/raw/FAERS_quarters/2014q3/ascii/RPSR14Q3.txt  
+  inflating: data/raw/FAERS_quarters/2014q3/ascii/ther14q.pdf  
+  inflating: data/raw/FAERS_quarters/2014q3/ascii/THER14Q3.txt  
+  inflating: data/raw/FAERS_quarters/2014q3/FAQs.pdf  
+  inflating: data/raw/FAERS_quarters/2014q3/Readme.pdf  
+Removing data/raw/FAERS_quarters/2014q3/faers_ascii_2014q3.zip...
+Downloading https://fis.fda.gov/content/Exports/faers_ascii_2014q4.zip to data/raw/FAERS_quarters/2014q4...
+Unzipping data/raw/FAERS_quarters/2014q4/faers_ascii_2014q4.zip...
+Archive:  data/raw/FAERS_quarters/2014q4/faers_ascii_2014q4.zip
+   creating: data/raw/FAERS_quarters/2014q4/ascii/
+  inflating: data/raw/FAERS_quarters/2014q4/ascii/ASC_NTS.pdf  
+  inflating: data/raw/FAERS_quarters/2014q4/ascii/demo14q4.pdf  
+  inflating: data/raw/FAERS_quarters/2014q4/ascii/DEMO14Q4.txt  
+  inflating: data/raw/FAERS_quarters/2014q4/ascii/drug14q4.pdf  
+  inflating: data/raw/FAERS_quarters/2014q4/ascii/DRUG14Q4.txt  
+  inflating: data/raw/FAERS_quarters/2014q4/ascii/indi14q4.pdf  
+  inflating: data/raw/FAERS_quarters/2014q4/ascii/INDI14Q4.txt  
+  inflating: data/raw/FAERS_quarters/2014q4/ascii/outc14q4.pdf  
+  inflating: data/raw/FAERS_quarters/2014q4/ascii/OUTC14Q4.txt  
+  inflating: data/raw/FAERS_quarters/2014q4/ascii/reac14q4.pdf  
+  inflating: data/raw/FAERS_quarters/2014q4/ascii/REAC14Q4.txt  
+  inflating: data/raw/FAERS_quarters/2014q4/ascii/rpsr14q4.pdf  
+  inflating: data/raw/FAERS_quarters/2014q4/ascii/RPSR14Q4.txt  
+  inflating: data/raw/FAERS_quarters/2014q4/ascii/ther14q4.pdf  
+  inflating: data/raw/FAERS_quarters/2014q4/ascii/THER14Q4.txt  
+  inflating: data/raw/FAERS_quarters/2014q4/FAQs.pdf  
+  inflating: data/raw/FAERS_quarters/2014q4/Readme.pdf  
+Removing data/raw/FAERS_quarters/2014q4/faers_ascii_2014q4.zip...
+Downloading https://fis.fda.gov/content/Exports/faers_ascii_2015q1.zip to data/raw/FAERS_quarters/2015q1...
+Unzipping data/raw/FAERS_quarters/2015q1/faers_ascii_2015q1.zip...
+Archive:  data/raw/FAERS_quarters/2015q1/faers_ascii_2015q1.zip
+   creating: data/raw/FAERS_quarters/2015q1/ascii/
+  inflating: data/raw/FAERS_quarters/2015q1/ascii/ASC_NTS.pdf  
+  inflating: data/raw/FAERS_quarters/2015q1/ascii/demo15q1.pdf  
+  inflating: data/raw/FAERS_quarters/2015q1/ascii/DEMO15Q1.txt  
+  inflating: data/raw/FAERS_quarters/2015q1/ascii/drug15q1.pdf  
+  inflating: data/raw/FAERS_quarters/2015q1/ascii/DRUG15Q1.txt  
+  inflating: data/raw/FAERS_quarters/2015q1/ascii/indi15q1.pdf  
+  inflating: data/raw/FAERS_quarters/2015q1/ascii/INDI15Q1.txt  
+  inflating: data/raw/FAERS_quarters/2015q1/ascii/outc15q1.pdf  
+  inflating: data/raw/FAERS_quarters/2015q1/ascii/OUTC15Q1.txt  
+  inflating: data/raw/FAERS_quarters/2015q1/ascii/reac15q1.pdf  
+  inflating: data/raw/FAERS_quarters/2015q1/ascii/REAC15Q1.txt  
+  inflating: data/raw/FAERS_quarters/2015q1/ascii/rpsr15q1.pdf  
+  inflating: data/raw/FAERS_quarters/2015q1/ascii/RPSR15Q1.txt  
+  inflating: data/raw/FAERS_quarters/2015q1/ascii/ther15q1.pdf  
+  inflating: data/raw/FAERS_quarters/2015q1/ascii/THER15Q1.txt  
+  inflating: data/raw/FAERS_quarters/2015q1/FAQs.pdf  
+  inflating: data/raw/FAERS_quarters/2015q1/Readme.pdf  
+Removing data/raw/FAERS_quarters/2015q1/faers_ascii_2015q1.zip...
+Downloading https://fis.fda.gov/content/Exports/faers_ascii_2015q2.zip to data/raw/FAERS_quarters/2015q2...
+Unzipping data/raw/FAERS_quarters/2015q2/faers_ascii_2015q2.zip...
+Archive:  data/raw/FAERS_quarters/2015q2/faers_ascii_2015q2.zip
+   creating: data/raw/FAERS_quarters/2015q2/ascii/
+  inflating: data/raw/FAERS_quarters/2015q2/ascii/ASC_NTS.pdf  
+  inflating: data/raw/FAERS_quarters/2015q2/ascii/demo15q2.pdf  
+  inflating: data/raw/FAERS_quarters/2015q2/ascii/DEMO15Q2.txt  
+  inflating: data/raw/FAERS_quarters/2015q2/ascii/drug15q2.pdf  
+  inflating: data/raw/FAERS_quarters/2015q2/ascii/DRUG15Q2.txt  
+  inflating: data/raw/FAERS_quarters/2015q2/ascii/indi15q2.pdf  
+  inflating: data/raw/FAERS_quarters/2015q2/ascii/INDI15Q2.txt  
+  inflating: data/raw/FAERS_quarters/2015q2/ascii/outc15q2.pdf  
+  inflating: data/raw/FAERS_quarters/2015q2/ascii/OUTC15Q2.txt  
+  inflating: data/raw/FAERS_quarters/2015q2/ascii/reac15q2.pdf  
+  inflating: data/raw/FAERS_quarters/2015q2/ascii/REAC15Q2.txt  
+  inflating: data/raw/FAERS_quarters/2015q2/ascii/rpsr15q2.pdf  
+  inflating: data/raw/FAERS_quarters/2015q2/ascii/RPSR15Q2.txt  
+  inflating: data/raw/FAERS_quarters/2015q2/ascii/ther15q2.pdf  
+  inflating: data/raw/FAERS_quarters/2015q2/ascii/THER15Q2.txt  
+  inflating: data/raw/FAERS_quarters/2015q2/FAQs.pdf  
+  inflating: data/raw/FAERS_quarters/2015q2/Readme.pdf  
+Removing data/raw/FAERS_quarters/2015q2/faers_ascii_2015q2.zip...
+Downloading https://fis.fda.gov/content/Exports/faers_ascii_2015q3.zip to data/raw/FAERS_quarters/2015q3...
+Unzipping data/raw/FAERS_quarters/2015q3/faers_ascii_2015q3.zip...
+Archive:  data/raw/FAERS_quarters/2015q3/faers_ascii_2015q3.zip
+   creating: data/raw/FAERS_quarters/2015q3/ascii/
+  inflating: data/raw/FAERS_quarters/2015q3/ascii/ASC_NTS.pdf  
+  inflating: data/raw/FAERS_quarters/2015q3/ascii/demo15q3.pdf  
+  inflating: data/raw/FAERS_quarters/2015q3/ascii/DEMO15Q3.txt  
+  inflating: data/raw/FAERS_quarters/2015q3/ascii/drug15q3.pdf  
+  inflating: data/raw/FAERS_quarters/2015q3/ascii/DRUG15Q3.txt  
+  inflating: data/raw/FAERS_quarters/2015q3/ascii/indi15q3.pdf  
+  inflating: data/raw/FAERS_quarters/2015q3/ascii/INDI15Q3.txt  
+  inflating: data/raw/FAERS_quarters/2015q3/ascii/outc15q3.pdf  
+  inflating: data/raw/FAERS_quarters/2015q3/ascii/OUTC15Q3.txt  
+  inflating: data/raw/FAERS_quarters/2015q3/ascii/reac15q3.pdf  
+  inflating: data/raw/FAERS_quarters/2015q3/ascii/REAC15Q3.txt  
+  inflating: data/raw/FAERS_quarters/2015q3/ascii/rpsr15q3.pdf  
+  inflating: data/raw/FAERS_quarters/2015q3/ascii/RPSR15Q3.txt  
+  inflating: data/raw/FAERS_quarters/2015q3/ascii/ther15q3.pdf  
+  inflating: data/raw/FAERS_quarters/2015q3/ascii/THER15Q3.txt  
+  inflating: data/raw/FAERS_quarters/2015q3/FAQs.pdf  
+  inflating: data/raw/FAERS_quarters/2015q3/Readme.pdf  
+Removing data/raw/FAERS_quarters/2015q3/faers_ascii_2015q3.zip...
+Downloading https://fis.fda.gov/content/Exports/faers_ascii_2015q4.zip to data/raw/FAERS_quarters/2015q4...
+Unzipping data/raw/FAERS_quarters/2015q4/faers_ascii_2015q4.zip...
+Archive:  data/raw/FAERS_quarters/2015q4/faers_ascii_2015q4.zip
+   creating: data/raw/FAERS_quarters/2015q4/ascii/
+  inflating: data/raw/FAERS_quarters/2015q4/ascii/ASC_NTS.pdf  
+  inflating: data/raw/FAERS_quarters/2015q4/ascii/demo15q4.pdf  
+  inflating: data/raw/FAERS_quarters/2015q4/ascii/DEMO15Q4.txt  
+  inflating: data/raw/FAERS_quarters/2015q4/ascii/drug15q4.pdf  
+  inflating: data/raw/FAERS_quarters/2015q4/ascii/DRUG15Q4.txt  
+  inflating: data/raw/FAERS_quarters/2015q4/ascii/indi15q4.pdf  
+  inflating: data/raw/FAERS_quarters/2015q4/ascii/INDI15Q4.txt  
+  inflating: data/raw/FAERS_quarters/2015q4/ascii/outc15q4.pdf  
+  inflating: data/raw/FAERS_quarters/2015q4/ascii/OUTC15Q4.txt  
+  inflating: data/raw/FAERS_quarters/2015q4/ascii/reac15q4.pdf  
+  inflating: data/raw/FAERS_quarters/2015q4/ascii/REAC15Q4.txt  
+  inflating: data/raw/FAERS_quarters/2015q4/ascii/rpsr15q4.pdf  
+  inflating: data/raw/FAERS_quarters/2015q4/ascii/RPSR15Q4.txt  
+  inflating: data/raw/FAERS_quarters/2015q4/ascii/ther15q4.pdf  
+  inflating: data/raw/FAERS_quarters/2015q4/ascii/THER15Q4.txt  
+  inflating: data/raw/FAERS_quarters/2015q4/FAQs.pdf  
+  inflating: data/raw/FAERS_quarters/2015q4/Readme.pdf  
+Removing data/raw/FAERS_quarters/2015q4/faers_ascii_2015q4.zip...
+Downloading https://fis.fda.gov/content/Exports/faers_ascii_2016q1.zip to data/raw/FAERS_quarters/2016q1...
+Unzipping data/raw/FAERS_quarters/2016q1/faers_ascii_2016q1.zip...
+Archive:  data/raw/FAERS_quarters/2016q1/faers_ascii_2016q1.zip
+   creating: data/raw/FAERS_quarters/2016q1/ascii/
+  inflating: data/raw/FAERS_quarters/2016q1/ascii/ASC_NTS.pdf  
+  inflating: data/raw/FAERS_quarters/2016q1/ascii/demo16q1.pdf  
+  inflating: data/raw/FAERS_quarters/2016q1/ascii/DEMO16Q1.txt  
+  inflating: data/raw/FAERS_quarters/2016q1/ascii/drug16q1.pdf  
+  inflating: data/raw/FAERS_quarters/2016q1/ascii/DRUG16Q1.txt  
+  inflating: data/raw/FAERS_quarters/2016q1/ascii/indi16q1.pdf  
+  inflating: data/raw/FAERS_quarters/2016q1/ascii/INDI16Q1.txt  
+  inflating: data/raw/FAERS_quarters/2016q1/ascii/out16q1.pdf  
+  inflating: data/raw/FAERS_quarters/2016q1/ascii/OUTC16Q1.txt  
+  inflating: data/raw/FAERS_quarters/2016q1/ascii/reac16q1.pdf  
+  inflating: data/raw/FAERS_quarters/2016q1/ascii/REAC16Q1.txt  
+  inflating: data/raw/FAERS_quarters/2016q1/ascii/rpsr16q1.pdf  
+  inflating: data/raw/FAERS_quarters/2016q1/ascii/RPSR16Q1.txt  
+  inflating: data/raw/FAERS_quarters/2016q1/ascii/ther16q1.pdf  
+  inflating: data/raw/FAERS_quarters/2016q1/ascii/THER16Q1.txt  
+  inflating: data/raw/FAERS_quarters/2016q1/FAQs.pdf  
+  inflating: data/raw/FAERS_quarters/2016q1/Readme.pdf  
+Removing data/raw/FAERS_quarters/2016q1/faers_ascii_2016q1.zip...
+Downloading https://fis.fda.gov/content/Exports/faers_ascii_2016q2.zip to data/raw/FAERS_quarters/2016q2...
+Unzipping data/raw/FAERS_quarters/2016q2/faers_ascii_2016q2.zip...
+Archive:  data/raw/FAERS_quarters/2016q2/faers_ascii_2016q2.zip
+   creating: data/raw/FAERS_quarters/2016q2/ascii/
+  inflating: data/raw/FAERS_quarters/2016q2/ascii/ASC_NTS.pdf  
+  inflating: data/raw/FAERS_quarters/2016q2/ascii/demo16q2.pdf  
+  inflating: data/raw/FAERS_quarters/2016q2/ascii/DEMO16Q2.txt  
+  inflating: data/raw/FAERS_quarters/2016q2/ascii/drug16q2.pdf  
+  inflating: data/raw/FAERS_quarters/2016q2/ascii/DRUG16Q2.txt  
+  inflating: data/raw/FAERS_quarters/2016q2/ascii/indi16q2.pdf  
+  inflating: data/raw/FAERS_quarters/2016q2/ascii/INDI16Q2.txt  
+  inflating: data/raw/FAERS_quarters/2016q2/ascii/outc16q2.pdf  
+  inflating: data/raw/FAERS_quarters/2016q2/ascii/OUTC16Q2.txt  
+  inflating: data/raw/FAERS_quarters/2016q2/ascii/reac16q2.pdf  
+  inflating: data/raw/FAERS_quarters/2016q2/ascii/REAC16Q2.txt  
+  inflating: data/raw/FAERS_quarters/2016q2/ascii/rpsr16q2.pdf  
+  inflating: data/raw/FAERS_quarters/2016q2/ascii/RPSR16Q2.txt  
+  inflating: data/raw/FAERS_quarters/2016q2/ascii/ther16q2.pdf  
+  inflating: data/raw/FAERS_quarters/2016q2/ascii/THER16Q2.txt  
+  inflating: data/raw/FAERS_quarters/2016q2/FAQs.pdf  
+  inflating: data/raw/FAERS_quarters/2016q2/Readme.pdf  
+Removing data/raw/FAERS_quarters/2016q2/faers_ascii_2016q2.zip...
+Downloading https://fis.fda.gov/content/Exports/faers_ascii_2016q3.zip to data/raw/FAERS_quarters/2016q3...
+Unzipping data/raw/FAERS_quarters/2016q3/faers_ascii_2016q3.zip...
+Archive:  data/raw/FAERS_quarters/2016q3/faers_ascii_2016q3.zip
+   creating: data/raw/FAERS_quarters/2016q3/ascii/
+  inflating: data/raw/FAERS_quarters/2016q3/ascii/ASC_NTS.pdf  
+  inflating: data/raw/FAERS_quarters/2016q3/ascii/demo16q3.pdf  
+  inflating: data/raw/FAERS_quarters/2016q3/ascii/DEMO16Q3.txt  
+  inflating: data/raw/FAERS_quarters/2016q3/ascii/drug16q3.pdf  
+  inflating: data/raw/FAERS_quarters/2016q3/ascii/DRUG16Q3.txt  
+  inflating: data/raw/FAERS_quarters/2016q3/ascii/indi16q3.pdf  
+  inflating: data/raw/FAERS_quarters/2016q3/ascii/INDI16Q3.txt  
+  inflating: data/raw/FAERS_quarters/2016q3/ascii/outc16q3.pdf  
+  inflating: data/raw/FAERS_quarters/2016q3/ascii/OUTC16Q3.txt  
+  inflating: data/raw/FAERS_quarters/2016q3/ascii/reac16q3.pdf  
+  inflating: data/raw/FAERS_quarters/2016q3/ascii/REAC16Q3.txt  
+  inflating: data/raw/FAERS_quarters/2016q3/ascii/rpsr16q3.pdf  
+  inflating: data/raw/FAERS_quarters/2016q3/ascii/RPSR16Q3.txt  
+  inflating: data/raw/FAERS_quarters/2016q3/ascii/ther16q3.pdf  
+  inflating: data/raw/FAERS_quarters/2016q3/ascii/THER16Q3.txt  
+  inflating: data/raw/FAERS_quarters/2016q3/FAQs.pdf  
+  inflating: data/raw/FAERS_quarters/2016q3/Readme.pdf  
+Removing data/raw/FAERS_quarters/2016q3/faers_ascii_2016q3.zip...
+Downloading https://fis.fda.gov/content/Exports/faers_ascii_2016q4.zip to data/raw/FAERS_quarters/2016q4...
+Unzipping data/raw/FAERS_quarters/2016q4/faers_ascii_2016q4.zip...
+Archive:  data/raw/FAERS_quarters/2016q4/faers_ascii_2016q4.zip
+   creating: data/raw/FAERS_quarters/2016q4/ascii/
+  inflating: data/raw/FAERS_quarters/2016q4/ascii/ASC_NTS.pdf  
+  inflating: data/raw/FAERS_quarters/2016q4/ascii/demo16q4.pdf  
+  inflating: data/raw/FAERS_quarters/2016q4/ascii/DEMO16Q4.txt  
+  inflating: data/raw/FAERS_quarters/2016q4/ascii/drug16q4.pdf  
+  inflating: data/raw/FAERS_quarters/2016q4/ascii/DRUG16Q4.txt  
+  inflating: data/raw/FAERS_quarters/2016q4/ascii/indi16q4.pdf  
+  inflating: data/raw/FAERS_quarters/2016q4/ascii/INDI16Q4.txt  
+  inflating: data/raw/FAERS_quarters/2016q4/ascii/outc16q4.pdf  
+  inflating: data/raw/FAERS_quarters/2016q4/ascii/OUTC16Q4.txt  
+  inflating: data/raw/FAERS_quarters/2016q4/ascii/reac16q4.pdf  
+  inflating: data/raw/FAERS_quarters/2016q4/ascii/REAC16Q4.txt  
+  inflating: data/raw/FAERS_quarters/2016q4/ascii/rpsr16q4.pdf  
+  inflating: data/raw/FAERS_quarters/2016q4/ascii/RPSR16Q4.txt  
+  inflating: data/raw/FAERS_quarters/2016q4/ascii/ther16q4.pdf  
+  inflating: data/raw/FAERS_quarters/2016q4/ascii/THER16Q4.txt  
+  inflating: data/raw/FAERS_quarters/2016q4/FAQs.pdf  
+  inflating: data/raw/FAERS_quarters/2016q4/Readme.pdf  
+Removing data/raw/FAERS_quarters/2016q4/faers_ascii_2016q4.zip...
+Downloading https://fis.fda.gov/content/Exports/faers_ascii_2017q1.zip to data/raw/FAERS_quarters/2017q1...
+Unzipping data/raw/FAERS_quarters/2017q1/faers_ascii_2017q1.zip...
+Archive:  data/raw/FAERS_quarters/2017q1/faers_ascii_2017q1.zip
+   creating: data/raw/FAERS_quarters/2017q1/ascii/
+  inflating: data/raw/FAERS_quarters/2017q1/ascii/ASC_NTS.pdf  
+  inflating: data/raw/FAERS_quarters/2017q1/ascii/demo17q1.pdf  
+  inflating: data/raw/FAERS_quarters/2017q1/ascii/DEMO17Q1.txt  
+  inflating: data/raw/FAERS_quarters/2017q1/ascii/drug17q1.pdf  
+  inflating: data/raw/FAERS_quarters/2017q1/ascii/DRUG17Q1.txt  
+  inflating: data/raw/FAERS_quarters/2017q1/ascii/indi17q1.pdf  
+  inflating: data/raw/FAERS_quarters/2017q1/ascii/INDI17Q1.txt  
+  inflating: data/raw/FAERS_quarters/2017q1/ascii/outc17q1.pdf  
+  inflating: data/raw/FAERS_quarters/2017q1/ascii/OUTC17Q1.txt  
+  inflating: data/raw/FAERS_quarters/2017q1/ascii/reac17q1.pdf  
+  inflating: data/raw/FAERS_quarters/2017q1/ascii/REAC17Q1.txt  
+  inflating: data/raw/FAERS_quarters/2017q1/ascii/rpsr17q1.pdf  
+  inflating: data/raw/FAERS_quarters/2017q1/ascii/RPSR17Q1.txt  
+  inflating: data/raw/FAERS_quarters/2017q1/ascii/ther17q1.pdf  
+  inflating: data/raw/FAERS_quarters/2017q1/ascii/THER17Q1.txt  
+  inflating: data/raw/FAERS_quarters/2017q1/FAQs.pdf  
+  inflating: data/raw/FAERS_quarters/2017q1/Readme.pdf  
+Removing data/raw/FAERS_quarters/2017q1/faers_ascii_2017q1.zip...
+Downloading https://fis.fda.gov/content/Exports/faers_ascii_2017q2.zip to data/raw/FAERS_quarters/2017q2...
+Unzipping data/raw/FAERS_quarters/2017q2/faers_ascii_2017q2.zip...
+Archive:  data/raw/FAERS_quarters/2017q2/faers_ascii_2017q2.zip
+   creating: data/raw/FAERS_quarters/2017q2/ascii/
+  inflating: data/raw/FAERS_quarters/2017q2/ascii/ASC_NTS.pdf  
+  inflating: data/raw/FAERS_quarters/2017q2/ascii/demo17q2.pdf  
+  inflating: data/raw/FAERS_quarters/2017q2/ascii/DEMO17Q2.txt  
+  inflating: data/raw/FAERS_quarters/2017q2/ascii/drug17q2.pdf  
+  inflating: data/raw/FAERS_quarters/2017q2/ascii/DRUG17Q2.txt  
+  inflating: data/raw/FAERS_quarters/2017q2/ascii/indi17q2.pdf  
+  inflating: data/raw/FAERS_quarters/2017q2/ascii/INDI17Q2.txt  
+  inflating: data/raw/FAERS_quarters/2017q2/ascii/outc17q2.pdf  
+  inflating: data/raw/FAERS_quarters/2017q2/ascii/OUTC17Q2.txt  
+  inflating: data/raw/FAERS_quarters/2017q2/ascii/reac17q2.pdf  
+  inflating: data/raw/FAERS_quarters/2017q2/ascii/REAC17Q2.txt  
+  inflating: data/raw/FAERS_quarters/2017q2/ascii/rpsr17q2.pdf  
+  inflating: data/raw/FAERS_quarters/2017q2/ascii/RPSR17Q2.txt  
+  inflating: data/raw/FAERS_quarters/2017q2/ascii/ther17q2.pdf  
+  inflating: data/raw/FAERS_quarters/2017q2/ascii/THER17Q2.txt  
+  inflating: data/raw/FAERS_quarters/2017q2/FAQs.pdf  
+  inflating: data/raw/FAERS_quarters/2017q2/Readme.pdf  
+Removing data/raw/FAERS_quarters/2017q2/faers_ascii_2017q2.zip...
+Downloading https://fis.fda.gov/content/Exports/faers_ascii_2017q3.zip to data/raw/FAERS_quarters/2017q3...
+Unzipping data/raw/FAERS_quarters/2017q3/faers_ascii_2017q3.zip...
+Archive:  data/raw/FAERS_quarters/2017q3/faers_ascii_2017q3.zip
+   creating: data/raw/FAERS_quarters/2017q3/ascii/
+  inflating: data/raw/FAERS_quarters/2017q3/ascii/ASC_NTS.pdf  
+  inflating: data/raw/FAERS_quarters/2017q3/ascii/demo17q3.pdf  
+  inflating: data/raw/FAERS_quarters/2017q3/ascii/DEMO17Q3.txt  
+  inflating: data/raw/FAERS_quarters/2017q3/ascii/drug17q3.pdf  
+  inflating: data/raw/FAERS_quarters/2017q3/ascii/DRUG17Q3.txt  
+  inflating: data/raw/FAERS_quarters/2017q3/ascii/indi17q3.pdf  
+  inflating: data/raw/FAERS_quarters/2017q3/ascii/INDI17Q3.txt  
+  inflating: data/raw/FAERS_quarters/2017q3/ascii/outc17q3.pdf  
+  inflating: data/raw/FAERS_quarters/2017q3/ascii/OUTC17Q3.txt  
+  inflating: data/raw/FAERS_quarters/2017q3/ascii/reac17q3.pdf  
+  inflating: data/raw/FAERS_quarters/2017q3/ascii/REAC17Q3.txt  
+  inflating: data/raw/FAERS_quarters/2017q3/ascii/rpsr17q3.pdf  
+  inflating: data/raw/FAERS_quarters/2017q3/ascii/RPSR17Q3.txt  
+  inflating: data/raw/FAERS_quarters/2017q3/ascii/ther17q3.pdf  
+  inflating: data/raw/FAERS_quarters/2017q3/ascii/THER17Q3.txt  
+  inflating: data/raw/FAERS_quarters/2017q3/FAQs.pdf  
+  inflating: data/raw/FAERS_quarters/2017q3/Readme.pdf  
+Removing data/raw/FAERS_quarters/2017q3/faers_ascii_2017q3.zip...
+Downloading https://fis.fda.gov/content/Exports/faers_ascii_2017q4.zip to data/raw/FAERS_quarters/2017q4...
+Unzipping data/raw/FAERS_quarters/2017q4/faers_ascii_2017q4.zip...
+Archive:  data/raw/FAERS_quarters/2017q4/faers_ascii_2017q4.zip
+   creating: data/raw/FAERS_quarters/2017q4/ascii/
+  inflating: data/raw/FAERS_quarters/2017q4/ascii/ASC_NTS.pdf  
+  inflating: data/raw/FAERS_quarters/2017q4/ascii/demo17q4.pdf  
+  inflating: data/raw/FAERS_quarters/2017q4/ascii/DEMO17Q4.txt  
+  inflating: data/raw/FAERS_quarters/2017q4/ascii/drug17q4.pdf  
+  inflating: data/raw/FAERS_quarters/2017q4/ascii/DRUG17Q4.txt  
+  inflating: data/raw/FAERS_quarters/2017q4/ascii/indi17q4.pdf  
+  inflating: data/raw/FAERS_quarters/2017q4/ascii/INDI17Q4.txt  
+  inflating: data/raw/FAERS_quarters/2017q4/ascii/outc17q4.pdf  
+  inflating: data/raw/FAERS_quarters/2017q4/ascii/OUTC17Q4.txt  
+  inflating: data/raw/FAERS_quarters/2017q4/ascii/reac17q4.pdf  
+  inflating: data/raw/FAERS_quarters/2017q4/ascii/REAC17Q4.txt  
+  inflating: data/raw/FAERS_quarters/2017q4/ascii/rpsr17q4.pdf  
+  inflating: data/raw/FAERS_quarters/2017q4/ascii/RPSR17Q4.txt  
+  inflating: data/raw/FAERS_quarters/2017q4/ascii/ther17q4.pdf  
+  inflating: data/raw/FAERS_quarters/2017q4/ascii/THER17Q4.txt  
+  inflating: data/raw/FAERS_quarters/2017q4/FAQs.pdf  
+  inflating: data/raw/FAERS_quarters/2017q4/Readme.pdf  
+Removing data/raw/FAERS_quarters/2017q4/faers_ascii_2017q4.zip...
+Downloading https://fis.fda.gov/content/Exports/faers_ascii_2018q1.zip to data/raw/FAERS_quarters/2018q1...
+Unzipping data/raw/FAERS_quarters/2018q1/faers_ascii_2018q1.zip...
+Archive:  data/raw/FAERS_quarters/2018q1/faers_ascii_2018q1.zip
+   creating: data/raw/FAERS_quarters/2018q1/ascii/
+  inflating: data/raw/FAERS_quarters/2018q1/ascii/ASC_NTS.pdf  
+  inflating: data/raw/FAERS_quarters/2018q1/ascii/demo18q1.pdf  
+  inflating: data/raw/FAERS_quarters/2018q1/ascii/DEMO18Q1_new.txt  
+  inflating: data/raw/FAERS_quarters/2018q1/ascii/drug18q1.pdf  
+  inflating: data/raw/FAERS_quarters/2018q1/ascii/DRUG18Q1.txt  
+  inflating: data/raw/FAERS_quarters/2018q1/ascii/indi18q1.pdf  
+  inflating: data/raw/FAERS_quarters/2018q1/ascii/INDI18Q1.txt  
+  inflating: data/raw/FAERS_quarters/2018q1/ascii/outc18q1.pdf  
+  inflating: data/raw/FAERS_quarters/2018q1/ascii/OUTC18Q1.txt  
+  inflating: data/raw/FAERS_quarters/2018q1/ascii/reac18q1.pdf  
+  inflating: data/raw/FAERS_quarters/2018q1/ascii/REAC18Q1.txt  
+  inflating: data/raw/FAERS_quarters/2018q1/ascii/rpsr18q1.pdf  
+  inflating: data/raw/FAERS_quarters/2018q1/ascii/RPSR18Q1.txt  
+  inflating: data/raw/FAERS_quarters/2018q1/ascii/ther18q1.pdf  
+  inflating: data/raw/FAERS_quarters/2018q1/ascii/THER18Q1.txt  
+  inflating: data/raw/FAERS_quarters/2018q1/FAQs.pdf  
+  inflating: data/raw/FAERS_quarters/2018q1/Readme.pdf  
+Removing data/raw/FAERS_quarters/2018q1/faers_ascii_2018q1.zip...
+Downloading https://fis.fda.gov/content/Exports/faers_ascii_2018q2.zip to data/raw/FAERS_quarters/2018q2...
+Unzipping data/raw/FAERS_quarters/2018q2/faers_ascii_2018q2.zip...
+Archive:  data/raw/FAERS_quarters/2018q2/faers_ascii_2018q2.zip
+   creating: data/raw/FAERS_quarters/2018q2/ascii/
+  inflating: data/raw/FAERS_quarters/2018q2/ascii/ASC_NTS.pdf  
+  inflating: data/raw/FAERS_quarters/2018q2/ascii/demo18q2.pdf  
+  inflating: data/raw/FAERS_quarters/2018q2/ascii/DEMO18Q2.txt  
+  inflating: data/raw/FAERS_quarters/2018q2/ascii/drug18q2.pdf  
+  inflating: data/raw/FAERS_quarters/2018q2/ascii/DRUG18Q2.txt  
+  inflating: data/raw/FAERS_quarters/2018q2/ascii/indi18.q2.pdf  
+  inflating: data/raw/FAERS_quarters/2018q2/ascii/INDI18Q2.txt  
+  inflating: data/raw/FAERS_quarters/2018q2/ascii/outc18q2.pdf  
+  inflating: data/raw/FAERS_quarters/2018q2/ascii/OUTC18Q2.txt  
+  inflating: data/raw/FAERS_quarters/2018q2/ascii/reac18q2.pdf  
+  inflating: data/raw/FAERS_quarters/2018q2/ascii/REAC18Q2.txt  
+  inflating: data/raw/FAERS_quarters/2018q2/ascii/rpsr18q2.pdf  
+  inflating: data/raw/FAERS_quarters/2018q2/ascii/RPSR18Q2.txt  
+  inflating: data/raw/FAERS_quarters/2018q2/ascii/ther18q2.pdf  
+  inflating: data/raw/FAERS_quarters/2018q2/ascii/THER18Q2.txt  
+  inflating: data/raw/FAERS_quarters/2018q2/FAQs.pdf  
+  inflating: data/raw/FAERS_quarters/2018q2/Readme.pdf  
+Removing data/raw/FAERS_quarters/2018q2/faers_ascii_2018q2.zip...
+Downloading https://fis.fda.gov/content/Exports/faers_ascii_2018q3.zip to data/raw/FAERS_quarters/2018q3...
+Unzipping data/raw/FAERS_quarters/2018q3/faers_ascii_2018q3.zip...
+Archive:  data/raw/FAERS_quarters/2018q3/faers_ascii_2018q3.zip
+   creating: data/raw/FAERS_quarters/2018q3/ascii/
+  inflating: data/raw/FAERS_quarters/2018q3/ascii/ASC_NTS.pdf  
+  inflating: data/raw/FAERS_quarters/2018q3/ascii/demo18q3.pdf  
+  inflating: data/raw/FAERS_quarters/2018q3/ascii/DEMO18Q3.txt  
+  inflating: data/raw/FAERS_quarters/2018q3/ascii/drug18q3.pdf  
+  inflating: data/raw/FAERS_quarters/2018q3/ascii/DRUG18Q3.txt  
+  inflating: data/raw/FAERS_quarters/2018q3/ascii/indi18q3.pdf  
+  inflating: data/raw/FAERS_quarters/2018q3/ascii/INDI18Q3.txt  
+  inflating: data/raw/FAERS_quarters/2018q3/ascii/outc18q3.pdf  
+  inflating: data/raw/FAERS_quarters/2018q3/ascii/OUTC18Q3.txt  
+  inflating: data/raw/FAERS_quarters/2018q3/ascii/reac18q3.pdf  
+  inflating: data/raw/FAERS_quarters/2018q3/ascii/REAC18Q3.txt  
+  inflating: data/raw/FAERS_quarters/2018q3/ascii/rpsr18q3.pdf  
+  inflating: data/raw/FAERS_quarters/2018q3/ascii/RPSR18Q3.txt  
+  inflating: data/raw/FAERS_quarters/2018q3/ascii/ther18q3.pdf  
+  inflating: data/raw/FAERS_quarters/2018q3/ascii/THER18Q3.txt  
+  inflating: data/raw/FAERS_quarters/2018q3/FAQs.pdf  
+  inflating: data/raw/FAERS_quarters/2018q3/Readme.pdf  
+Removing data/raw/FAERS_quarters/2018q3/faers_ascii_2018q3.zip...
+Downloading https://fis.fda.gov/content/Exports/faers_ascii_2018q4.zip to data/raw/FAERS_quarters/2018q4...
+Unzipping data/raw/FAERS_quarters/2018q4/faers_ascii_2018q4.zip...
+Archive:  data/raw/FAERS_quarters/2018q4/faers_ascii_2018q4.zip
+  inflating: data/raw/FAERS_quarters/2018q4/ascii/ASC_NTS.pdf  
+  inflating: data/raw/FAERS_quarters/2018q4/ascii/demo18q4.pdf  
+  inflating: data/raw/FAERS_quarters/2018q4/ascii/DEMO18Q4.txt  
+  inflating: data/raw/FAERS_quarters/2018q4/ascii/drug18q4.pdf  
+  inflating: data/raw/FAERS_quarters/2018q4/ascii/DRUG18Q4.txt  
+  inflating: data/raw/FAERS_quarters/2018q4/ascii/indi18q4.pdf  
+  inflating: data/raw/FAERS_quarters/2018q4/ascii/INDI18Q4.txt  
+  inflating: data/raw/FAERS_quarters/2018q4/ascii/outc18q4.pdf  
+  inflating: data/raw/FAERS_quarters/2018q4/ascii/OUTC18Q4.txt  
+  inflating: data/raw/FAERS_quarters/2018q4/ascii/reac18q4.pdf  
+  inflating: data/raw/FAERS_quarters/2018q4/ascii/REAC18Q4.txt  
+  inflating: data/raw/FAERS_quarters/2018q4/ascii/rpsr18q4.pdf  
+  inflating: data/raw/FAERS_quarters/2018q4/ascii/RPSR18Q4.txt  
+  inflating: data/raw/FAERS_quarters/2018q4/ascii/ther18q4.pdf  
+  inflating: data/raw/FAERS_quarters/2018q4/ascii/THER18Q4.txt  
+  inflating: data/raw/FAERS_quarters/2018q4/FAQs.pdf  
+  inflating: data/raw/FAERS_quarters/2018q4/Readme.pdf  
+Removing data/raw/FAERS_quarters/2018q4/faers_ascii_2018q4.zip...
+Downloading https://fis.fda.gov/content/Exports/faers_ascii_2019q1.zip to data/raw/FAERS_quarters/2019q1...
+Unzipping data/raw/FAERS_quarters/2019q1/faers_ascii_2019q1.zip...
+Archive:  data/raw/FAERS_quarters/2019q1/faers_ascii_2019q1.zip
+   creating: data/raw/FAERS_quarters/2019q1/ascii/
+  inflating: data/raw/FAERS_quarters/2019q1/ascii/ASC_NTS.pdf  
+  inflating: data/raw/FAERS_quarters/2019q1/ascii/DEMO19Q1.pdf  
+  inflating: data/raw/FAERS_quarters/2019q1/ascii/DEMO19Q1.txt  
+  inflating: data/raw/FAERS_quarters/2019q1/ascii/DRUG19Q1.pdf  
+  inflating: data/raw/FAERS_quarters/2019q1/ascii/DRUG19Q1.txt  
+  inflating: data/raw/FAERS_quarters/2019q1/ascii/INDI19Q1.pdf  
+  inflating: data/raw/FAERS_quarters/2019q1/ascii/INDI19Q1.txt  
+  inflating: data/raw/FAERS_quarters/2019q1/ascii/OUTC19Q1.pdf  
+  inflating: data/raw/FAERS_quarters/2019q1/ascii/OUTC19Q1.txt  
+  inflating: data/raw/FAERS_quarters/2019q1/ascii/REAC19Q1.pdf  
+  inflating: data/raw/FAERS_quarters/2019q1/ascii/REAC19Q1.txt  
+  inflating: data/raw/FAERS_quarters/2019q1/ascii/RPSR19Q1.pdf  
+  inflating: data/raw/FAERS_quarters/2019q1/ascii/RPSR19Q1.txt  
+  inflating: data/raw/FAERS_quarters/2019q1/ascii/THER19Q1.pdf  
+  inflating: data/raw/FAERS_quarters/2019q1/ascii/THER19Q1.txt  
+   creating: data/raw/FAERS_quarters/2019q1/deleted/
+  inflating: data/raw/FAERS_quarters/2019q1/deleted/ADR19Q1DeletedCases.txt  
+  inflating: data/raw/FAERS_quarters/2019q1/deleted/AllDeletedCases.txt  
+  inflating: data/raw/FAERS_quarters/2019q1/FAQs.pdf  
+  inflating: data/raw/FAERS_quarters/2019q1/Readme.pdf  
+Removing data/raw/FAERS_quarters/2019q1/faers_ascii_2019q1.zip...
+Downloading https://fis.fda.gov/content/Exports/faers_ascii_2019q2.zip to data/raw/FAERS_quarters/2019q2...
+Unzipping data/raw/FAERS_quarters/2019q2/faers_ascii_2019q2.zip...
+Archive:  data/raw/FAERS_quarters/2019q2/faers_ascii_2019q2.zip
+   creating: data/raw/FAERS_quarters/2019q2/ascii/
+  inflating: data/raw/FAERS_quarters/2019q2/ascii/ASC_NTS.pdf  
+  inflating: data/raw/FAERS_quarters/2019q2/ascii/demo19q2.pdf  
+  inflating: data/raw/FAERS_quarters/2019q2/ascii/DEMO19Q2.txt  
+  inflating: data/raw/FAERS_quarters/2019q2/ascii/drug19q2.pdf  
+  inflating: data/raw/FAERS_quarters/2019q2/ascii/DRUG19Q2.txt  
+  inflating: data/raw/FAERS_quarters/2019q2/ascii/indi19q2.pdf  
+  inflating: data/raw/FAERS_quarters/2019q2/ascii/INDI19Q2.txt  
+  inflating: data/raw/FAERS_quarters/2019q2/ascii/outc19q2.pdf  
+  inflating: data/raw/FAERS_quarters/2019q2/ascii/OUTC19Q2.txt  
+  inflating: data/raw/FAERS_quarters/2019q2/ascii/reac19q2.pdf  
+  inflating: data/raw/FAERS_quarters/2019q2/ascii/REAC19Q2.txt  
+  inflating: data/raw/FAERS_quarters/2019q2/ascii/rpsr19q2.pdf  
+  inflating: data/raw/FAERS_quarters/2019q2/ascii/RPSR19Q2.txt  
+  inflating: data/raw/FAERS_quarters/2019q2/ascii/ther19q2.pdf  
+  inflating: data/raw/FAERS_quarters/2019q2/ascii/THER19Q2.txt  
+   creating: data/raw/FAERS_quarters/2019q2/deleted/
+  inflating: data/raw/FAERS_quarters/2019q2/deleted/ADR19Q2DeletedCases.txt  
+  inflating: data/raw/FAERS_quarters/2019q2/FAQs.pdf  
+  inflating: data/raw/FAERS_quarters/2019q2/Readme.pdf  
+Removing data/raw/FAERS_quarters/2019q2/faers_ascii_2019q2.zip...
+Downloading https://fis.fda.gov/content/Exports/faers_ascii_2019q3.zip to data/raw/FAERS_quarters/2019q3...
+Unzipping data/raw/FAERS_quarters/2019q3/faers_ascii_2019q3.zip...
+Archive:  data/raw/FAERS_quarters/2019q3/faers_ascii_2019q3.zip
+   creating: data/raw/FAERS_quarters/2019q3/ascii/
+  inflating: data/raw/FAERS_quarters/2019q3/ascii/ASC_NTS.pdf  
+  inflating: data/raw/FAERS_quarters/2019q3/ascii/demo19q3.pdf  
+  inflating: data/raw/FAERS_quarters/2019q3/ascii/DEMO19Q3.txt  
+  inflating: data/raw/FAERS_quarters/2019q3/ascii/drug19q3.pdf  
+  inflating: data/raw/FAERS_quarters/2019q3/ascii/DRUG19Q3.txt  
+  inflating: data/raw/FAERS_quarters/2019q3/ascii/indi19q3.pdf  
+  inflating: data/raw/FAERS_quarters/2019q3/ascii/INDI19Q3.txt  
+  inflating: data/raw/FAERS_quarters/2019q3/ascii/outc19q3.pdf  
+  inflating: data/raw/FAERS_quarters/2019q3/ascii/OUTC19Q3.txt  
+  inflating: data/raw/FAERS_quarters/2019q3/ascii/reac19q3.pdf  
+  inflating: data/raw/FAERS_quarters/2019q3/ascii/REAC19Q3.txt  
+  inflating: data/raw/FAERS_quarters/2019q3/ascii/rpsr19q3.pdf  
+  inflating: data/raw/FAERS_quarters/2019q3/ascii/RPSR19Q3.txt  
+  inflating: data/raw/FAERS_quarters/2019q3/ascii/ther19q3.pdf  
+  inflating: data/raw/FAERS_quarters/2019q3/ascii/THER19Q3.txt  
+   creating: data/raw/FAERS_quarters/2019q3/deleted/
+  inflating: data/raw/FAERS_quarters/2019q3/deleted/ADR19Q3DeletedCases.txt  
+  inflating: data/raw/FAERS_quarters/2019q3/FAQs.pdf  
+  inflating: data/raw/FAERS_quarters/2019q3/Readme.pdf  
+Removing data/raw/FAERS_quarters/2019q3/faers_ascii_2019q3.zip...
+Downloading https://fis.fda.gov/content/Exports/faers_ascii_2019q4.zip to data/raw/FAERS_quarters/2019q4...
+Unzipping data/raw/FAERS_quarters/2019q4/faers_ascii_2019q4.zip...
+Archive:  data/raw/FAERS_quarters/2019q4/faers_ascii_2019q4.zip
+   creating: data/raw/FAERS_quarters/2019q4/ascii/
+  inflating: data/raw/FAERS_quarters/2019q4/ascii/ASC_NTS.pdf  
+  inflating: data/raw/FAERS_quarters/2019q4/ascii/demo19q4.pdf  
+  inflating: data/raw/FAERS_quarters/2019q4/ascii/DEMO19Q4.txt  
+  inflating: data/raw/FAERS_quarters/2019q4/ascii/drug19q4.pdf  
+  inflating: data/raw/FAERS_quarters/2019q4/ascii/DRUG19Q4.txt  
+  inflating: data/raw/FAERS_quarters/2019q4/ascii/indi19q4.pdf  
+  inflating: data/raw/FAERS_quarters/2019q4/ascii/INDI19Q4.txt  
+  inflating: data/raw/FAERS_quarters/2019q4/ascii/outc19q4.pdf  
+  inflating: data/raw/FAERS_quarters/2019q4/ascii/OUTC19Q4.txt  
+  inflating: data/raw/FAERS_quarters/2019q4/ascii/reac19q4.pdf  
+  inflating: data/raw/FAERS_quarters/2019q4/ascii/REAC19Q4.txt  
+  inflating: data/raw/FAERS_quarters/2019q4/ascii/rpsr19q4.pdf  
+  inflating: data/raw/FAERS_quarters/2019q4/ascii/RPSR19Q4.txt  
+  inflating: data/raw/FAERS_quarters/2019q4/ascii/ther19q4.pdf  
+  inflating: data/raw/FAERS_quarters/2019q4/ascii/THER19Q4.txt  
+   creating: data/raw/FAERS_quarters/2019q4/deleted/
+  inflating: data/raw/FAERS_quarters/2019q4/deleted/ADR19Q4DeletedCases.txt  
+  inflating: data/raw/FAERS_quarters/2019q4/FAQs.pdf  
+  inflating: data/raw/FAERS_quarters/2019q4/Readme.pdf  
+Removing data/raw/FAERS_quarters/2019q4/faers_ascii_2019q4.zip...
+Downloading https://fis.fda.gov/content/Exports/faers_ascii_2020q1.zip to data/raw/FAERS_quarters/2020q1...
+Unzipping data/raw/FAERS_quarters/2020q1/faers_ascii_2020q1.zip...
+Archive:  data/raw/FAERS_quarters/2020q1/faers_ascii_2020q1.zip
+   creating: data/raw/FAERS_quarters/2020q1/ASCII/
+  inflating: data/raw/FAERS_quarters/2020q1/ASCII/ASC_NTS.pdf  
+  inflating: data/raw/FAERS_quarters/2020q1/ASCII/demo20q1.pdf  
+  inflating: data/raw/FAERS_quarters/2020q1/ASCII/DEMO20Q1.txt  
+  inflating: data/raw/FAERS_quarters/2020q1/ASCII/drug20q1.pdf  
+  inflating: data/raw/FAERS_quarters/2020q1/ASCII/DRUG20Q1.txt  
+  inflating: data/raw/FAERS_quarters/2020q1/ASCII/indi20q1.pdf  
+  inflating: data/raw/FAERS_quarters/2020q1/ASCII/INDI20Q1.txt  
+  inflating: data/raw/FAERS_quarters/2020q1/ASCII/outc20q1.pdf  
+  inflating: data/raw/FAERS_quarters/2020q1/ASCII/OUTC20Q1.txt  
+  inflating: data/raw/FAERS_quarters/2020q1/ASCII/reac20q1.pdf  
+  inflating: data/raw/FAERS_quarters/2020q1/ASCII/REAC20Q1.txt  
+  inflating: data/raw/FAERS_quarters/2020q1/ASCII/rpsr20q1.pdf  
+  inflating: data/raw/FAERS_quarters/2020q1/ASCII/RPSR20Q1.txt  
+  inflating: data/raw/FAERS_quarters/2020q1/ASCII/THER20Q1.PDF  
+  inflating: data/raw/FAERS_quarters/2020q1/ASCII/THER20Q1.txt  
+   creating: data/raw/FAERS_quarters/2020q1/DELETED/
+  inflating: data/raw/FAERS_quarters/2020q1/DELETED/ADR20Q1DeletedCases.txt  
+  inflating: data/raw/FAERS_quarters/2020q1/FAQs.pdf  
+  inflating: data/raw/FAERS_quarters/2020q1/Readme.pdf  
+Removing data/raw/FAERS_quarters/2020q1/faers_ascii_2020q1.zip...
+Downloading https://fis.fda.gov/content/Exports/faers_ascii_2020q2.zip to data/raw/FAERS_quarters/2020q2...
+Unzipping data/raw/FAERS_quarters/2020q2/faers_ascii_2020q2.zip...
+Archive:  data/raw/FAERS_quarters/2020q2/faers_ascii_2020q2.zip
+  inflating: data/raw/FAERS_quarters/2020q2/ASCII/ASC_NTS.pdf  
+  inflating: data/raw/FAERS_quarters/2020q2/ASCII/demo20q2.pdf  
+  inflating: data/raw/FAERS_quarters/2020q2/ASCII/DEMO20Q2.txt  
+  inflating: data/raw/FAERS_quarters/2020q2/ASCII/drug20q2.pdf  
+  inflating: data/raw/FAERS_quarters/2020q2/ASCII/DRUG20Q2.txt  
+  inflating: data/raw/FAERS_quarters/2020q2/ASCII/indi20q2.pdf  
+  inflating: data/raw/FAERS_quarters/2020q2/ASCII/INDI20Q2.txt  
+  inflating: data/raw/FAERS_quarters/2020q2/ASCII/outc20q2.pdf  
+  inflating: data/raw/FAERS_quarters/2020q2/ASCII/OUTC20Q2.txt  
+  inflating: data/raw/FAERS_quarters/2020q2/ASCII/reac20q2.pdf  
+  inflating: data/raw/FAERS_quarters/2020q2/ASCII/REAC20Q2.txt  
+  inflating: data/raw/FAERS_quarters/2020q2/ASCII/rpsr20q.pdf  
+  inflating: data/raw/FAERS_quarters/2020q2/ASCII/RPSR20Q2.txt  
+  inflating: data/raw/FAERS_quarters/2020q2/ASCII/ther20q2.pdf  
+  inflating: data/raw/FAERS_quarters/2020q2/ASCII/THER20Q2.txt  
+  inflating: data/raw/FAERS_quarters/2020q2/DELETED/ADR20Q2DeletedCases.txt  
+  inflating: data/raw/FAERS_quarters/2020q2/FAQs.pdf  
+  inflating: data/raw/FAERS_quarters/2020q2/Readme.pdf  
+Removing data/raw/FAERS_quarters/2020q2/faers_ascii_2020q2.zip...
+Downloading https://fis.fda.gov/content/Exports/faers_ascii_2020q3.zip to data/raw/FAERS_quarters/2020q3...
+Unzipping data/raw/FAERS_quarters/2020q3/faers_ascii_2020q3.zip...
+Archive:  data/raw/FAERS_quarters/2020q3/faers_ascii_2020q3.zip
+   creating: data/raw/FAERS_quarters/2020q3/ASCII/
+  inflating: data/raw/FAERS_quarters/2020q3/ASCII/ASC_NTS.pdf  
+  inflating: data/raw/FAERS_quarters/2020q3/ASCII/demo20q3.pdf  
+  inflating: data/raw/FAERS_quarters/2020q3/ASCII/DEMO20Q3.txt  
+  inflating: data/raw/FAERS_quarters/2020q3/ASCII/drug20q3.pdf  
+  inflating: data/raw/FAERS_quarters/2020q3/ASCII/DRUG20Q3.txt  
+  inflating: data/raw/FAERS_quarters/2020q3/ASCII/indi20q3.pdf  
+  inflating: data/raw/FAERS_quarters/2020q3/ASCII/INDI20Q3.txt  
+  inflating: data/raw/FAERS_quarters/2020q3/ASCII/outc20q3.pdf  
+  inflating: data/raw/FAERS_quarters/2020q3/ASCII/OUTC20Q3.txt  
+  inflating: data/raw/FAERS_quarters/2020q3/ASCII/reac20q3.pdf  
+  inflating: data/raw/FAERS_quarters/2020q3/ASCII/REAC20Q3.txt  
+  inflating: data/raw/FAERS_quarters/2020q3/ASCII/rpsr20q3.pdf  
+  inflating: data/raw/FAERS_quarters/2020q3/ASCII/RPSR20Q3.txt  
+  inflating: data/raw/FAERS_quarters/2020q3/ASCII/ther20q3.pdf  
+  inflating: data/raw/FAERS_quarters/2020q3/ASCII/THER20Q3.txt  
+   creating: data/raw/FAERS_quarters/2020q3/Deleted/
+  inflating: data/raw/FAERS_quarters/2020q3/Deleted/ADR20Q3DeletedCases.txt  
+  inflating: data/raw/FAERS_quarters/2020q3/FAQs.pdf  
+  inflating: data/raw/FAERS_quarters/2020q3/Readme.pdf  
+Removing data/raw/FAERS_quarters/2020q3/faers_ascii_2020q3.zip...
+Downloading https://fis.fda.gov/content/Exports/faers_ascii_2020q4.zip to data/raw/FAERS_quarters/2020q4...
+Unzipping data/raw/FAERS_quarters/2020q4/faers_ascii_2020q4.zip...
+Archive:  data/raw/FAERS_quarters/2020q4/faers_ascii_2020q4.zip
+  inflating: data/raw/FAERS_quarters/2020q4/ASCII/ASC_NTS.pdf  
+  inflating: data/raw/FAERS_quarters/2020q4/ASCII/demo20q4.pdf  
+  inflating: data/raw/FAERS_quarters/2020q4/ASCII/DEMO20Q4.txt  
+  inflating: data/raw/FAERS_quarters/2020q4/ASCII/drug20q4.pdf  
+  inflating: data/raw/FAERS_quarters/2020q4/ASCII/DRUG20Q4.txt  
+  inflating: data/raw/FAERS_quarters/2020q4/ASCII/indi20q4.pdf  
+  inflating: data/raw/FAERS_quarters/2020q4/ASCII/INDI20Q4.txt  
+  inflating: data/raw/FAERS_quarters/2020q4/ASCII/outc20q4.pdf  
+  inflating: data/raw/FAERS_quarters/2020q4/ASCII/OUTC20Q4.txt  
+  inflating: data/raw/FAERS_quarters/2020q4/ASCII/reac20q4.pdf  
+  inflating: data/raw/FAERS_quarters/2020q4/ASCII/REAC20Q4.txt  
+  inflating: data/raw/FAERS_quarters/2020q4/ASCII/rpsr20q4.pdf  
+  inflating: data/raw/FAERS_quarters/2020q4/ASCII/RPSR20Q4.txt  
+  inflating: data/raw/FAERS_quarters/2020q4/ASCII/ther20q4.pdf  
+  inflating: data/raw/FAERS_quarters/2020q4/ASCII/THER20Q4.txt  
+  inflating: data/raw/FAERS_quarters/2020q4/Deleted/20Q4DeletedCases.txt  
+  inflating: data/raw/FAERS_quarters/2020q4/FAQs.pdf  
+  inflating: data/raw/FAERS_quarters/2020q4/Readme.pdf  
+Removing data/raw/FAERS_quarters/2020q4/faers_ascii_2020q4.zip...
+Downloading https://fis.fda.gov/content/Exports/faers_ascii_2021q1.zip to data/raw/FAERS_quarters/2021q1...
+Unzipping data/raw/FAERS_quarters/2021q1/faers_ascii_2021q1.zip...
+Archive:  data/raw/FAERS_quarters/2021q1/faers_ascii_2021q1.zip
+   creating: data/raw/FAERS_quarters/2021q1/ASCII/
+  inflating: data/raw/FAERS_quarters/2021q1/ASCII/ASC_NTS.pdf  
+  inflating: data/raw/FAERS_quarters/2021q1/ASCII/demo21q1.pdf  
+  inflating: data/raw/FAERS_quarters/2021q1/ASCII/DEMO21Q1.txt  
+  inflating: data/raw/FAERS_quarters/2021q1/ASCII/drug21q1.pdf  
+  inflating: data/raw/FAERS_quarters/2021q1/ASCII/DRUG21Q1.txt  
+  inflating: data/raw/FAERS_quarters/2021q1/ASCII/indi21q1.pdf  
+  inflating: data/raw/FAERS_quarters/2021q1/ASCII/INDI21Q1.txt  
+  inflating: data/raw/FAERS_quarters/2021q1/ASCII/outc21q1.pdf  
+  inflating: data/raw/FAERS_quarters/2021q1/ASCII/OUTC21Q1.txt  
+  inflating: data/raw/FAERS_quarters/2021q1/ASCII/reac21q1.pdf  
+  inflating: data/raw/FAERS_quarters/2021q1/ASCII/REAC21Q1.txt  
+  inflating: data/raw/FAERS_quarters/2021q1/ASCII/rpsr21q1.pdf  
+  inflating: data/raw/FAERS_quarters/2021q1/ASCII/RPSR21Q1.txt  
+  inflating: data/raw/FAERS_quarters/2021q1/ASCII/ther21q1.pdf  
+  inflating: data/raw/FAERS_quarters/2021q1/ASCII/THER21Q1.txt  
+   creating: data/raw/FAERS_quarters/2021q1/Deleted/
+  inflating: data/raw/FAERS_quarters/2021q1/Deleted/21Q1DeletedCases.txt  
+  inflating: data/raw/FAERS_quarters/2021q1/FAQs.pdf  
+  inflating: data/raw/FAERS_quarters/2021q1/Readme.pdf  
+Removing data/raw/FAERS_quarters/2021q1/faers_ascii_2021q1.zip...
+Downloading https://fis.fda.gov/content/Exports/faers_ascii_2021q2.zip to data/raw/FAERS_quarters/2021q2...
+Unzipping data/raw/FAERS_quarters/2021q2/faers_ascii_2021q2.zip...
+Archive:  data/raw/FAERS_quarters/2021q2/faers_ascii_2021q2.zip
+   creating: data/raw/FAERS_quarters/2021q2/ASCII/
+  inflating: data/raw/FAERS_quarters/2021q2/ASCII/ASC_NTS.pdf  
+  inflating: data/raw/FAERS_quarters/2021q2/ASCII/demo21q2.pdf  
+  inflating: data/raw/FAERS_quarters/2021q2/ASCII/DEMO21Q2.txt  
+  inflating: data/raw/FAERS_quarters/2021q2/ASCII/drug21q2.pdf  
+  inflating: data/raw/FAERS_quarters/2021q2/ASCII/DRUG21Q2.txt  
+  inflating: data/raw/FAERS_quarters/2021q2/ASCII/indi21q2.pdf  
+  inflating: data/raw/FAERS_quarters/2021q2/ASCII/INDI21Q2.txt  
+  inflating: data/raw/FAERS_quarters/2021q2/ASCII/out21q2.pdf  
+  inflating: data/raw/FAERS_quarters/2021q2/ASCII/OUTC21Q2.txt  
+  inflating: data/raw/FAERS_quarters/2021q2/ASCII/reac21q2.pdf  
+  inflating: data/raw/FAERS_quarters/2021q2/ASCII/REAC21Q2.txt  
+  inflating: data/raw/FAERS_quarters/2021q2/ASCII/rpsr21q2.pdf  
+  inflating: data/raw/FAERS_quarters/2021q2/ASCII/RPSR21Q2.txt  
+  inflating: data/raw/FAERS_quarters/2021q2/ASCII/ther21q2.pdf  
+  inflating: data/raw/FAERS_quarters/2021q2/ASCII/THER21Q2.txt  
+   creating: data/raw/FAERS_quarters/2021q2/Deleted/
+  inflating: data/raw/FAERS_quarters/2021q2/Deleted/21Q2DeletedCases.txt  
+  inflating: data/raw/FAERS_quarters/2021q2/FAQs.pdf  
+  inflating: data/raw/FAERS_quarters/2021q2/Readme.pdf  
+Removing data/raw/FAERS_quarters/2021q2/faers_ascii_2021q2.zip...
+Downloading https://fis.fda.gov/content/Exports/faers_ascii_2021q3.zip to data/raw/FAERS_quarters/2021q3...
+Unzipping data/raw/FAERS_quarters/2021q3/faers_ascii_2021q3.zip...
+Archive:  data/raw/FAERS_quarters/2021q3/faers_ascii_2021q3.zip
+   creating: data/raw/FAERS_quarters/2021q3/ASCII/
+  inflating: data/raw/FAERS_quarters/2021q3/ASCII/ASC_NTS.pdf  
+  inflating: data/raw/FAERS_quarters/2021q3/ASCII/demo21q3.pdf  
+  inflating: data/raw/FAERS_quarters/2021q3/ASCII/DEMO21Q3.txt  
+  inflating: data/raw/FAERS_quarters/2021q3/ASCII/drug21q3.pdf  
+  inflating: data/raw/FAERS_quarters/2021q3/ASCII/DRUG21Q3.txt  
+  inflating: data/raw/FAERS_quarters/2021q3/ASCII/indi21q3.pdf  
+  inflating: data/raw/FAERS_quarters/2021q3/ASCII/INDI21Q3.txt  
+  inflating: data/raw/FAERS_quarters/2021q3/ASCII/outc21q3.pdf  
+  inflating: data/raw/FAERS_quarters/2021q3/ASCII/OUTC21Q3.txt  
+  inflating: data/raw/FAERS_quarters/2021q3/ASCII/reac21q3.pdf  
+  inflating: data/raw/FAERS_quarters/2021q3/ASCII/REAC21Q3.txt  
+  inflating: data/raw/FAERS_quarters/2021q3/ASCII/rpsr21q3.pdf  
+  inflating: data/raw/FAERS_quarters/2021q3/ASCII/RPSR21Q3.txt  
+  inflating: data/raw/FAERS_quarters/2021q3/ASCII/ther21q3.pdf  
+  inflating: data/raw/FAERS_quarters/2021q3/ASCII/THER21Q3.txt  
+   creating: data/raw/FAERS_quarters/2021q3/Deleted/
+  inflating: data/raw/FAERS_quarters/2021q3/Deleted/21Q3DeletedCases.txt  
+  inflating: data/raw/FAERS_quarters/2021q3/FAQs.pdf  
+  inflating: data/raw/FAERS_quarters/2021q3/Readme.pdf  
+Removing data/raw/FAERS_quarters/2021q3/faers_ascii_2021q3.zip...
+Downloading https://fis.fda.gov/content/Exports/faers_ascii_2021q4.zip to data/raw/FAERS_quarters/2021q4...
+Unzipping data/raw/FAERS_quarters/2021q4/faers_ascii_2021q4.zip...
+Archive:  data/raw/FAERS_quarters/2021q4/faers_ascii_2021q4.zip
+   creating: data/raw/FAERS_quarters/2021q4/ASCII/
+  inflating: data/raw/FAERS_quarters/2021q4/ASCII/ASC_NTS.pdf  
+  inflating: data/raw/FAERS_quarters/2021q4/ASCII/DEMO21Q4.pdf  
+  inflating: data/raw/FAERS_quarters/2021q4/ASCII/DEMO21Q4.txt  
+  inflating: data/raw/FAERS_quarters/2021q4/ASCII/DRUG21Q4.pdf  
+  inflating: data/raw/FAERS_quarters/2021q4/ASCII/DRUG21Q4.txt  
+  inflating: data/raw/FAERS_quarters/2021q4/ASCII/INDI21Q4.pdf  
+  inflating: data/raw/FAERS_quarters/2021q4/ASCII/INDI21Q4.txt  
+  inflating: data/raw/FAERS_quarters/2021q4/ASCII/OUTC21Q4.pdf  
+  inflating: data/raw/FAERS_quarters/2021q4/ASCII/OUTC21Q4.txt  
+  inflating: data/raw/FAERS_quarters/2021q4/ASCII/REAC21Q4.pdf  
+  inflating: data/raw/FAERS_quarters/2021q4/ASCII/REAC21Q4.txt  
+  inflating: data/raw/FAERS_quarters/2021q4/ASCII/RPSR21Q4.pdf  
+  inflating: data/raw/FAERS_quarters/2021q4/ASCII/RPSR21Q4.txt  
+  inflating: data/raw/FAERS_quarters/2021q4/ASCII/THER21Q4.pdf  
+  inflating: data/raw/FAERS_quarters/2021q4/ASCII/THER21Q4.txt  
+   creating: data/raw/FAERS_quarters/2021q4/Deleted/
+  inflating: data/raw/FAERS_quarters/2021q4/Deleted/DELETE21Q4.txt  
+  inflating: data/raw/FAERS_quarters/2021q4/FAQs.pdf  
+  inflating: data/raw/FAERS_quarters/2021q4/Readme.pdf  
+Removing data/raw/FAERS_quarters/2021q4/faers_ascii_2021q4.zip...
+Downloading https://fis.fda.gov/content/Exports/faers_ascii_2022q1.zip to data/raw/FAERS_quarters/2022q1...
+Unzipping data/raw/FAERS_quarters/2022q1/faers_ascii_2022q1.zip...
+Archive:  data/raw/FAERS_quarters/2022q1/faers_ascii_2022q1.zip
+   creating: data/raw/FAERS_quarters/2022q1/ASCII/
+  inflating: data/raw/FAERS_quarters/2022q1/ASCII/ASC_NTS.pdf  
+  inflating: data/raw/FAERS_quarters/2022q1/ASCII/DEMO22Q1.pdf  
+  inflating: data/raw/FAERS_quarters/2022q1/ASCII/DEMO22Q1.txt  
+  inflating: data/raw/FAERS_quarters/2022q1/ASCII/DRUG22Q1.pdf  
+  inflating: data/raw/FAERS_quarters/2022q1/ASCII/DRUG22Q1.txt  
+  inflating: data/raw/FAERS_quarters/2022q1/ASCII/INDI22Q1.pdf  
+  inflating: data/raw/FAERS_quarters/2022q1/ASCII/INDI22Q1.txt  
+  inflating: data/raw/FAERS_quarters/2022q1/ASCII/OUTC22Q1.pdf  
+  inflating: data/raw/FAERS_quarters/2022q1/ASCII/OUTC22Q1.txt  
+  inflating: data/raw/FAERS_quarters/2022q1/ASCII/REAC22Q1.pdf  
+  inflating: data/raw/FAERS_quarters/2022q1/ASCII/REAC22Q1.txt  
+  inflating: data/raw/FAERS_quarters/2022q1/ASCII/RPSR22Q1.pdf  
+  inflating: data/raw/FAERS_quarters/2022q1/ASCII/RPSR22Q1.txt  
+  inflating: data/raw/FAERS_quarters/2022q1/ASCII/THER22Q1.pdf  
+  inflating: data/raw/FAERS_quarters/2022q1/ASCII/THER22Q1.txt  
+   creating: data/raw/FAERS_quarters/2022q1/Deleted/
+  inflating: data/raw/FAERS_quarters/2022q1/Deleted/DELETE22Q1.txt  
+  inflating: data/raw/FAERS_quarters/2022q1/FAQs.pdf  
+  inflating: data/raw/FAERS_quarters/2022q1/Readme.pdf  
+Removing data/raw/FAERS_quarters/2022q1/faers_ascii_2022q1.zip...
+Downloading https://fis.fda.gov/content/Exports/faers_ascii_2022q2.zip to data/raw/FAERS_quarters/2022q2...
+Unzipping data/raw/FAERS_quarters/2022q2/faers_ascii_2022q2.zip...
+Archive:  data/raw/FAERS_quarters/2022q2/faers_ascii_2022q2.zip
+   creating: data/raw/FAERS_quarters/2022q2/ASCII/
+  inflating: data/raw/FAERS_quarters/2022q2/ASCII/ASC_NTS.pdf  
+  inflating: data/raw/FAERS_quarters/2022q2/ASCII/DEMO22Q2.pdf  
+  inflating: data/raw/FAERS_quarters/2022q2/ASCII/DEMO22Q2.txt  
+  inflating: data/raw/FAERS_quarters/2022q2/ASCII/DRUG22Q2.pdf  
+  inflating: data/raw/FAERS_quarters/2022q2/ASCII/DRUG22Q2.txt  
+  inflating: data/raw/FAERS_quarters/2022q2/ASCII/INDI22Q2.pdf  
+  inflating: data/raw/FAERS_quarters/2022q2/ASCII/INDI22Q2.txt  
+  inflating: data/raw/FAERS_quarters/2022q2/ASCII/OUTC22Q2.pdf  
+  inflating: data/raw/FAERS_quarters/2022q2/ASCII/OUTC22Q2.txt  
+  inflating: data/raw/FAERS_quarters/2022q2/ASCII/REAC22Q2.pdf  
+  inflating: data/raw/FAERS_quarters/2022q2/ASCII/REAC22Q2.txt  
+  inflating: data/raw/FAERS_quarters/2022q2/ASCII/RPSR22Q2.pdf  
+  inflating: data/raw/FAERS_quarters/2022q2/ASCII/RPSR22Q2.txt  
+  inflating: data/raw/FAERS_quarters/2022q2/ASCII/THER22Q2.pdf  
+  inflating: data/raw/FAERS_quarters/2022q2/ASCII/THER22Q2.txt  
+   creating: data/raw/FAERS_quarters/2022q2/Deleted/
+  inflating: data/raw/FAERS_quarters/2022q2/Deleted/DELETE22Q2.txt  
+  inflating: data/raw/FAERS_quarters/2022q2/FAQs.pdf  
+  inflating: data/raw/FAERS_quarters/2022q2/Readme.pdf  
+Removing data/raw/FAERS_quarters/2022q2/faers_ascii_2022q2.zip...
+Downloading https://fis.fda.gov/content/Exports/faers_ascii_2022q3.zip to data/raw/FAERS_quarters/2022q3...
+Unzipping data/raw/FAERS_quarters/2022q3/faers_ascii_2022q3.zip...
+Archive:  data/raw/FAERS_quarters/2022q3/faers_ascii_2022q3.zip
+   creating: data/raw/FAERS_quarters/2022q3/ASCII/
+  inflating: data/raw/FAERS_quarters/2022q3/ASCII/ASC_NTS.pdf  
+  inflating: data/raw/FAERS_quarters/2022q3/ASCII/DEMO22Q3.pdf  
+  inflating: data/raw/FAERS_quarters/2022q3/ASCII/DEMO22Q3.txt  
+  inflating: data/raw/FAERS_quarters/2022q3/ASCII/DRUG22Q3.pdf  
+  inflating: data/raw/FAERS_quarters/2022q3/ASCII/DRUG22Q3.txt  
+  inflating: data/raw/FAERS_quarters/2022q3/ASCII/INDI22Q3.pdf  
+  inflating: data/raw/FAERS_quarters/2022q3/ASCII/INDI22Q3.txt  
+  inflating: data/raw/FAERS_quarters/2022q3/ASCII/OUTC22Q3.pdf  
+  inflating: data/raw/FAERS_quarters/2022q3/ASCII/OUTC22Q3.txt  
+  inflating: data/raw/FAERS_quarters/2022q3/ASCII/REAC22Q3.pdf  
+  inflating: data/raw/FAERS_quarters/2022q3/ASCII/REAC22Q3.txt  
+  inflating: data/raw/FAERS_quarters/2022q3/ASCII/RPSR22Q3.pdf  
+  inflating: data/raw/FAERS_quarters/2022q3/ASCII/RPSR22Q3.txt  
+  inflating: data/raw/FAERS_quarters/2022q3/ASCII/THER22Q3.pdf  
+  inflating: data/raw/FAERS_quarters/2022q3/ASCII/THER22Q3.txt  
+   creating: data/raw/FAERS_quarters/2022q3/Deleted/
+  inflating: data/raw/FAERS_quarters/2022q3/Deleted/DELETE22Q3.txt  
+  inflating: data/raw/FAERS_quarters/2022q3/FAQs.pdf  
+  inflating: data/raw/FAERS_quarters/2022q3/Readme.pdf  
+Removing data/raw/FAERS_quarters/2022q3/faers_ascii_2022q3.zip...
+Downloading https://fis.fda.gov/content/Exports/faers_ascii_2022q4.zip to data/raw/FAERS_quarters/2022q4...
+Unzipping data/raw/FAERS_quarters/2022q4/faers_ascii_2022q4.zip...
+Archive:  data/raw/FAERS_quarters/2022q4/faers_ascii_2022q4.zip
+   creating: data/raw/FAERS_quarters/2022q4/ASCII/
+  inflating: data/raw/FAERS_quarters/2022q4/ASCII/ASC_NTS.pdf  
+  inflating: data/raw/FAERS_quarters/2022q4/ASCII/DEMO22Q4.pdf  
+  inflating: data/raw/FAERS_quarters/2022q4/ASCII/DEMO22Q4.txt  
+  inflating: data/raw/FAERS_quarters/2022q4/ASCII/DRUG22Q4.pdf  
+  inflating: data/raw/FAERS_quarters/2022q4/ASCII/DRUG22Q4.txt  
+  inflating: data/raw/FAERS_quarters/2022q4/ASCII/INDI22Q4.pdf  
+  inflating: data/raw/FAERS_quarters/2022q4/ASCII/INDI22Q4.txt  
+  inflating: data/raw/FAERS_quarters/2022q4/ASCII/OUTC22Q4.pdf  
+  inflating: data/raw/FAERS_quarters/2022q4/ASCII/OUTC22Q4.txt  
+  inflating: data/raw/FAERS_quarters/2022q4/ASCII/REAC22Q4.pdf  
+  inflating: data/raw/FAERS_quarters/2022q4/ASCII/REAC22Q4.txt  
+  inflating: data/raw/FAERS_quarters/2022q4/ASCII/RPSR22Q4.pdf  
+  inflating: data/raw/FAERS_quarters/2022q4/ASCII/RPSR22Q4.txt  
+  inflating: data/raw/FAERS_quarters/2022q4/ASCII/THER22Q4.pdf  
+  inflating: data/raw/FAERS_quarters/2022q4/ASCII/THER22Q4.txt  
+   creating: data/raw/FAERS_quarters/2022q4/Deleted/
+  inflating: data/raw/FAERS_quarters/2022q4/Deleted/DELETE22Q4.txt  
+  inflating: data/raw/FAERS_quarters/2022q4/FAQs.pdf  
+  inflating: data/raw/FAERS_quarters/2022q4/Readme.pdf  
+Removing data/raw/FAERS_quarters/2022q4/faers_ascii_2022q4.zip...
+Downloading https://fis.fda.gov/content/Exports/faers_ascii_2023q1.zip to data/raw/FAERS_quarters/2023q1...
+Unzipping data/raw/FAERS_quarters/2023q1/faers_ascii_2023q1.zip...
+Archive:  data/raw/FAERS_quarters/2023q1/faers_ascii_2023q1.zip
+   creating: data/raw/FAERS_quarters/2023q1/ASCII/
+  inflating: data/raw/FAERS_quarters/2023q1/ASCII/ASC_NTS.pdf  
+  inflating: data/raw/FAERS_quarters/2023q1/ASCII/DEMO23Q1.pdf  
+  inflating: data/raw/FAERS_quarters/2023q1/ASCII/DEMO23Q1.txt  
+  inflating: data/raw/FAERS_quarters/2023q1/ASCII/DRUG23Q1.pdf  
+  inflating: data/raw/FAERS_quarters/2023q1/ASCII/DRUG23Q1.txt  
+  inflating: data/raw/FAERS_quarters/2023q1/ASCII/INDI23Q1.pdf  
+  inflating: data/raw/FAERS_quarters/2023q1/ASCII/INDI23Q1.txt  
+  inflating: data/raw/FAERS_quarters/2023q1/ASCII/OUTC23Q1.pdf  
+  inflating: data/raw/FAERS_quarters/2023q1/ASCII/OUTC23Q1.txt  
+  inflating: data/raw/FAERS_quarters/2023q1/ASCII/REAC23Q1.pdf  
+  inflating: data/raw/FAERS_quarters/2023q1/ASCII/REAC23Q1.txt  
+  inflating: data/raw/FAERS_quarters/2023q1/ASCII/RPSR23Q1.pdf  
+  inflating: data/raw/FAERS_quarters/2023q1/ASCII/RPSR23Q1.txt  
+  inflating: data/raw/FAERS_quarters/2023q1/ASCII/THER23Q1.pdf  
+  inflating: data/raw/FAERS_quarters/2023q1/ASCII/THER23Q1.txt  
+   creating: data/raw/FAERS_quarters/2023q1/Deleted/
+  inflating: data/raw/FAERS_quarters/2023q1/Deleted/DELETE23Q1.txt  
+  inflating: data/raw/FAERS_quarters/2023q1/FAQs.pdf  
+  inflating: data/raw/FAERS_quarters/2023q1/Readme.pdf  
+Removing data/raw/FAERS_quarters/2023q1/faers_ascii_2023q1.zip...
+Downloading https://fis.fda.gov/content/Exports/faers_ascii_2023q2.zip to data/raw/FAERS_quarters/2023q2...
+Unzipping data/raw/FAERS_quarters/2023q2/faers_ascii_2023q2.zip...
+Archive:  data/raw/FAERS_quarters/2023q2/faers_ascii_2023q2.zip
+   creating: data/raw/FAERS_quarters/2023q2/ASCII/
+  inflating: data/raw/FAERS_quarters/2023q2/ASCII/ASC_NTS.pdf  
+  inflating: data/raw/FAERS_quarters/2023q2/ASCII/DEMO23Q2.pdf  
+  inflating: data/raw/FAERS_quarters/2023q2/ASCII/DEMO23Q2.txt  
+  inflating: data/raw/FAERS_quarters/2023q2/ASCII/DRUG23Q2.pdf  
+  inflating: data/raw/FAERS_quarters/2023q2/ASCII/DRUG23Q2.txt  
+  inflating: data/raw/FAERS_quarters/2023q2/ASCII/INDI23Q2.pdf  
+  inflating: data/raw/FAERS_quarters/2023q2/ASCII/INDI23Q2.txt  
+  inflating: data/raw/FAERS_quarters/2023q2/ASCII/OUTC23Q2.pdf  
+  inflating: data/raw/FAERS_quarters/2023q2/ASCII/OUTC23Q2.txt  
+  inflating: data/raw/FAERS_quarters/2023q2/ASCII/REAC23Q2.pdf  
+  inflating: data/raw/FAERS_quarters/2023q2/ASCII/REAC23Q2.txt  
+  inflating: data/raw/FAERS_quarters/2023q2/ASCII/RPSR23Q2.pdf  
+  inflating: data/raw/FAERS_quarters/2023q2/ASCII/RPSR23Q2.txt  
+  inflating: data/raw/FAERS_quarters/2023q2/ASCII/THER23Q2.pdf  
+  inflating: data/raw/FAERS_quarters/2023q2/ASCII/THER23Q2.txt  
+   creating: data/raw/FAERS_quarters/2023q2/Deleted/
+  inflating: data/raw/FAERS_quarters/2023q2/Deleted/DELETE23Q2.txt  
+  inflating: data/raw/FAERS_quarters/2023q2/FAQs.pdf  
+  inflating: data/raw/FAERS_quarters/2023q2/Readme.pdf  
+Removing data/raw/FAERS_quarters/2023q2/faers_ascii_2023q2.zip...
+Downloading https://fis.fda.gov/content/Exports/faers_ascii_2023q3.zip to data/raw/FAERS_quarters/2023q3...
+Unzipping data/raw/FAERS_quarters/2023q3/faers_ascii_2023q3.zip...
+Archive:  data/raw/FAERS_quarters/2023q3/faers_ascii_2023q3.zip
+   creating: data/raw/FAERS_quarters/2023q3/ASCII/
+  inflating: data/raw/FAERS_quarters/2023q3/ASCII/ASC_NTS.pdf  
+  inflating: data/raw/FAERS_quarters/2023q3/ASCII/DEMO23Q3.pdf  
+  inflating: data/raw/FAERS_quarters/2023q3/ASCII/DEMO23Q3.txt  
+  inflating: data/raw/FAERS_quarters/2023q3/ASCII/DRUG23Q3.pdf  
+  inflating: data/raw/FAERS_quarters/2023q3/ASCII/DRUG23Q3.txt  
+  inflating: data/raw/FAERS_quarters/2023q3/ASCII/INDI23Q3.pdf  
+  inflating: data/raw/FAERS_quarters/2023q3/ASCII/INDI23Q3.txt  
+  inflating: data/raw/FAERS_quarters/2023q3/ASCII/OUTC23Q3.pdf  
+  inflating: data/raw/FAERS_quarters/2023q3/ASCII/OUTC23Q3.txt  
+  inflating: data/raw/FAERS_quarters/2023q3/ASCII/REAC23Q3.pdf  
+  inflating: data/raw/FAERS_quarters/2023q3/ASCII/REAC23Q3.txt  
+  inflating: data/raw/FAERS_quarters/2023q3/ASCII/RPSR23Q3.pdf  
+  inflating: data/raw/FAERS_quarters/2023q3/ASCII/RPSR23Q3.txt  
+  inflating: data/raw/FAERS_quarters/2023q3/ASCII/THER23Q3.pdf  
+  inflating: data/raw/FAERS_quarters/2023q3/ASCII/THER23Q3.txt  
+   creating: data/raw/FAERS_quarters/2023q3/Deleted/
+  inflating: data/raw/FAERS_quarters/2023q3/Deleted/DELETE23Q3.txt  
+  inflating: data/raw/FAERS_quarters/2023q3/FAQs.pdf  
+  inflating: data/raw/FAERS_quarters/2023q3/Readme.pdf  
+Removing data/raw/FAERS_quarters/2023q3/faers_ascii_2023q3.zip...
+Downloading https://fis.fda.gov/content/Exports/faers_ascii_2023q4.zip to data/raw/FAERS_quarters/2023q4...
+Unzipping data/raw/FAERS_quarters/2023q4/faers_ascii_2023q4.zip...
+Archive:  data/raw/FAERS_quarters/2023q4/faers_ascii_2023q4.zip
+  inflating: data/raw/FAERS_quarters/2023q4/ASCII/ASC_NTS.pdf  
+  inflating: data/raw/FAERS_quarters/2023q4/ASCII/DEMO23Q4.pdf  
+  inflating: data/raw/FAERS_quarters/2023q4/ASCII/DEMO23Q4.txt  
+  inflating: data/raw/FAERS_quarters/2023q4/ASCII/DRUG23Q4.pdf  
+  inflating: data/raw/FAERS_quarters/2023q4/ASCII/DRUG23Q4.txt  
+  inflating: data/raw/FAERS_quarters/2023q4/ASCII/INDI23Q4.pdf  
+  inflating: data/raw/FAERS_quarters/2023q4/ASCII/INDI23Q4.txt  
+  inflating: data/raw/FAERS_quarters/2023q4/ASCII/OUTC23Q4.pdf  
+  inflating: data/raw/FAERS_quarters/2023q4/ASCII/OUTC23Q4.txt  
+  inflating: data/raw/FAERS_quarters/2023q4/ASCII/REAC23Q4.pdf  
+  inflating: data/raw/FAERS_quarters/2023q4/ASCII/REAC23Q4.txt  
+  inflating: data/raw/FAERS_quarters/2023q4/ASCII/RPSR23Q4.pdf  
+  inflating: data/raw/FAERS_quarters/2023q4/ASCII/RPSR23Q4.txt  
+  inflating: data/raw/FAERS_quarters/2023q4/ASCII/THER23Q4.pdf  
+  inflating: data/raw/FAERS_quarters/2023q4/ASCII/THER23Q4.txt  
+  inflating: data/raw/FAERS_quarters/2023q4/Deleted/DELETE23Q4.txt  
+  inflating: data/raw/FAERS_quarters/2023q4/FAQs.pdf  
+  inflating: data/raw/FAERS_quarters/2023q4/Readme.pdf  
+Removing data/raw/FAERS_quarters/2023q4/faers_ascii_2023q4.zip...
+Downloading https://fis.fda.gov/content/Exports/faers_ascii_2024q1.zip to data/raw/FAERS_quarters/2024q1...
+Unzipping data/raw/FAERS_quarters/2024q1/faers_ascii_2024q1.zip...
+Archive:  data/raw/FAERS_quarters/2024q1/faers_ascii_2024q1.zip
+   creating: data/raw/FAERS_quarters/2024q1/ASCII/
+  inflating: data/raw/FAERS_quarters/2024q1/ASCII/ASC_NTS.pdf  
+  inflating: data/raw/FAERS_quarters/2024q1/ASCII/DEMO24Q1.pdf  
+  inflating: data/raw/FAERS_quarters/2024q1/ASCII/DEMO24Q1.txt  
+  inflating: data/raw/FAERS_quarters/2024q1/ASCII/DRUG24Q1.pdf  
+  inflating: data/raw/FAERS_quarters/2024q1/ASCII/DRUG24Q1.txt  
+  inflating: data/raw/FAERS_quarters/2024q1/ASCII/INDI24Q1.pdf  
+  inflating: data/raw/FAERS_quarters/2024q1/ASCII/INDI24Q1.txt  
+  inflating: data/raw/FAERS_quarters/2024q1/ASCII/OUTC24Q1.pdf  
+  inflating: data/raw/FAERS_quarters/2024q1/ASCII/OUTC24Q1.txt  
+  inflating: data/raw/FAERS_quarters/2024q1/ASCII/REAC24Q1.pdf  
+  inflating: data/raw/FAERS_quarters/2024q1/ASCII/REAC24Q1.txt  
+  inflating: data/raw/FAERS_quarters/2024q1/ASCII/RPSR24Q1.pdf  
+  inflating: data/raw/FAERS_quarters/2024q1/ASCII/RPSR24Q1.txt  
+  inflating: data/raw/FAERS_quarters/2024q1/ASCII/THER24Q1.pdf  
+  inflating: data/raw/FAERS_quarters/2024q1/ASCII/THER24Q1.txt  
+   creating: data/raw/FAERS_quarters/2024q1/Deleted/
+  inflating: data/raw/FAERS_quarters/2024q1/Deleted/DELETE24Q1.txt  
+  inflating: data/raw/FAERS_quarters/2024q1/FAQs.pdf  
+  inflating: data/raw/FAERS_quarters/2024q1/Readme.pdf  
+Removing data/raw/FAERS_quarters/2024q1/faers_ascii_2024q1.zip...
+Downloading https://fis.fda.gov/content/Exports/faers_ascii_2024q2.zip to data/raw/FAERS_quarters/2024q2...
+Unzipping data/raw/FAERS_quarters/2024q2/faers_ascii_2024q2.zip...
+Archive:  data/raw/FAERS_quarters/2024q2/faers_ascii_2024q2.zip
+   creating: data/raw/FAERS_quarters/2024q2/ASCII/
+  inflating: data/raw/FAERS_quarters/2024q2/ASCII/ASC_NTS.pdf  
+  inflating: data/raw/FAERS_quarters/2024q2/ASCII/DEMO24Q2.pdf  
+  inflating: data/raw/FAERS_quarters/2024q2/ASCII/DEMO24Q2.txt  
+  inflating: data/raw/FAERS_quarters/2024q2/ASCII/DRUG24Q2.pdf  
+  inflating: data/raw/FAERS_quarters/2024q2/ASCII/DRUG24Q2.txt  
+  inflating: data/raw/FAERS_quarters/2024q2/ASCII/INDI24Q2.pdf  
+  inflating: data/raw/FAERS_quarters/2024q2/ASCII/INDI24Q2.txt  
+  inflating: data/raw/FAERS_quarters/2024q2/ASCII/OUTC24Q2.pdf  
+  inflating: data/raw/FAERS_quarters/2024q2/ASCII/OUTC24Q2.txt  
+  inflating: data/raw/FAERS_quarters/2024q2/ASCII/REAC24Q2.pdf  
+  inflating: data/raw/FAERS_quarters/2024q2/ASCII/REAC24Q2.txt  
+  inflating: data/raw/FAERS_quarters/2024q2/ASCII/RPSR24Q2.pdf  
+  inflating: data/raw/FAERS_quarters/2024q2/ASCII/RPSR24Q2.txt  
+  inflating: data/raw/FAERS_quarters/2024q2/ASCII/THER24Q2.pdf  
+  inflating: data/raw/FAERS_quarters/2024q2/ASCII/THER24Q2.txt  
+   creating: data/raw/FAERS_quarters/2024q2/Deleted/
+  inflating: data/raw/FAERS_quarters/2024q2/Deleted/DELETE24Q2.txt  
+  inflating: data/raw/FAERS_quarters/2024q2/FAQs.pdf  
+  inflating: data/raw/FAERS_quarters/2024q2/Readme.pdf  
+Removing data/raw/FAERS_quarters/2024q2/faers_ascii_2024q2.zip...
+Downloading https://fis.fda.gov/content/Exports/faers_ascii_2024q3.zip to data/raw/FAERS_quarters/2024q3...
+Unzipping data/raw/FAERS_quarters/2024q3/faers_ascii_2024q3.zip...
+Archive:  data/raw/FAERS_quarters/2024q3/faers_ascii_2024q3.zip
+   creating: data/raw/FAERS_quarters/2024q3/ASCII/
+  inflating: data/raw/FAERS_quarters/2024q3/ASCII/ASC_NTS.pdf  
+  inflating: data/raw/FAERS_quarters/2024q3/ASCII/DEMO24Q3.pdf  
+  inflating: data/raw/FAERS_quarters/2024q3/ASCII/DEMO24Q3.txt  
+  inflating: data/raw/FAERS_quarters/2024q3/ASCII/DRUG24Q3.pdf  
+  inflating: data/raw/FAERS_quarters/2024q3/ASCII/DRUG24Q3.txt  
+  inflating: data/raw/FAERS_quarters/2024q3/ASCII/INDI24Q3.pdf  
+  inflating: data/raw/FAERS_quarters/2024q3/ASCII/INDI24Q3.txt  
+  inflating: data/raw/FAERS_quarters/2024q3/ASCII/OUTC24Q3.pdf  
+  inflating: data/raw/FAERS_quarters/2024q3/ASCII/OUTC24Q3.txt  
+  inflating: data/raw/FAERS_quarters/2024q3/ASCII/REAC24Q3.pdf  
+  inflating: data/raw/FAERS_quarters/2024q3/ASCII/REAC24Q3.txt  
+  inflating: data/raw/FAERS_quarters/2024q3/ASCII/RPSR24Q3.pdf  
+  inflating: data/raw/FAERS_quarters/2024q3/ASCII/RPSR24Q3.txt  
+  inflating: data/raw/FAERS_quarters/2024q3/ASCII/THER24Q3.pdf  
+  inflating: data/raw/FAERS_quarters/2024q3/ASCII/THER24Q3.txt  
+   creating: data/raw/FAERS_quarters/2024q3/Deleted/
+  inflating: data/raw/FAERS_quarters/2024q3/Deleted/DELETE24Q3.txt  
+  inflating: data/raw/FAERS_quarters/2024q3/FAQs.pdf  
+  inflating: data/raw/FAERS_quarters/2024q3/Readme.pdf  
+Removing data/raw/FAERS_quarters/2024q3/faers_ascii_2024q3.zip...
+Downloading https://fis.fda.gov/content/Exports/faers_ascii_2024q4.zip to data/raw/FAERS_quarters/2024q4...
+Unzipping data/raw/FAERS_quarters/2024q4/faers_ascii_2024q4.zip...
+Archive:  data/raw/FAERS_quarters/2024q4/faers_ascii_2024q4.zip
+   creating: data/raw/FAERS_quarters/2024q4/ASCII/
+  inflating: data/raw/FAERS_quarters/2024q4/ASCII/ASC_NTS.pdf  
+  inflating: data/raw/FAERS_quarters/2024q4/ASCII/DEMO24Q4.pdf  
+  inflating: data/raw/FAERS_quarters/2024q4/ASCII/DEMO24Q4.txt  
+  inflating: data/raw/FAERS_quarters/2024q4/ASCII/DRUG24Q4.pdf  
+  inflating: data/raw/FAERS_quarters/2024q4/ASCII/DRUG24Q4.txt  
+  inflating: data/raw/FAERS_quarters/2024q4/ASCII/INDI24Q4.pdf  
+  inflating: data/raw/FAERS_quarters/2024q4/ASCII/INDI24Q4.txt  
+  inflating: data/raw/FAERS_quarters/2024q4/ASCII/OUTC24Q4.pdf  
+  inflating: data/raw/FAERS_quarters/2024q4/ASCII/OUTC24Q4.txt  
+  inflating: data/raw/FAERS_quarters/2024q4/ASCII/REAC24Q4.pdf  
+  inflating: data/raw/FAERS_quarters/2024q4/ASCII/REAC24Q4.txt  
+  inflating: data/raw/FAERS_quarters/2024q4/ASCII/RPSR24Q4.pdf  
+  inflating: data/raw/FAERS_quarters/2024q4/ASCII/RPSR24Q4.txt  
+  inflating: data/raw/FAERS_quarters/2024q4/ASCII/THER24Q4.pdf  
+  inflating: data/raw/FAERS_quarters/2024q4/ASCII/THER24Q4.txt  
+   creating: data/raw/FAERS_quarters/2024q4/Deleted/
+  inflating: data/raw/FAERS_quarters/2024q4/Deleted/DELETE24Q4.txt  
+  inflating: data/raw/FAERS_quarters/2024q4/FAQs.pdf  
+  inflating: data/raw/FAERS_quarters/2024q4/Readme.pdf  
+Removing data/raw/FAERS_quarters/2024q4/faers_ascii_2024q4.zip...
+Downloading https://fis.fda.gov/content/Exports/faers_ascii_2025q1.zip to data/raw/FAERS_quarters/2025q1...
+Unzipping data/raw/FAERS_quarters/2025q1/faers_ascii_2025q1.zip...
+Archive:  data/raw/FAERS_quarters/2025q1/faers_ascii_2025q1.zip
+   creating: data/raw/FAERS_quarters/2025q1/ASCII/
+  inflating: data/raw/FAERS_quarters/2025q1/ASCII/ASC_NTS.pdf  
+  inflating: data/raw/FAERS_quarters/2025q1/ASCII/DEMO25Q1.pdf  
+  inflating: data/raw/FAERS_quarters/2025q1/ASCII/DEMO25Q1.txt  
+  inflating: data/raw/FAERS_quarters/2025q1/ASCII/DRUG25Q1.pdf  
+  inflating: data/raw/FAERS_quarters/2025q1/ASCII/DRUG25Q1.txt  
+  inflating: data/raw/FAERS_quarters/2025q1/ASCII/INDI25Q1.pdf  
+  inflating: data/raw/FAERS_quarters/2025q1/ASCII/INDI25Q1.txt  
+  inflating: data/raw/FAERS_quarters/2025q1/ASCII/OUTC25Q1.pdf  
+  inflating: data/raw/FAERS_quarters/2025q1/ASCII/OUTC25Q1.txt  
+  inflating: data/raw/FAERS_quarters/2025q1/ASCII/REAC25Q1.pdf  
+  inflating: data/raw/FAERS_quarters/2025q1/ASCII/REAC25Q1.txt  
+  inflating: data/raw/FAERS_quarters/2025q1/ASCII/RPSR25Q1.pdf  
+  inflating: data/raw/FAERS_quarters/2025q1/ASCII/RPSR25Q1.txt  
+  inflating: data/raw/FAERS_quarters/2025q1/ASCII/THER25Q1.pdf  
+  inflating: data/raw/FAERS_quarters/2025q1/ASCII/THER25Q1.txt  
+   creating: data/raw/FAERS_quarters/2025q1/Deleted/
+  inflating: data/raw/FAERS_quarters/2025q1/Deleted/DELETE25Q1.txt  
+  inflating: data/raw/FAERS_quarters/2025q1/FAQs.pdf  
+  inflating: data/raw/FAERS_quarters/2025q1/Readme.pdf  
+Removing data/raw/FAERS_quarters/2025q1/faers_ascii_2025q1.zip...
+Downloading https://fis.fda.gov/content/Exports/faers_ascii_2025q2.zip to data/raw/FAERS_quarters/2025q2...
+Unzipping data/raw/FAERS_quarters/2025q2/faers_ascii_2025q2.zip...
+Archive:  data/raw/FAERS_quarters/2025q2/faers_ascii_2025q2.zip
+   creating: data/raw/FAERS_quarters/2025q2/ASCII/
+  inflating: data/raw/FAERS_quarters/2025q2/ASCII/ASC_NTS.pdf  
+  inflating: data/raw/FAERS_quarters/2025q2/ASCII/DEMO25Q2.pdf  
+  inflating: data/raw/FAERS_quarters/2025q2/ASCII/DEMO25Q2.txt  
+  inflating: data/raw/FAERS_quarters/2025q2/ASCII/DRUG25Q2.pdf  
+  inflating: data/raw/FAERS_quarters/2025q2/ASCII/DRUG25Q2.txt  
+  inflating: data/raw/FAERS_quarters/2025q2/ASCII/INDI25Q2.pdf  
+  inflating: data/raw/FAERS_quarters/2025q2/ASCII/INDI25Q2.txt  
+  inflating: data/raw/FAERS_quarters/2025q2/ASCII/OUTC25Q2.pdf  
+  inflating: data/raw/FAERS_quarters/2025q2/ASCII/OUTC25Q2.txt  
+  inflating: data/raw/FAERS_quarters/2025q2/ASCII/REAC25Q2.pdf  
+  inflating: data/raw/FAERS_quarters/2025q2/ASCII/REAC25Q2.txt  
+  inflating: data/raw/FAERS_quarters/2025q2/ASCII/RPSR25Q2.pdf  
+  inflating: data/raw/FAERS_quarters/2025q2/ASCII/RPSR25Q2.txt  
+  inflating: data/raw/FAERS_quarters/2025q2/ASCII/THER25Q2.pdf  
+  inflating: data/raw/FAERS_quarters/2025q2/ASCII/THER25Q2.txt  
+   creating: data/raw/FAERS_quarters/2025q2/Deleted/
+  inflating: data/raw/FAERS_quarters/2025q2/Deleted/DELETE25Q2.txt  
+  inflating: data/raw/FAERS_quarters/2025q2/FAQs.pdf  
+  inflating: data/raw/FAERS_quarters/2025q2/Readme.pdf  
+Removing data/raw/FAERS_quarters/2025q2/faers_ascii_2025q2.zip...
+Downloading https://fis.fda.gov/content/Exports/faers_ascii_2025q3.zip to data/raw/FAERS_quarters/2025q3...
+Unzipping data/raw/FAERS_quarters/2025q3/faers_ascii_2025q3.zip...
+Archive:  data/raw/FAERS_quarters/2025q3/faers_ascii_2025q3.zip
+  inflating: data/raw/FAERS_quarters/2025q3/Readme.pdf  
+   creating: data/raw/FAERS_quarters/2025q3/ASCII/
+  inflating: data/raw/FAERS_quarters/2025q3/ASCII/DEMO25Q3.pdf  
+  inflating: data/raw/FAERS_quarters/2025q3/ASCII/DRUG25Q3.txt  
+  inflating: data/raw/FAERS_quarters/2025q3/ASCII/OUTC25Q3.pdf  
+  inflating: data/raw/FAERS_quarters/2025q3/ASCII/ASC_NTS.pdf  
+  inflating: data/raw/FAERS_quarters/2025q3/ASCII/INDI25Q3.txt  
+  inflating: data/raw/FAERS_quarters/2025q3/ASCII/REAC25Q3.pdf  
+  inflating: data/raw/FAERS_quarters/2025q3/ASCII/RPSR25Q3.pdf  
+  inflating: data/raw/FAERS_quarters/2025q3/ASCII/INDI25Q3.pdf  
+  inflating: data/raw/FAERS_quarters/2025q3/ASCII/DRUG25Q3.pdf  
+  inflating: data/raw/FAERS_quarters/2025q3/ASCII/REAC25Q3.txt  
+  inflating: data/raw/FAERS_quarters/2025q3/ASCII/RPSR25Q3.txt  
+  inflating: data/raw/FAERS_quarters/2025q3/ASCII/DEMO25Q3.txt  
+  inflating: data/raw/FAERS_quarters/2025q3/ASCII/OUTC25Q3.txt  
+  inflating: data/raw/FAERS_quarters/2025q3/ASCII/THER25Q3.txt  
+  inflating: data/raw/FAERS_quarters/2025q3/ASCII/THER25Q3.pdf  
+   creating: data/raw/FAERS_quarters/2025q3/Deleted/
+  inflating: data/raw/FAERS_quarters/2025q3/Deleted/DELETE25Q3.txt  
+  inflating: data/raw/FAERS_quarters/2025q3/FAQs.pdf  
+Removing data/raw/FAERS_quarters/2025q3/faers_ascii_2025q3.zip...
+Downloading https://fis.fda.gov/content/Exports/faers_ascii_2025q4.zip to data/raw/FAERS_quarters/2025q4...
+Unzipping data/raw/FAERS_quarters/2025q4/faers_ascii_2025q4.zip...
+Archive:  data/raw/FAERS_quarters/2025q4/faers_ascii_2025q4.zip
+  inflating: data/raw/FAERS_quarters/2025q4/Readme.pdf  
+   creating: data/raw/FAERS_quarters/2025q4/ASCII/
+  inflating: data/raw/FAERS_quarters/2025q4/ASCII/THER25Q4.txt  
+  inflating: data/raw/FAERS_quarters/2025q4/ASCII/REAC25Q4.txt  
+  inflating: data/raw/FAERS_quarters/2025q4/ASCII/REAC25Q4.pdf  
+  inflating: data/raw/FAERS_quarters/2025q4/ASCII/ASC_NTS.pdf  
+  inflating: data/raw/FAERS_quarters/2025q4/ASCII/INDI25Q4.txt  
+  inflating: data/raw/FAERS_quarters/2025q4/ASCII/RPSR25Q4.txt  
+  inflating: data/raw/FAERS_quarters/2025q4/ASCII/OUTC25Q4.txt  
+  inflating: data/raw/FAERS_quarters/2025q4/ASCII/INDI25Q4.pdf  
+  inflating: data/raw/FAERS_quarters/2025q4/ASCII/OUTC25Q4.pdf  
+  inflating: data/raw/FAERS_quarters/2025q4/ASCII/DEMO25Q4.pdf  
+  inflating: data/raw/FAERS_quarters/2025q4/ASCII/RPSR25Q4.pdf  
+  inflating: data/raw/FAERS_quarters/2025q4/ASCII/THER25Q4.pdf  
+  inflating: data/raw/FAERS_quarters/2025q4/ASCII/DEMO25Q4.txt  
+  inflating: data/raw/FAERS_quarters/2025q4/ASCII/DRUG25Q4.txt  
+  inflating: data/raw/FAERS_quarters/2025q4/ASCII/DRUG25Q4.pdf  
+   creating: data/raw/FAERS_quarters/2025q4/Deleted/
+  inflating: data/raw/FAERS_quarters/2025q4/Deleted/DELETE25Q4.txt  
+  inflating: data/raw/FAERS_quarters/2025q4/FAQs.pdf  
+Removing data/raw/FAERS_quarters/2025q4/faers_ascii_2025q4.zip...
+Downloading https://fis.fda.gov/content/Exports/faers_ascii_2026q1.zip to data/raw/FAERS_quarters/2026q1...
+No data available for 2026q1. Stopping for this year.
+All files downloaded, unzipped, and original zip files removed.
+Data download completed.
+Cleaning cancer types...
+Data preparation failed with status 127

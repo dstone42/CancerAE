@@ -4,7 +4,22 @@ set -euo pipefail
 
 # Download data
 echo "Downloading data..."
-sh src/prep/download_FAERS.sh
+if bash src/prep/download_FAERS.sh; then
+	download_status=0
+else
+	download_status=$?
+fi
+
+if [ "$download_status" -eq 10 ]; then
+	echo "No new data was downloaded. Skipping data preparation."
+	exit 10
+fi
+
+if [ "$download_status" -ne 0 ]; then
+	echo "Data download failed with status $download_status"
+	exit "$download_status"
+fi
+
 echo "Data download completed."
 
 # Clean Cancer Types
