@@ -9,15 +9,18 @@
 #SBATCH --error=data/logs/slurm/%x_%j.err
 ##SBATCH --partition=<your_partition>
 ##SBATCH --account=<your_account>
+#SBATCH --partition=notchpeak-freecycle
+#SBATCH --qos=notchpeak-freecycle
+#SBATCH --account=actan
 
 set -euo pipefail
 
 cd /uufs/chpc.utah.edu/common/home/u1025397/scratch/projects/CancerAE
 mkdir -p data/logs/slurm
 
-# Optional: activate environment later
-# source .venv/bin/activate
-# or: module load python/3.x
+source ~/scratch/miniconda3/bin/activate
+
+conda activate cancer-ae
 
 # Encourage threaded libraries to stay inside the Slurm CPU allocation
 export OMP_NUM_THREADS=${SLURM_CPUS_PER_TASK:-1}

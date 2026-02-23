@@ -1,0 +1,23 @@
+name: cancer-ae
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Core runtime
+  - python=3.11
+  - pip
+
+  # R runtime + packages used by pipeline R scripts
+  - r-base>=4.3
+  - r-data.table
+
+  # Python packages (kept in pip section per request)
+  - pip:
+      - pandas>=2.2
+      - numpy>=1.26
+      - scipy>=1.11
+      - joblib>=1.3
+      - tqdm>=4.66
+      - rapidfuzz>=3.9
+      - swifter>=1.4
+      - openpyxl>=3.1
