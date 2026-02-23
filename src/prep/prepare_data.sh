@@ -4,7 +4,7 @@ set -euo pipefail
 
 # Download data
 echo "Downloading data..."
-sh src/prep/download_FAERS.sh
+# sh src/prep/download_FAERS.sh
 echo "Data download completed."
 
 # Clean Cancer Types

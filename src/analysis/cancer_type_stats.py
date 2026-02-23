@@ -24,21 +24,17 @@
 
 # %%
 import pandas as pd
-import json
+import numpy as np
 import src.analysis.bcpnn as bcpnn
 import src.analysis.mhra as mhra
 import src.analysis.odds_ratio as odds_ratio
 import src.analysis.prr as prr
-import multiprocessing
 from scipy.stats import fisher_exact
 from joblib import Parallel, delayed
 from tqdm import tqdm
 
 # import importlib
 # importlib.reload(prr)
-
-import os
-# os.chdir('../../')
 
 # %% [markdown]
 # #### Read in data
@@ -52,51 +48,46 @@ df = pd.read_csv('data/processed/cleaned/merged_formatted.csv', sep='$')
 # #### Setup
 
 # %%
-cancerTypeSet = set()
+cancer_type_series = df['cancerType'].fillna('').astype(str)
+ae_series = df['AE'].fillna('').astype(str)
 
-for cell in df['cancerType']:
-    split = str(cell).split(',')
-    for item in split:
-        if item != 'Other' and item != 'nan':
-            cancerTypeSet.add(item)
-    
+cancerTypeSet = set(
+    cancer_type_series.str.split(',').explode().str.strip()
+) - {'Other', 'nan', ''}
 
-AESet = set()
+AESet = set(
+    ae_series.str.split(',').explode().str.strip()
+) - {'Other', 'nan', ''}
 
-for cell in df['AE']:
-    split = str(cell).split(',')
-    for item in split:
-        if item != 'Other' and item != 'nan':
-            AESet.add(item)
+cancerTypeList = list(cancerTypeSet)
+AEList = list(AESet)
+
+cancer_type_masks = {
+    cancerType: cancer_type_series.str.contains(cancerType, regex=False, na=False).to_numpy()
+    for cancerType in cancerTypeList
+}
+
+ae_masks = {
+    AE: ae_series.str.contains(AE, regex=False, na=False).to_numpy()
+    for AE in AEList
+}
 
 statTable = pd.DataFrame()
 
 
 # %%
-def compute_stats(cancerType, AE, df, cancerTypeSet, AESet):
+def compute_stats(cancerType, AE, num_cancer_types, num_aes):
     filterCount = 5
 
-    cancer_type_frame = df[[cancerType in str(x) for x in df['cancerType']]]
-    not_cancer_type_frame = df[[cancerType not in str(x) for x in df['cancerType']]]
+    cancer_mask = cancer_type_masks[cancerType]
+    ae_mask = ae_masks[AE]
+    not_cancer_mask = np.logical_not(cancer_mask)
+    not_ae_mask = np.logical_not(ae_mask)
 
-    if len(cancer_type_frame) == 0:
-        cancer_type_AE_frame = cancer_type_frame # a
-        cancer_type_not_AE_frame = cancer_type_frame # b
-    else:
-        cancer_type_AE_frame = cancer_type_frame[[AE in str(x) for x in cancer_type_frame['AE']]] # a
-        cancer_type_not_AE_frame = cancer_type_frame[[AE not in str(x) for x in cancer_type_frame['AE']]] # b
-
-    if len(not_cancer_type_frame) == 0:
-        not_cancer_type_AE_frame = not_cancer_type_frame # c
-        not_cancer_type_not_AE_frame = not_cancer_type_frame # d
-    else:
-        not_cancer_type_AE_frame = not_cancer_type_frame[[AE in str(x) for x in not_cancer_type_frame['AE']]] # c
-        not_cancer_type_not_AE_frame = not_cancer_type_frame[[AE not in str(x) for x in not_cancer_type_frame['AE']]] # d
-
-    a = len(cancer_type_AE_frame)
-    b = len(cancer_type_not_AE_frame)
-    c = len(not_cancer_type_AE_frame)
-    d = len(not_cancer_type_not_AE_frame)
+    a = int(np.count_nonzero(cancer_mask & ae_mask))
+    b = int(np.count_nonzero(cancer_mask & not_ae_mask))
+    c = int(np.count_nonzero(not_cancer_mask & ae_mask))
+    d = int(np.count_nonzero(not_cancer_mask & not_ae_mask))
     N = a + b + c + d
 
     nn = bcpnn.BCPNN(a, b, c, d)
@@ -108,10 +99,9 @@ def compute_stats(cancerType, AE, df, cancerTypeSet, AESet):
     PRR = prr.calcPRR(a, b, c, d)
     PRRLB, PRRUB = prr.calcPRRCI(PRR, a, b, c, d)
 
-    contTable = pd.DataFrame({'AE yes': [a, c], 'AE no': [b, d]})
-    result = fisher_exact(contTable)
+    result = fisher_exact([[a, b], [c, d]])
     pvalue = result.pvalue
-    adjpvalue = pvalue * len(cancerTypeSet) * len(AESet)
+    adjpvalue = pvalue * num_cancer_types * num_aes
 
     PRRFilter = 'pass'
     RORFilter = 'pass'
@@ -174,11 +164,21 @@ def compute_stats(cancerType, AE, df, cancerTypeSet, AESet):
     }
 
 # Prepare all combinations
-combinations = [(cancerType, AE, df, cancerTypeSet, AESet) for cancerType in cancerTypeSet for AE in AESet]
+num_cancer_types = len(cancerTypeList)
+num_aes = len(AEList)
+combinations = [
+    (cancerType, AE, num_cancer_types, num_aes)
+    for cancerType in cancerTypeList
+    for AE in AEList
+]
 
 # Run in parallel
-num_cores = multiprocessing.cpu_count()
-results = Parallel(n_jobs=num_cores)(
+num_cores = min(32, num_cancer_types * num_aes)
+results = Parallel(
+    n_jobs=num_cores,
+    batch_size=256,
+    pre_dispatch='all'
+)(
     delayed(compute_stats)(*args) for args in tqdm(combinations)
     )
 
