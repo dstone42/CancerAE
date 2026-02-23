@@ -48,7 +48,7 @@ def map_cancer_types(cancer_list, existing_mapping=None):
             elif (any([x in cancer_lower for x in ["thymic", "thymus"]]) and any([x in cancer_lower for x in cancer_terms])) or "thymoma" in cancer_lower:
                 mapping[cancer] = "Thymic Tumor"
             elif ("skin" in cancer_lower and "non-melanoma" in cancer_lower) or any([x in cancer_lower for x in ["non-melanoma", "bowen's disease", "basal cell carcinoma"]]):
-                mapping[cancer] = "Skin Cancer, Non-Melanoma"
+                mapping[cancer] = "Non-Melanoma Skin Cancer"
             elif "liver" in cancer_lower and "rhabdoid" in cancer_lower:
                 mapping[cancer] = "Malignant Rhabdoid Tumor of the Liver"
             elif "leukemia" in cancer_lower or "leukaemia" in cancer_lower:

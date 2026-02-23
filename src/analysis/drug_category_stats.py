@@ -24,21 +24,17 @@
 
 # %%
 import pandas as pd
-import json
+import numpy as np
 import src.analysis.bcpnn as bcpnn
 import src.analysis.mhra as mhra
 import src.analysis.odds_ratio as odds_ratio
 import src.analysis.prr as prr
 from scipy.stats import fisher_exact
-import multiprocessing
 from joblib import Parallel, delayed
 from tqdm import tqdm
 
 # import importlib
 # importlib.reload(prr)
-
-import os
-# os.chdir('../../')
 
 # %% [markdown]
 # #### Read in data
@@ -51,22 +47,29 @@ df = pd.read_csv('data/processed/cleaned/merged_formatted.csv', sep='$')
 # #### Setup
 
 # %%
-drugCategorySet = set()
+drug_category_series = df['drug_category'].fillna('').astype(str)
+ae_series = df['AE'].fillna('').astype(str)
 
-for cell in df['drug_category']:
-    split = str(cell).split(',')
-    for item in split:
-        if item != 'Other' and item != 'nan':
-            drugCategorySet.add(item)
-    
+drugCategorySet = set(
+    drug_category_series.str.split(',').explode().str.strip()
+) - {'Other', 'nan', ''}
 
-AESet = set()
+AESet = set(
+    ae_series.str.split(',').explode().str.strip()
+) - {'Other', 'nan', ''}
 
-for cell in df['AE']:
-    split = str(cell).split(',')
-    for item in split:
-        if item != 'Other' and item != 'nan':
-            AESet.add(item)
+drugCategoryList = list(drugCategorySet)
+AEList = list(AESet)
+
+drug_category_masks = {
+    drugCategory: drug_category_series.str.contains(drugCategory, regex=False, na=False).to_numpy()
+    for drugCategory in drugCategoryList
+}
+
+ae_masks = {
+    AE: ae_series.str.contains(AE, regex=False, na=False).to_numpy()
+    for AE in AEList
+}
 
 statTable = pd.DataFrame()
 
@@ -74,30 +77,18 @@ statTable = pd.DataFrame()
 # #### Main Loop with specific AEs
 
 # %%
-def compute_stats(drugCategory, AE, df, drugCategorySet, AESet):
+def compute_stats(drugCategory, AE, num_drug_categories, num_aes):
     filterCount = 5
 
-    drug_category_frame = df[[drugCategory in str(x) for x in df['drug_category']]]
-    not_drug_category_frame = df[[drugCategory not in str(x) for x in df['drug_category']]]
+    drug_mask = drug_category_masks[drugCategory]
+    ae_mask = ae_masks[AE]
+    not_drug_mask = np.logical_not(drug_mask)
+    not_ae_mask = np.logical_not(ae_mask)
 
-    if len(drug_category_frame) == 0:
-        drug_category_AE_frame = drug_category_frame # a
-        drug_category_not_AE_frame = drug_category_frame # b
-    else:
-        drug_category_AE_frame = drug_category_frame[[AE in str(x) for x in drug_category_frame['AE']]] # a
-        drug_category_not_AE_frame = drug_category_frame[[AE not in str(x) for x in drug_category_frame['AE']]] # b
-
-    if len(not_drug_category_frame) == 0:
-        not_drug_category_AE_frame = not_drug_category_frame # c
-        not_drug_category_not_AE_frame = not_drug_category_frame # d
-    else:
-        not_drug_category_AE_frame = not_drug_category_frame[[AE in str(x) for x in not_drug_category_frame['AE']]] # c
-        not_drug_category_not_AE_frame = not_drug_category_frame[[AE not in str(x) for x in not_drug_category_frame['AE']]] # d
-
-    a = len(drug_category_AE_frame)
-    b = len(drug_category_not_AE_frame)
-    c = len(not_drug_category_AE_frame)
-    d = len(not_drug_category_not_AE_frame)
+    a = int(np.count_nonzero(drug_mask & ae_mask))
+    b = int(np.count_nonzero(drug_mask & not_ae_mask))
+    c = int(np.count_nonzero(not_drug_mask & ae_mask))
+    d = int(np.count_nonzero(not_drug_mask & not_ae_mask))
     N = a + b + c + d
 
     nn = bcpnn.BCPNN(a, b, c, d)
@@ -109,10 +100,9 @@ def compute_stats(drugCategory, AE, df, drugCategorySet, AESet):
     PRR = prr.calcPRR(a, b, c, d)
     PRRLB, PRRUB = prr.calcPRRCI(PRR, a, b, c, d)
 
-    contTable = pd.DataFrame({'irAE yes': [a, c], 'irAE no': [b, d]})
-    result = fisher_exact(contTable)
+    result = fisher_exact([[a, b], [c, d]])
     pvalue = result.pvalue
-    adjpvalue = pvalue * len(drugCategorySet) * len(AESet)
+    adjpvalue = pvalue * num_drug_categories * num_aes
 
     PRRFilter = 'pass'
     RORFilter = 'pass'
@@ -175,11 +165,21 @@ def compute_stats(drugCategory, AE, df, drugCategorySet, AESet):
     }
 
 # Prepare all combinations
-combinations = [(drugCategory, AE, df, drugCategorySet, AESet) for drugCategory in drugCategorySet for AE in AESet]
+num_drug_categories = len(drugCategoryList)
+num_aes = len(AEList)
+combinations = [
+    (drugCategory, AE, num_drug_categories, num_aes)
+    for drugCategory in drugCategoryList
+    for AE in AEList
+]
 
 # Run in parallel
-num_cores = multiprocessing.cpu_count()
-results = Parallel(n_jobs=num_cores)(
+num_cores = min(32, num_drug_categories * num_aes)
+results = Parallel(
+    n_jobs=num_cores,
+    batch_size=256,
+    pre_dispatch='all'
+)(
     delayed(compute_stats)(*args) for args in tqdm(combinations)
 )
 
