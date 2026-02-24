@@ -26,32 +26,25 @@ merged = DEMO.merge(DRUG, on='caseid', suffixes=('_demo', '_drug'))
 # Calculate time differences using vectorized operations
 merged['time_to_onset'] = (merged['event_dt'] - merged['start_dt']).dt.days
 
-# Replace invalid time differences with NaN
-# merged.loc[merged['start_dt'] > merged['event_dt'], 'time_to_onset'] = np.nan
-
-# Group by 'caseid' and find the closest drugs
-def aggregate_closest_drugs(group):
-    if group['time_to_onset'].isna().all():
-        # If all time_diff values are NaN, return all drugs
-        closest_drugs = group['cancer_drug_name'].dropna().unique().tolist()
-        return pd.Series({
-            'closest_drugs': ','.join(sorted(closest_drugs)),
-            'time_to_onset': np.nan
-        })
+# For each caseid, select the minimum positive time_to_onset if any exist,
+# otherwise keep the minimum (most negative) value.
+def select_time_to_onset(group):
+    positives = group[group['time_to_onset'] > 0]
+    if not positives.empty:
+        return positives['time_to_onset'].min()
     else:
-        # Find the minimum time difference
-        min_time_diff = group['time_to_onset'].min()
-        closest_drugs = group[group['time_to_onset'] == min_time_diff]['cancer_drug_name'].dropna().unique().tolist()
-        return pd.Series({
-            'closest_drugs': ','.join(sorted(closest_drugs)),
-            'time_to_onset': min_time_diff
-        })
+        return group['time_to_onset'].min()
 
-result = merged.swifter.groupby('caseid').apply(aggregate_closest_drugs).reset_index()
+time_to_onset_per_case = (
+    merged[['caseid', 'time_to_onset']]
+    .dropna(subset=['time_to_onset'])
+    .groupby('caseid')
+    .apply(select_time_to_onset)
+    .reset_index(name='time_to_onset')
+)
 
-# Merge the result back into DEMO
-DEMO = DEMO.drop(columns=['closest_drugs', 'time_to_onset'], errors='ignore')  # Drop if they already exist
-DEMO = DEMO.merge(result, on='caseid', how='left')
+# Merge this back into DEMO (will not duplicate rows)
+DEMO = DEMO.merge(time_to_onset_per_case, on='caseid', how='left')
 
 # Save or inspect the updated DEMO dataframe
 DEMO.to_csv('data/processed/cleaned/DEMO_mapped.csv', index=False, sep='$')
