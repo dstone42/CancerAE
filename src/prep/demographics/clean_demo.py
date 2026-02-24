@@ -48,7 +48,7 @@ if __name__ == '__main__':
         quarter_cancer_cases = cancer_cases[cancer_cases['quarter'] == quarter]
         quarter_cancer_cases_set = set(quarter_cancer_cases['caseid'])
 
-        year_suffix = quarter[2:]
+        year_suffix = quarter[2:].upper()
         demo_file_path = os.path.join(faers_quarters_path, quarter, 'ASCII', f'DEMO{year_suffix}.TXT')
         # Read the DEMO file
         # The columns in the DEMO file have changed over time, so we need to handle that

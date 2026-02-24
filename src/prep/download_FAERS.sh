@@ -43,16 +43,19 @@ download_and_process() {
         mv "${quarter_dir}/ascii" "${quarter_dir}/ASCII"
     fi
 
-    # Rename files to uppercase if DEMO file is not found
-    if [ ! -f "${quarter_dir}/ASCII/DEMO${year}.txt" ]; then
-        for file in "${quarter_dir}/ASCII"/*; do
-            mv "$file" "${quarter_dir}/ASCII/$(basename "$file" | tr '[:lower:]' '[:upper:]')"
-        done
-    fi
+    # Normalize file naming to uppercase without failing on already-uppercase files
+    for file in "${quarter_dir}/ASCII"/*; do
+        upper_file="${quarter_dir}/ASCII/$(basename "$file" | tr '[:lower:]' '[:upper:]')"
+        if [ "$file" != "$upper_file" ]; then
+            mv "$file" "$upper_file"
+        fi
+    done
 
     # Special case for 2018Q1
     if [ "${year}q${quarter}" == "2018q1" ]; then
-        mv "${quarter_dir}/ASCII/DEMO18Q1_NEW.txt" "${quarter_dir}/ASCII/DEMO18Q1.txt"
+        if [ -f "${quarter_dir}/ASCII/DEMO18Q1_NEW.TXT" ] && [ ! -f "${quarter_dir}/ASCII/DEMO18Q1.TXT" ]; then
+            mv "${quarter_dir}/ASCII/DEMO18Q1_NEW.TXT" "${quarter_dir}/ASCII/DEMO18Q1.TXT"
+        fi
     fi
 
     # Remove the original zip file

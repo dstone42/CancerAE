@@ -53,7 +53,7 @@ def process_quarter(quarter):
     quarter_cancer_cases = cancer_cases[cancer_cases['quarter'] == quarter]
     quarter_cancer_cases_set = set(quarter_cancer_cases['caseid'])
 
-    year_suffix = quarter[2:]
+    year_suffix = quarter[2:].upper()
     reac_file_path = os.path.join(faers_quarters_path, quarter, 'ASCII', f'REAC{year_suffix}.TXT')
 
     reac_df = pd.read_csv(reac_file_path, delimiter='$', usecols=['caseid', 'pt'])

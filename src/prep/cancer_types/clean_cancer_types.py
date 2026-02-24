@@ -187,7 +187,7 @@ combined_mapping = {}
 
 for quarter in quarters:
     
-    year_suffix = quarter[2:]
+    year_suffix = quarter[2:].upper()
     df = pd.read_csv(f'data/raw/FAERS_quarters/{quarter}/ASCII/INDI{year_suffix}.TXT', sep='$', usecols=['caseid', 'indi_pt'])
 
     valsToMap = list(df['indi_pt'].unique())

@@ -42,7 +42,7 @@ if __name__ == '__main__':
         quarter_cancer_cases = cancer_cases[cancer_cases['quarter'] == quarter]
         quarter_cancer_cases_set = set(quarter_cancer_cases['caseid'])
 
-        year_suffix = quarter[2:]
+        year_suffix = quarter[2:].upper()
         outc_file_path = os.path.join(faers_quarters_path, quarter, 'ASCII', f'OUTC{year_suffix}.TXT')
         outc_df = pd.read_csv(outc_file_path, delimiter='$', usecols=[1, 2])
         outc_df.columns = ['caseid', 'outc_cod']

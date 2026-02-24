@@ -88,11 +88,22 @@ all_drug_data = pd.DataFrame()
 # Function to clean drug data for a specific quarter
 def clean_drug_data_for_quarter(quarter, case_ids):
     
-    year_suffix = quarter[2:]
-    quarter_df = pd.read_csv(f'data/raw/FAERS_quarters/{quarter}/ASCII/DRUG{year_suffix}.TXT', sep='$', encoding_errors='ignore')
+    year_suffix = quarter[2:].upper()
+    quarter_df = pd.read_csv(
+        f'data/raw/FAERS_quarters/{quarter}/ASCII/DRUG{year_suffix}.TXT',
+        sep='$',
+        encoding_errors='ignore',
+        low_memory=False
+    )
     quarter_df = quarter_df[quarter_df['caseid'].isin(case_ids)]
 
-    quarter_therapies = pd.read_csv(f'data/raw/FAERS_quarters/{quarter}/ASCII/THER{year_suffix}.TXT', sep='$', encoding_errors='ignore', usecols=["caseid", "dsg_drug_seq", "start_dt", "end_dt", "dur", "dur_cod"])
+    quarter_therapies = pd.read_csv(
+        f'data/raw/FAERS_quarters/{quarter}/ASCII/THER{year_suffix}.TXT',
+        sep='$',
+        encoding_errors='ignore',
+        usecols=["caseid", "dsg_drug_seq", "start_dt", "end_dt", "dur", "dur_cod"],
+        low_memory=False
+    )
     
     # Function to find the cancer drug name
     def find_cancer_drug(row):
