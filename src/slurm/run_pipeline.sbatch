@@ -7,10 +7,14 @@
 #SBATCH --time=24:00:00
 #SBATCH --output=data/logs/slurm/%x_%j.out
 #SBATCH --error=data/logs/slurm/%x_%j.err
-##SBATCH --partition=<your_partition>
-##SBATCH --account=<your_account>
-#SBATCH --partition=notchpeak-freecycle
-#SBATCH --qos=notchpeak-freecycle
+#SBATCH --mail-type=BEGIN,END,FAIL
+#SBATCH --mail-user=u1025397@utah.edu
+##SBATCH --partition=notchpeak-freecycle
+##SBATCH --qos=notchpeak-freecycle
+##SBATCH --account=actan
+
+#SBATCH --partition=kingspeak
+#SBATCH --qos=kingspeak
 #SBATCH --account=actan
 
 set -euo pipefail

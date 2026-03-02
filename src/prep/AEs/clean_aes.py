@@ -58,7 +58,7 @@ def process_quarter(quarter):
 
     reac_df = pd.read_csv(reac_file_path, delimiter='$', usecols=['caseid', 'pt'])
     # Filter to rows that are cancer cases
-    cancer_reac_df = reac_df[reac_df['caseid'].isin(quarter_cancer_cases_set)]
+    cancer_reac_df = reac_df[reac_df['caseid'].isin(quarter_cancer_cases_set)].copy()
 
     # Add meddra codes to cancer_reac_df
     cancer_reac_df['pt_code'] = cancer_reac_df['pt'].map(meddra_pt_dict)
@@ -69,9 +69,9 @@ def process_quarter(quarter):
     
     # Map CTCAE Term based on meddra codes
     cancer_reac_df['CTCAE Term'] = cancer_reac_df['pt_code'].map(ctcae_dict)
-    cancer_reac_df['CTCAE Term'].fillna(cancer_reac_df['hlt_code'].map(ctcae_dict), inplace=True)
-    cancer_reac_df['CTCAE Term'].fillna(cancer_reac_df['hlgt_code'].map(ctcae_dict), inplace=True)
-    cancer_reac_df['CTCAE Term'].fillna(cancer_reac_df['soc_code'].map(ctcae_dict), inplace=True)
+    cancer_reac_df['CTCAE Term'] = cancer_reac_df['CTCAE Term'].fillna(cancer_reac_df['hlt_code'].map(ctcae_dict))
+    cancer_reac_df['CTCAE Term'] = cancer_reac_df['CTCAE Term'].fillna(cancer_reac_df['hlgt_code'].map(ctcae_dict))
+    cancer_reac_df['CTCAE Term'] = cancer_reac_df['CTCAE Term'].fillna(cancer_reac_df['soc_code'].map(ctcae_dict))
 
     # Map MedDRA SOC based on CTCAE Term
     cancer_reac_df['MedDRA SOC'] = cancer_reac_df['CTCAE Term'].map(ctcae_meddra_soc_dict)

@@ -7,6 +7,8 @@
 #SBATCH --time=00:10:00
 #SBATCH --output=data/logs/slurm/%x_%j.out
 #SBATCH --error=data/logs/slurm/%x_%j.err
+#SBATCH --mail-type=END,FAIL
+#SBATCH --mail-user=u1025397@utah.edu
 ##SBATCH --partition=<your_partition>
 ##SBATCH --account=<your_account>
 
