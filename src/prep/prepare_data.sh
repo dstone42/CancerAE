@@ -29,7 +29,6 @@ echo "Cancer types cleaning completed."
 
 # Clean AEs
 echo "Cleaning adverse events..."
-python src/prep/AEs/asco.py
 python src/prep/AEs/clean_aes.py
 python src/prep/AEs/clean_outcomes.py
 echo "Adverse events cleaning completed."

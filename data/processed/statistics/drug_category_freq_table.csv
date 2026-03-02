@@ -1,5 +1,5 @@
-"","Chemotherapy","Targeted","Hormone","Immunotherapy"
-"Chemotherapy",0,272131,23596,56243
-"Targeted",272131,0,72184,57027
-"Hormone",23596,72184,0,3759
-"Immunotherapy",56243,57027,3759,0
+"","Hormone","Targeted","Chemotherapy","Immunotherapy"
+"Hormone",0,72184,23596,3759
+"Targeted",72184,0,272130,57026
+"Chemotherapy",23596,272130,0,56244
+"Immunotherapy",3759,57026,56244,0
