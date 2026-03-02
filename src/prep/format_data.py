@@ -28,7 +28,7 @@ result['sex'] = result['sex'].str.replace('F', 'Female')
 
 def deduplicate_definitive_rows(df: pd.DataFrame) -> pd.DataFrame:
     subset_cols = [
-        'AE', 'event_dt',
+        'ae', 'event_dt',
         'cancer_drug_name', 'other_drug_name',
         'outcome', 'sex',
         'time_to_onset', 'tumor_type'
@@ -120,7 +120,29 @@ result['tumor_type'] = np.where(
 
 # %%
 
-# Write the cleaned data to a new CSV file
+# Reorder columns into a consistent, analysis-friendly layout.
+preferred_order = [
+    'caseid',
+    'ae',
+    'ae_type',
+    'ae_type_Expanded',
+    'outcome',
+    'cancer_drug_name',
+    'other_drug_name',
+    'drug_category',
+    'drug_category_expanded',
+    'detailed_drug_category',
+    'tumor_type',
+    'time_to_onset',
+    'event_dt',
+    'sex',
+    'quarter',
+]
+ordered_cols = [c for c in preferred_order if c in result.columns]
+remaining_cols = [c for c in result.columns if c not in ordered_cols]
+result = result[ordered_cols + remaining_cols]
+
+# Write the cleaned data to the final CSV file
 result.to_csv('data/processed/data.csv', sep='$', index=False)
 
 # %%

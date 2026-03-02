@@ -49,7 +49,7 @@ df = pd.read_csv('data/processed/data.csv', sep='$')
 
 # %%
 tumor_type_series = df['tumor_type'].fillna('').astype(str)
-ae_series = df['AE'].fillna('').astype(str)
+ae_series = df['ae'].fillna('').astype(str)
 
 tumorTypeSet = set(
     tumor_type_series.str.split(',').explode().str.strip()
@@ -140,7 +140,7 @@ def compute_stats(tumorType, AE, num_tumor_types, num_aes):
 
     return {
         'tumor_type': tumorType,
-        'AE': AE,
+        'ae': AE,
         'BCPNN': bcpnnVal,
         'BCPNN lower bound': bcpnnLB,
         'BCPNN upper bound': bcpnnUB,
@@ -190,6 +190,5 @@ statTable = pd.DataFrame(results)
 # %%
 statTable = statTable.sort_values(by='N', ascending=False)
 statTable.to_csv(f'data/processed/statistics/tumor_type_stats.csv', sep=',', index=False)
-
 
 

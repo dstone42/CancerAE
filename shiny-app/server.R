@@ -49,7 +49,7 @@ column_labels <- c(
   "Cancer Drugs" = "cancer_drug_name",
   "Drug Category (Detailed)" = "drug_category_expanded",
   "Quarter" = "quarter",
-  "AE" = "AE",
+  "AE" = "ae",
   "AE Type (Detailed)" = "ae_type_Expanded"
 )
 

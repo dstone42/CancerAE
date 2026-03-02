@@ -7,14 +7,14 @@ import pandas as pd
 
 def infer_key_columns(df: pd.DataFrame) -> list[str]:
     candidates = [
-        ["tumor_type", "AE"],
-        ["drug_category", "AE"],
+        ["tumor_type", "ae"],
+        ["drug_category", "ae"],
     ]
     for keys in candidates:
         if all(k in df.columns for k in keys):
             return keys
-    if "AE" in df.columns:
-        return ["AE"]
+    if "ae" in df.columns:
+        return ["ae"]
     raise ValueError(
         "Could not infer key columns. Please pass --keys explicitly for this file pair."
     )
@@ -180,8 +180,8 @@ def main() -> None:
 
     stats_dir = Path(args.stats_dir)
     pairs = [
-        (stats_dir / "tumor_type_stats.csv", stats_dir / "tumor_type_stats copy.csv", ["tumor_type", "AE"]),
-        (stats_dir / "drug_category_stats.csv", stats_dir / "drug_category_stats copy.csv", ["drug_category", "AE"]),
+        (stats_dir / "tumor_type_stats.csv", stats_dir / "tumor_type_stats copy.csv", ["tumor_type", "ae"]),
+        (stats_dir / "drug_category_stats.csv", stats_dir / "drug_category_stats copy.csv", ["drug_category", "ae"]),
     ]
 
     exit_code = 0

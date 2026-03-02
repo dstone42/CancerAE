@@ -88,12 +88,12 @@ final_results = pd.concat(results, ignore_index=True)
 
 final_results = final_results[['caseid', 'CTCAE Term', 'MedDRA SOC']]
 # Rename columns
-final_results.columns = ['caseid', 'AE', 'ae_type']
+final_results.columns = ['caseid', 'ae', 'ae_type']
 
 # %%
 
-# Remove commas from the AE and ae_type columns
-final_results['AE'] = final_results['AE'].str.replace(',', '', regex=False)
+# Remove commas from the ae and ae_type columns
+final_results['ae'] = final_results['ae'].str.replace(',', '', regex=False)
 final_results['ae_type'] = final_results['ae_type'].str.replace(',', '', regex=False)
 
 # %%

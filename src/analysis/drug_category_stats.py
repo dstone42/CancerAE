@@ -48,7 +48,7 @@ df = pd.read_csv('data/processed/data.csv', sep='$')
 
 # %%
 drug_category_series = df['drug_category'].fillna('').astype(str)
-ae_series = df['AE'].fillna('').astype(str)
+ae_series = df['ae'].fillna('').astype(str)
 
 drugCategorySet = set(
     drug_category_series.str.split(',').explode().str.strip()
@@ -141,7 +141,7 @@ def compute_stats(drugCategory, AE, num_drug_categories, num_aes):
 
     return {
         'drug_category': drugCategory,
-        'AE': AE,
+        'ae': AE,
         'BCPNN': bcpnnVal,
         'BCPNN lower bound': bcpnnLB,
         'BCPNN upper bound': bcpnnUB,
@@ -190,5 +190,4 @@ statTable = pd.DataFrame(results)
 
 statTable = statTable.sort_values(by='N', ascending=False)
 statTable.to_csv(f'data/processed/statistics/drug_category_stats.csv', sep=',', index=False)
-
 

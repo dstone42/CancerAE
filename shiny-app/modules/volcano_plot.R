@@ -93,7 +93,7 @@ volcanoPlotServer <- function(id, data, target_col, measure, plot_title = "Volca
       pvalueThreshold <- proc$p_thresh
       mycolors <- getVolcanoColors()
 
-      df$label_text <- paste0(df[[target_col()]], " & ", df$AE)
+      df$label_text <- paste0(df[[target_col()]], " & ", df$ae)
 
       # Add a text column for tooltips
       df$tooltip <- paste0(
@@ -180,7 +180,7 @@ volcanoPlotServer <- function(id, data, target_col, measure, plot_title = "Volca
       )
 
       tbl <- data.frame(
-        AE = sig$AE,
+        AE = sig$ae,
         Target = sig[[target_col()]],
         value = sig[[measure]],
         CI = sprintf("(%.2f - %.2f)", sig[[lower_col]], sig[[upper_col]]),
@@ -242,7 +242,7 @@ volcanoPlotServer <- function(id, data, target_col, measure, plot_title = "Volca
         } else {
           # Build table using only existing columns
           tbl <- data.frame(
-            AE = sig$AE,
+            AE = sig$ae,
             Target = sig[[target_col()]],
             value = sig[[measure]],
             CI = sprintf("(%.2f - %.2f)", as.numeric(sig[[lower_col]]), as.numeric(sig[[upper_col]])),
