@@ -20,11 +20,11 @@ custom_theme <- bs_theme(
 )
 
 column_labels <- c(
-  "Outcome" = "outc_cod",
-  "AE Category" = "AE_Category",
+  "Outcome" = "outcome",
+  "AE Type" = "ae_type",
   "Sex" = "sex",
   "Drug Category" = "drug_category",
-  "Cancer Type" = "cancer_type"
+  "Tumor Type" = "tumor_type"
 )
 
 # Create another list with the names and values of column_labels switched
@@ -76,7 +76,7 @@ ui <- navbarPage(
                 selectizeInput(
                   "volcanoTarget",
                   "Select Target Column",
-                  choices = column_labels[c("Drug Category", "Cancer Type")],
+                  choices = column_labels[c("Drug Category", "Tumor Type")],
                   selected = "Drug Category"
                 ),
                 radioButtons(
@@ -124,13 +124,13 @@ ui <- navbarPage(
                 selectizeInput(
                   "facetVarRow",
                   "Facet By (Rows)",
-                  choices = c("None" = "None", column_labels[c("Outcome", "AE Category", "Drug Category", "Sex")]),
+                  choices = c("None" = "None", column_labels[c("Outcome", "AE Type", "Drug Category", "Sex")]),
                   selected = "None"
                 ),
                 selectizeInput(
                   "facetVarCol",
                   "Facet By (Columns)",
-                  choices = c("None" = "None", column_labels[c("Outcome", "AE Category", "Drug Category", "Sex")]),
+                  choices = c("None" = "None", column_labels[c("Outcome", "AE Type", "Drug Category", "Sex")]),
                   selected = "None"
                 ),
                 # Subset options
@@ -206,7 +206,7 @@ ui <- navbarPage(
                   add_rank_list(
                     text = "Available Columns",
                     input_id = "sankey_available",
-                    labels = column_labels_switched[c("AE_Category", "sex", "drug_category", "outc_cod")], # not selected by default
+                    labels = column_labels_switched[c("ae_type", "sex", "drug_category", "outcome")], # not selected by default
                     options = sortable_options(multiselect = FALSE)
                   ),
                   add_rank_list(
@@ -268,8 +268,8 @@ ui <- navbarPage(
                   selectizeInput(
                     "chordColumn",
                     "Select Column for Chord Diagram",
-                    choices = c("AE Category"),
-                    selected = "AE Category"
+                    choices = c("AE Type"),
+                    selected = "AE Type"
                   )
                 ),
                 conditionalPanel(
@@ -278,8 +278,8 @@ ui <- navbarPage(
                     selectizeInput(
                       "overlapTarget",
                       "Select Target Column",
-                      choices = c("AE Category"),
-                      selected = "AE Category"
+                      choices = c("AE Type"),
+                      selected = "AE Type"
                     ),
                     checkboxInput(
                       "overlapCluster",

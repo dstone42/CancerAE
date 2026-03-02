@@ -10,11 +10,11 @@ def collapse_dataframe(df, group_by_column):
     return df.groupby(group_by_column).agg(lambda x: ','.join(sorted(set(val for val in x.astype(str) if val != '')))).reset_index()
 
 # Load data frames
-DRUG = pd.read_csv('data/processed/cleaned/DRUG_mapped.csv', sep = '$', usecols=['caseid', 'other_drug_name', 'cancer_drug_name', 'drug_category', 'detailed_drug_category'])
-INDI = pd.read_csv('data/processed/cleaned/INDI_mapped.csv', sep = '$', usecols=['caseid', 'cancerType', 'quarter'])
-OUTC = pd.read_csv('data/processed/cleaned/OUTC_mapped.csv', sep = '$')
-REAC = pd.read_csv('data/processed/cleaned/REAC_mapped.csv', sep = '$')
-DEMO = pd.read_csv('data/processed/cleaned/DEMO_mapped.csv', sep = '$')
+DRUG = pd.read_csv('data/processed/cleaned/DRUG.csv', sep = '$', usecols=['caseid', 'other_drug_name', 'cancer_drug_name', 'drug_category', 'detailed_drug_category'])
+INDI = pd.read_csv('data/processed/cleaned/INDI.csv', sep = '$', usecols=['caseid', 'tumor_type', 'quarter'])
+OUTC = pd.read_csv('data/processed/cleaned/OUTC.csv', sep = '$', usecols=['caseid', 'outcome'])
+REAC = pd.read_csv('data/processed/cleaned/REAC.csv', sep = '$')
+DEMO = pd.read_csv('data/processed/cleaned/DEMO.csv', sep = '$')
 
 # Fill NaN values with empty strings
 DRUG.fillna('', inplace=True)

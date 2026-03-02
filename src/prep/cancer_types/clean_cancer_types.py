@@ -17,7 +17,7 @@ def map_cancer_types(cancer_list, existing_mapping=None):
 
     for cancer in cancer_list:
         if pd.isna(cancer):
-            mapping[cancer] = "Other"
+            mapping[cancer] = ""
             continue
         cancer = cancer.strip().upper().replace(',', '')
         cancer_lower = cancer.lower()
@@ -25,17 +25,17 @@ def map_cancer_types(cancer_list, existing_mapping=None):
         if cancer not in mapping.keys():
             # Determine the category for each cancer type based on keywords
             if "metasta" in cancer_lower:
-                mapping[cancer] = "Other Cancer"
+                mapping[cancer] = "Other"
             elif "endometrial" in cancer_lower and any([x in cancer_lower for x in cancer_terms]):
-                mapping[cancer] = "Endometrial Cancer"
+                mapping[cancer] = "Endometrial"
             elif "melanocytoma" in cancer_lower:
                 mapping[cancer] = "Melanocytoma"
             elif any([x in cancer_lower for x in ["lentigo maligna", "melanoma", "choroid"]]):
                 mapping[cancer] = "Melanoma"
             elif ("colorectal" in cancer_lower or "colon" in cancer_lower or "rect" in cancer_lower) and any([x in cancer_lower for x in cancer_terms]):
-                mapping[cancer] = "Colorectal Cancer"
+                mapping[cancer] = "Colorectal"
             elif ("peripheral nervous system" in cancer_lower and any([x in cancer_lower for x in cancer_terms])) or "neuroblastoma" in cancer_lower:
-                mapping[cancer] = "Peripheral Nervous System Cancer"
+                mapping[cancer] = "Peripheral Nervous System"
             elif ("uterine" in cancer_lower or "endometrial" in cancer_lower) and "sarcoma" in cancer_lower:
                 mapping[cancer] = "Uterine Sarcoma"
             elif "medulloblastoma" in cancer_lower:
@@ -57,60 +57,60 @@ def map_cancer_types(cancer_list, existing_mapping=None):
             elif "breast" in cancer_lower and "sarcoma" in cancer_lower:
                 mapping[cancer] = "Breast Sarcoma"
             elif any([x in cancer_lower for x in ["esophageal", "stomach", "esophagogastric", "gastric"]]) and any([x in cancer_lower for x in cancer_terms]):
-                mapping[cancer] = "Esophageal/Stomach Cancer"
+                mapping[cancer] = "Esophageal/Stomach"
             elif ("pancrea" in cancer_lower and any([x in cancer_lower for x in cancer_terms])) or "insulinoma" in cancer_lower:
-                mapping[cancer] = "Pancreatic Cancer"
+                mapping[cancer] = "Pancreatic"
             elif ("adrenal" in cancer_lower and any([x in cancer_lower for x in cancer_terms])) or "phaeochromocytoma" in cancer_lower:
-                mapping[cancer] = "Adrenal Gland Cancer"
+                mapping[cancer] = "Adrenal Gland"
             elif (any([x in cancer_lower for x in ["kidney", "renal"]]) and any([x in cancer_lower for x in cancer_terms])) or "nephroblastoma" in cancer_lower:
-                mapping[cancer] = "Kidney Cancer"
+                mapping[cancer] = "Kidney"
             elif any([x in cancer_lower for x in ["eye", "ocular"]]) and any([x in cancer_lower for x in cancer_terms]):
-                mapping[cancer] = "Eye Cancer"
+                mapping[cancer] = "Eye"
             elif "mastocytosis" in cancer_lower:
                 mapping[cancer] = "Mastocytosis"
             # FIXME Parotid which is currently in head and neck should be in this category
             elif (any([x in cancer_lower for x in ["salivary gland", "mucoepidermoid"]]) and any([x in cancer_lower for x in cancer_terms])) or "pleomorphic adenoma" in cancer_lower or any([x == cancer_lower for x in ["adenoid cystic carcinoma"]]):
-                mapping[cancer] = "Salivary Gland Cancer"
+                mapping[cancer] = "Salivary Gland"
             elif "liver" in cancer_lower and not "rhabdoid" in cancer_lower and any([x in cancer_lower for x in cancer_terms]):
-                mapping[cancer] = "Liver Cancer"
+                mapping[cancer] = "Liver"
             elif "sex cord stromal" in cancer_lower and any([x in cancer_lower for x in cancer_terms]):
                 mapping[cancer] = "Sex Cord Stromal Tumor"
             elif "posttransplant lymphoproliferative" in cancer_lower:
                 mapping[cancer] = "Posttransplant Lymphoproliferative Disorders"
             elif any([x in cancer_lower for x in ["bladder", "urinary tract", "urethra"]]) and any([x in cancer_lower for x in cancer_terms]):
-                mapping[cancer] = "Bladder/Urinary Tract Cancer"
+                mapping[cancer] = "Bladder/Urinary Tract"
             elif any([x in cancer_lower for x in ["vulva", "vagin"]]) and any([x in cancer_lower for x in cancer_terms]):
-                mapping[cancer] = "Vulvar/Vaginal Cancer"
+                mapping[cancer] = "Vulvar/Vaginal"
             elif "histiocytosis" in cancer_lower:
                 mapping[cancer] = "Histiocytosis"
             elif "adenocarcinoma in situ" in cancer_lower:
                 mapping[cancer] = "Adenocarcinoma In Situ"
             elif ("thyroid" in cancer_lower or "huerthle" in cancer_lower) and any([x in cancer_lower for x in cancer_terms]):
-                mapping[cancer] = "Thyroid Cancer"
+                mapping[cancer] = "Thyroid"
             elif ("uterine" in cancer_lower or "ureteric" in cancer_lower) and any([x in cancer_lower for x in cancer_terms]):
-                mapping[cancer] = "Uterine Cancer"
+                mapping[cancer] = "Uterine"
             elif (any([x in cancer_lower for x in ["brain", "cns", "central nervous system", "Paraganglion"]]) and any([x in cancer_lower for x in cancer_terms])) or any([x in cancer_lower for x in ["meningioma", "ependymoma", "astrocytoma"]]):
-                mapping[cancer] = "CNS/Brain Cancer"
+                mapping[cancer] = "CNS/Brain"
             elif (any([x in cancer_lower for x in ["lung", "bronch", "pulmonary", "mediastinum", "respiratory", "thorax", "tracheal"]]) and any([x in cancer_lower for x in cancer_terms])) or any([x in cancer_lower for x in ["pancoast's"]]):
-                mapping[cancer] = "Lung Cancer"
+                mapping[cancer] = "Lung"
             elif any([x in cancer_lower for x in ["ovar", "fallopian tube", "placenta"]]) and any([x in cancer_lower for x in cancer_terms]):
-                mapping[cancer] = "Ovarian/Fallopian Tube Cancer"
+                mapping[cancer] = "Ovarian/Fallopian Tube"
             elif ("cervical" in cancer_lower or "cervix" in cancer_lower) and any([x in cancer_lower for x in cancer_terms]):
-                mapping[cancer] = "Cervical Cancer"
+                mapping[cancer] = "Cervical"
             elif "skin" in cancer_lower and any([x in cancer_lower for x in cancer_terms]):
-                mapping[cancer] = "Skin Cancer"
+                mapping[cancer] = "Skin"
             elif "breast" in cancer_lower and any([x in cancer_lower for x in cancer_terms]):
-                mapping[cancer] = "Breast Cancer"
+                mapping[cancer] = "Breast"
             elif "prostate" in cancer_lower and any([x in cancer_lower for x in cancer_terms]):
-                mapping[cancer] = "Prostate Cancer"
+                mapping[cancer] = "Prostate"
             elif any([x in cancer_lower for x in ["testic", "testis", "scrotal"]]) and any([x in cancer_lower for x in cancer_terms]):
-                mapping[cancer] = "Testicular Cancer"
+                mapping[cancer] = "Testicular"
             elif "glioma" in cancer_lower or "glioblastoma" in cancer_lower:
                 mapping[cancer] = "Glioma"
             elif "gestational trophoblastic" in cancer_lower:
                 mapping[cancer] = "Gestational Trophoblastic Disease"
             elif "parathyroid" in cancer_lower and any([x in cancer_lower for x in cancer_terms]):
-                mapping[cancer] = "Parathyroid Cancer"
+                mapping[cancer] = "Parathyroid"
             elif "gastrointestinal neuroendocrine" in cancer_lower and ("esophagus" in cancer_lower or "stomach" in cancer_lower) and any([x in cancer_lower for x in cancer_terms]):
                 mapping[cancer] = "Gastrointestinal Neuroendocrine Tumors of the Esophagus/Stomach"
             elif ("gastrointestinal" in cancer_lower or "caecum" in cancer_lower) and any([x in cancer_lower for x in cancer_terms]):
@@ -118,7 +118,7 @@ def map_cancer_types(cancer_list, existing_mapping=None):
             elif ("myelodysplastic" in cancer_lower and "myeloproliferative" in cancer_lower) and any([x in cancer_lower for x in cancer_terms]):
                 mapping[cancer] = "Myelodysplastic/Myeloproliferative Neoplasms"
             elif "rhabdoid" in cancer_lower and any([x in cancer_lower for x in cancer_terms]):
-                mapping[cancer] = "Rhabdoid Cancer"
+                mapping[cancer] = "Rhabdoid"
             elif "adrenocortical carcinoma" in cancer_lower:
                 mapping[cancer] = "Adrenocortical Carcinoma"
             elif any([x in cancer_lower for x in ["soft tissue sarcoma", "leiomyosarcoma", "fibroma"]]) or (any([x in cancer_lower for x in ["desmoplastic small round cell", "alveolar"]]) and 'sarcoma' in cancer_lower) or ("pleomorphic" in cancer_lower and "histiocytoma" in cancer_lower): # Needs to be before bone cancer
@@ -126,15 +126,15 @@ def map_cancer_types(cancer_list, existing_mapping=None):
             elif "histiocytoma" in cancer_lower:
                 mapping[cancer] = "Angiomatoid Fibrous Histiocytoma"
             elif (any([x in cancer_lower for x in ["bone", "desmoid", "connective tissue"]]) and any([x in cancer_lower for x in cancer_terms])) or any([x in cancer_lower for x in ["chondroma", "paget's disease of penis", "sarcoma", "chordoma"]]):
-                mapping[cancer] = "Bone Cancer"
+                mapping[cancer] = "Bone"
             elif "medulloblastoma with extensive nodularity" in cancer_lower:
                 mapping[cancer] = "Medulloblastoma with Extensive Nodularity"
             elif "non-hodgkin lymphoma" in cancer_lower:
                 mapping[cancer] = "Non-Hodgkin Lymphoma"
             elif (any([x in cancer_lower for x in ["hepato", "hepatic", "bile duct"]]) and any([x in cancer_lower for x in cancer_terms])) or any([x in cancer_lower for x in ["cholangiocarcinoma"]]):
-                mapping[cancer] = "Hepatobiliary Cancer"
+                mapping[cancer] = "Hepatobiliary"
             elif ("biliary" in cancer_lower or "gall" in cancer_lower) and any([x in cancer_lower for x in cancer_terms]):
-                mapping[cancer] = "Biliary Tract Cancer"
+                mapping[cancer] = "Biliary Tract"
             elif "nerve sheath" in cancer_lower and any([x in cancer_lower for x in cancer_terms]):
                 mapping[cancer] = "Nerve Sheath Tumor"
             elif any([x in cancer_lower for x in ["peritoneal", "pleura"]]) and any([x in cancer_lower for x in cancer_terms]):
@@ -142,17 +142,17 @@ def map_cancer_types(cancer_list, existing_mapping=None):
             elif "malignant glomus" in cancer_lower and any([x in cancer_lower for x in cancer_terms]):
                 mapping[cancer] = "Malignant Glomus Tumor"
             elif ("small bowel" in cancer_lower or "small intestin" in cancer_lower) and any([x in cancer_lower for x in cancer_terms]):
-                mapping[cancer] = "Small Bowel Cancer"
+                mapping[cancer] = "Small Bowel"
             elif ("bowel" in cancer_lower or "intestin" in cancer_lower) and any([x in cancer_lower for x in cancer_terms]):
-                mapping[cancer] = "Bowel Cancer"
+                mapping[cancer] = "Bowel"
             elif (any([x in cancer_lower for x in ["soft tissue", "granular cell", "conjunctiva"]]) and any([x in cancer_lower for x in cancer_terms])) or any([x in cancer_lower for x in ["leiomyoma"]]):
-                mapping[cancer] = "Soft Tissue Cancer"
+                mapping[cancer] = "Soft Tissue"
             elif ("appendiceal" in cancer_lower or "appendix" in cancer_lower) and any([x in cancer_lower for x in cancer_terms]):
-                mapping[cancer] = "Appendiceal Cancer"
+                mapping[cancer] = "Appendiceal"
             elif "mature b-cell neoplasms" in cancer_lower or "myeloma" in cancer_lower:
                 mapping[cancer] = "Mature B-Cell Neoplasms"
             elif any([x in cancer_lower for x in ["penile", "penis"]]) and any([x in cancer_lower for x in cancer_terms]):
-                mapping[cancer] = "Penile Cancer"
+                mapping[cancer] = "Penile"
             elif "myelodysplastic syndrome" in cancer_lower:
                 mapping[cancer] = "Myelodysplastic Syndromes"
             elif ("sellar" in cancer_lower or "pituitary" in cancer_lower) and any([x in cancer_lower for x in cancer_terms]):
@@ -160,19 +160,19 @@ def map_cancer_types(cancer_list, existing_mapping=None):
             elif "mesothelioma" in cancer_lower:
                 mapping[cancer] = "Mesothelioma"
             elif "anal" in cancer_lower and any([x in cancer_lower for x in cancer_terms]):
-                mapping[cancer] = "Anal Cancer"
+                mapping[cancer] = "Anal"
             elif any([x in cancer_lower for x in ["teratoma", "choriocarcinoma"]]) or ("germ cell" in cancer_lower and any([x in cancer_lower for x in cancer_terms])):
                 mapping[cancer] = "Germ Cell Tumor"
             elif any([x in cancer_lower for x in ["ampulla"]]) and any([x in cancer_lower for x in cancer_terms]):
-                mapping[cancer] = "Ampullary Cancer"
+                mapping[cancer] = "Ampullary"
             elif (any([x in cancer_lower for x in ["head and neck", "pharyngeal", "tongue", "oral", "nasal", "gingiv", "tonsil", "pharynx", "laryngeal", "larynx", "parotid", "throat", "ear", "lip", "glotti", "palate", "spinal cord"]]) and any([x in cancer_lower for x in cancer_terms])) or any([x in cancer_lower for x in ["ameloblastoma"]]):
-                mapping[cancer] = "Head and Neck Cancer"
+                mapping[cancer] = "Head and Neck"
             elif any([x in cancer_lower for x in ["neuroe"]]) and any([x in cancer_lower for x in cancer_terms]):
                 mapping[cancer] = "Other Neuroendocrine"
             elif "unknown primary" in cancer_lower and any([x in cancer_lower for x in cancer_terms]):
                 mapping[cancer] = "Carcinoma of Unknown Primary"
             elif any([x in cancer_lower for x in cancer_terms]) and 'mass' not in cancer_lower:
-                mapping[cancer] = "Other Cancer"
+                mapping[cancer] = "Other"
             # Default to "Other" if no specific match found
             else:
                 mapping[cancer] = ""
@@ -193,7 +193,7 @@ for quarter in quarters:
     valsToMap = list(df['indi_pt'].unique())
     combined_mapping = map_cancer_types(valsToMap, combined_mapping)
 
-    df['cancerType'] = df['indi_pt'].apply(lambda x: combined_mapping[x.strip().upper().replace(',', '')])
+    df['tumor_type'] = df['indi_pt'].apply(lambda x: combined_mapping[x.strip().upper().replace(',', '')])
     df['quarter'] = quarter
 
     all_data.append(df)
@@ -201,8 +201,13 @@ for quarter in quarters:
 # %%
 
 combined_df = pd.concat(all_data, ignore_index=True)
-# Filter out rows with empty cancerType
-combined_df = combined_df[combined_df['cancerType'] != '']
+
+os.makedirs('data/processed/summary', exist_ok=True)
+cancer_type_not_mapped = combined_df[combined_df['tumor_type'] == '']
+cancer_type_not_mapped['indi_pt'].value_counts().to_csv('data/processed/summary/unmapped_indications.csv')
+
+# Filter out rows with empty tumor_type
+combined_df = combined_df[combined_df['tumor_type'] != '']
 
 # %%
 
@@ -225,7 +230,7 @@ combined_df = combined_df.drop(columns=['quarter_numeric'])
 
 # %%
 
-combined_df.to_csv('data/processed/cleaned/INDI_mapped.csv', sep='$', index=False)
+combined_df.to_csv('data/processed/cleaned/INDI.csv', sep='$', index=False)
 json.dump(combined_mapping, open('data/processed/cancer_types/cancer_type_map.json', 'w+'), indent=4)
 
 # %%

@@ -175,7 +175,7 @@ volcanoPlotServer <- function(id, data, target_col, measure, plot_title = "Volca
       target_label <- switch(
         target_col(),
         "drug_category" = "Drug Category",
-        "cancer_type" = "Cancer Type",
+        "tumor_type" = "Tumor Type",
         target_col()
       )
 
@@ -254,7 +254,7 @@ volcanoPlotServer <- function(id, data, target_col, measure, plot_title = "Volca
           colnames(tbl)[2] <- switch(
             target_col(),
             "drug_category" = "Drug Category",
-            "cancer_type" = "Cancer Type",
+            "tumor_type" = "Tumor Type",
             target_col()
           )
           colnames(tbl)[3] <- measure
@@ -309,4 +309,3 @@ volcanoPlotServer <- function(id, data, target_col, measure, plot_title = "Volca
     )
   })
 }
-

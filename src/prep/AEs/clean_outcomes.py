@@ -35,7 +35,7 @@ def mostSevereOutcome(outcomeList):
 
 if __name__ == '__main__':
 
-    cancer_cases = pd.read_csv('data/processed/cleaned/INDI_mapped.csv', sep='$')
+    cancer_cases = pd.read_csv('data/processed/cleaned/INDI.csv', sep='$')
 
     def process_quarter(quarter):
 
@@ -61,5 +61,8 @@ if __name__ == '__main__':
     # Concatenate all results
     final_results = pd.concat(results, ignore_index=True)
 
+    # Rename outc_cod to outcome for downstream readability.
+    final_results.rename(columns={'outc_cod': 'outcome'}, inplace=True)
+
     # Output the results
-    final_results.to_csv('data/processed/cleaned/OUTC_mapped.csv', sep='$', index=False)
+    final_results.to_csv('data/processed/cleaned/OUTC.csv', sep='$', index=False)

@@ -41,7 +41,7 @@ def parse_date(date_str):
 if __name__ == '__main__':
     
     # Read in cancer cases
-    cancer_cases = pd.read_csv('data/processed/cleaned/INDI_mapped.csv', sep='$')
+    cancer_cases = pd.read_csv('data/processed/cleaned/INDI.csv', sep='$')
 
     def process_quarter(quarter):
 
@@ -86,5 +86,5 @@ if __name__ == '__main__':
     final_results['event_dt'] = final_results['event_dt'].dt.strftime('%Y-%m-%d')
 
     # Output the results
-    final_results.to_csv('data/processed/cleaned/DEMO_mapped.csv', sep='$', index=False)
+    final_results.to_csv('data/processed/cleaned/DEMO.csv', sep='$', index=False)
 

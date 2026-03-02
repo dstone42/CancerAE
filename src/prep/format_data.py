@@ -11,11 +11,11 @@ result = pd.read_csv('data/processed/cleaned/merged.csv', sep='$')
 
 # %%
 
-# Update outc_cod to group "DS", "CA", "RI", "OT" into "Other" and map "LT": "Life Threatening", "HO": "Hospitalization", "DE": "Death"
-result['outc_cod'] = np.where(result['outc_cod'].isin(["DS", "CA", "RI", "OT"]), "Other", result['outc_cod'])
-result['outc_cod'] = np.where(result['outc_cod'] == "LT", "Life Threatening", result['outc_cod'])
-result['outc_cod'] = np.where(result['outc_cod'] == "HO", "Hospitalization", result['outc_cod'])
-result['outc_cod'] = np.where(result['outc_cod'] == "DE", "Death", result['outc_cod'])
+# Update outcome to group "DS", "CA", "RI", "OT" into "Other" and map "LT": "Life Threatening", "HO": "Hospitalization", "DE": "Death"
+result['outcome'] = np.where(result['outcome'].isin(["DS", "CA", "RI", "OT"]), "Other", result['outcome'])
+result['outcome'] = np.where(result['outcome'] == "LT", "Life Threatening", result['outcome'])
+result['outcome'] = np.where(result['outcome'] == "HO", "Hospitalization", result['outcome'])
+result['outcome'] = np.where(result['outcome'] == "DE", "Death", result['outcome'])
 
 # %%
 
@@ -30,8 +30,8 @@ def deduplicate_definitive_rows(df: pd.DataFrame) -> pd.DataFrame:
     subset_cols = [
         'AE', 'event_dt',
         'cancer_drug_name', 'other_drug_name',
-        'outc_cod', 'sex',
-        'time_to_onset', 'cancerType'
+        'outcome', 'sex',
+        'time_to_onset', 'tumor_type'
     ]
 
     # Build mask for definitive candidates
@@ -80,11 +80,11 @@ result['time_to_onset'] = result['time_to_onset'] / 7
 
 # %%
 
-# Save original AE_Category column as AE_Category_Expanded
-result['AE_Category_Expanded'] = result['AE_Category']
+# Save original ae_type column as ae_type_Expanded
+result['ae_type_Expanded'] = result['ae_type']
 
-# Create a simplified AE_Category column that has any categories with a comma as "Multiple Categories"
-result['AE_Category'] = np.where(result['AE_Category'].str.contains(","), "Multiple AE Categories", result['AE_Category'])
+# Create a simplified ae_type column that has any categories with a comma as "Multiple AE Types"
+result['ae_type'] = np.where(result['ae_type'].str.contains(","), "Multiple AE Types", result['ae_type'])
 
 # %%
 
@@ -102,7 +102,25 @@ result['drug_category'] = np.where(result['drug_category'].str.contains(","), "M
 
 # %%
 
+def clean_tumor_type(value):
+    if pd.isna(value):
+        return value
+    types = [t.strip() for t in str(value).split(',')]
+    if len(types) > 1:
+        types_without_other = [t for t in types if t != "Other"]
+        return ','.join(types_without_other)
+    return value
+
+result['tumor_type'] = result['tumor_type'].apply(clean_tumor_type)
+result['tumor_type'] = np.where(
+    result['tumor_type'].fillna('').str.contains(","),
+    "Multiple Tumor Types",
+    result['tumor_type']
+)
+
+# %%
+
 # Write the cleaned data to a new CSV file
-result.to_csv('data/processed/cleaned/merged_formatted.csv', sep='$', index=False)
+result.to_csv('data/processed/data.csv', sep='$', index=False)
 
 # %%

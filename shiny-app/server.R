@@ -27,30 +27,30 @@ source("modules/overlap.R")
 cached_data <- fread("data/data.csv", sep = "$")
 # Volcano plot data
 drug_category_stats <- fread("data/drug_category_stats.csv")
-cancer_type_stats <- fread("data/cancer_type_stats.csv")
+tumor_type_stats <- fread("data/tumor_type_stats.csv")
 # Chord diagram data
-AE_Category_freq_table <- fread("data/AE_Category_freq_table.csv")
-AE_Category_freq_table <- formatChordTable(AE_Category_freq_table)  # Format the frequency table
-cancer_type_freq_table <- fread("data/cancer_type_freq_table.csv")
-cancer_type_freq_table <- formatChordTable(cancer_type_freq_table)  # Format the frequency table
+ae_type_freq_table <- fread("data/ae_type_freq_table.csv")
+ae_type_freq_table <- formatChordTable(ae_type_freq_table)  # Format the frequency table
+tumor_type_freq_table <- fread("data/tumor_type_freq_table.csv")
+tumor_type_freq_table <- formatChordTable(tumor_type_freq_table)  # Format the frequency table
 drug_category_freq_table <- fread("data/drug_category_freq_table.csv")
 drug_category_freq_table <- formatChordTable(drug_category_freq_table)  # Format the frequency table
 # Overlap coefficient data
-AE_category_overlap <- as.matrix(read.csv("data/AE_Category_overlap_coefficient.csv", row.names = 1, check.names = FALSE))
+ae_type_overlap <- as.matrix(read.csv("data/ae_type_overlap_coefficient.csv", row.names = 1, check.names = FALSE))
 # -------------------------
 
 column_labels <- c(
-  "Outcome" = "outc_cod",
-  "AE Category" = "AE_Category",
+  "Outcome" = "outcome",
+  "AE Type" = "ae_type",
   "Sex" = "sex",
   "Drug Category" = "drug_category",
-  "Cancer Type" = "cancerType",
+  "Tumor Type" = "tumor_type",
   "Other Drugs" = "other_drug_name",
   "Cancer Drugs" = "cancer_drug_name",
   "Drug Category (Detailed)" = "drug_category_expanded",
   "Quarter" = "quarter",
   "AE" = "AE",
-  "AE Category (Detailed)" = "AE_Category_Expanded"
+  "AE Type (Detailed)" = "ae_type_Expanded"
 )
 
 # Define the server logic
@@ -61,18 +61,18 @@ server <- function(input, output, session) {
   # Reactive value to store the loaded data
   data <- reactiveVal(cached_data)
   drug_category_stats_data <- reactiveVal(drug_category_stats)
-  cancer_type_stats_data <- reactiveVal(cancer_type_stats)
+  tumor_type_stats_data <- reactiveVal(tumor_type_stats)
   chord_data <- reactiveVal(NULL)
   volcano_data <- reactiveVal(NULL)
   overlap_data <- reactiveVal(NULL)
 
   # Read palettes
-  ae_category_palette <- fromJSON("www/palettes/ae_categories.json")
+  ae_type_palette <- fromJSON("www/palettes/ae_type.json")
   outcomes_palette <- fromJSON("www/palettes/outcomes.json")
   drug_category_palette <- fromJSON("www/palettes/drug_categories.json")
 
   # Ensure palettes are available globally
-  assign("ae_category_palette", ae_category_palette, envir = .GlobalEnv)
+  assign("ae_type_palette", ae_type_palette, envir = .GlobalEnv)
   assign("outcomes_palette", outcomes_palette, envir = .GlobalEnv)
   assign("drug_category_palette", drug_category_palette, envir = .GlobalEnv)
 
@@ -497,7 +497,7 @@ server <- function(input, output, session) {
   volcano_data <- reactive({
     switch(input$volcanoTarget,
       "drug_category" = drug_category_stats_data(),
-      "cancer_type" = cancer_type_stats_data(),
+      "tumor_type" = tumor_type_stats_data(),
       NULL
     )
   })
@@ -571,7 +571,7 @@ server <- function(input, output, session) {
   output$chordPlot <- renderchordNetwork({
     req(input$cooccurPlotType == "chord")
     req(chord_data())
-    palette <- if (input$chordColumn == "AE Category") ae_category_palette else NULL
+    palette <- if (input$chordColumn == "AE Type") ae_type_palette else NULL
     renderChordPlot(
       data = chord_data(),
       source_col = "source",
@@ -587,7 +587,7 @@ server <- function(input, output, session) {
     content = function(file) {
       req(input$cooccurPlotType == "chord")
       req(chord_data())
-      palette <- if (input$chordColumn == "AE Category") ae_category_palette else NULL
+      palette <- if (input$chordColumn == "AE Type") ae_type_palette else NULL
       widget <- renderChordPlot(
         data = chord_data(),
         source_col = "source",
@@ -604,7 +604,7 @@ server <- function(input, output, session) {
     content = function(file) {
       req(input$cooccurPlotType == "chord")
       req(chord_data())
-      palette <- if (input$chordColumn == "AE Category") ae_category_palette else NULL
+      palette <- if (input$chordColumn == "AE Type") ae_type_palette else NULL
       widget <- renderChordPlot(
         data = chord_data(),
         source_col = "source",
@@ -621,8 +621,8 @@ server <- function(input, output, session) {
 
   # Keep existing chord_data assignment inside chord UI logic
   observe({
-    if (input$cooccurPlotType == "chord" && input$chordColumn == "AE Category") {
-      chord_data(AE_Category_freq_table)
+    if (input$cooccurPlotType == "chord" && input$chordColumn == "AE Type") {
+      chord_data(ae_type_freq_table)
     } else if (input$cooccurPlotType == "chord") {
       chord_data(NULL)
     }
@@ -644,8 +644,8 @@ server <- function(input, output, session) {
 
   # Overlap data selection (reuses existing logic; input IDs unchanged)
   observe({
-    if (input$overlapTarget == "AE Category") {
-      overlap_data(AE_category_overlap)
+    if (input$overlapTarget == "AE Type") {
+      overlap_data(ae_type_overlap)
     } else {
       overlap_data(NULL)
     }

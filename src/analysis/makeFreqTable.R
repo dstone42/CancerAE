@@ -23,21 +23,21 @@ makeFreqTable <- function(df, subset_column) {
   return(list(freq_table = freq_table, item_counts = item_counts))
 }
 
-data <- fread("data/processed/cleaned/merged_formatted.csv", sep = "$")
+data <- fread("data/processed/data.csv", sep = "$")
 
-# AE Category Expanded Frequency Table
-AE_Category_Expanded_result <- makeFreqTable(data, "AE_Category_Expanded")
-write.csv(AE_Category_Expanded_result$freq_table, "data/processed/statistics/AE_Category_Expanded_freq_table.csv", row.names = TRUE)
-write.csv(data.frame(item = names(AE_Category_Expanded_result$item_counts), 
-                     count = AE_Category_Expanded_result$item_counts), 
-          "data/processed/statistics/counts/AE_Category_Expanded_item_counts.csv", row.names = FALSE)
+# AE Type Expanded Frequency Table
+ae_type_Expanded_result <- makeFreqTable(data, "ae_type_Expanded")
+write.csv(ae_type_Expanded_result$freq_table, "data/processed/statistics/ae_type_Expanded_freq_table.csv", row.names = TRUE)
+write.csv(data.frame(item = names(ae_type_Expanded_result$item_counts), 
+                     count = ae_type_Expanded_result$item_counts), 
+          "data/processed/statistics/counts/ae_type_Expanded_item_counts.csv", row.names = FALSE)
 
-# Cancer Type Frequency Table
-cancer_type_result <- makeFreqTable(data, "cancerType")
-write.csv(cancer_type_result$freq_table, "data/processed/statistics/cancer_type_freq_table.csv", row.names = TRUE)
-write.csv(data.frame(item = names(cancer_type_result$item_counts), 
-                     count = cancer_type_result$item_counts), 
-          "data/processed/statistics/counts/cancer_type_item_counts.csv", row.names = FALSE)
+# Tumor Type Frequency Table
+tumor_type_result <- makeFreqTable(data, "tumor_type")
+write.csv(tumor_type_result$freq_table, "data/processed/statistics/tumor_type_freq_table.csv", row.names = TRUE)
+write.csv(data.frame(item = names(tumor_type_result$item_counts), 
+                     count = tumor_type_result$item_counts), 
+          "data/processed/statistics/counts/tumor_type_item_counts.csv", row.names = FALSE)
 
 # Drug Category Frequency Table
 drug_category_result <- makeFreqTable(data, "drug_category_expanded")

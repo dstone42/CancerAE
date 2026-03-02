@@ -7,7 +7,7 @@ import pandas as pd
 
 def infer_key_columns(df: pd.DataFrame) -> list[str]:
     candidates = [
-        ["cancer_type", "AE"],
+        ["tumor_type", "AE"],
         ["drug_category", "AE"],
     ]
     for keys in candidates:
@@ -180,7 +180,7 @@ def main() -> None:
 
     stats_dir = Path(args.stats_dir)
     pairs = [
-        (stats_dir / "cancer_type_stats.csv", stats_dir / "cancer_type_stats copy.csv", ["cancer_type", "AE"]),
+        (stats_dir / "tumor_type_stats.csv", stats_dir / "tumor_type_stats copy.csv", ["tumor_type", "AE"]),
         (stats_dir / "drug_category_stats.csv", stats_dir / "drug_category_stats copy.csv", ["drug_category", "AE"]),
     ]
 

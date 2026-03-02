@@ -18,19 +18,19 @@ calculateOverlapCoefficient <- function(freq_table, item_counts) {
   return(overlap_matrix)
 }
 
-# AE_Category
-AE_Category_Expanded_freq_table <- as.matrix(read.csv("data/processed/statistics/AE_Category_Expanded_freq_table.csv", row.names = 1, check.names = FALSE))
-AE_Category_Expanded_item_counts <- read.csv("data/processed/statistics/counts/AE_Category_Expanded_item_counts.csv")
-AE_Category_Expanded_item_counts <- setNames(AE_Category_Expanded_item_counts$count, AE_Category_Expanded_item_counts$item)
-AE_Category_Expanded_overlap <- calculateOverlapCoefficient(AE_Category_Expanded_freq_table, AE_Category_Expanded_item_counts)
-write.csv(AE_Category_Expanded_overlap, "data/processed/statistics/overlap/AE_Category_Expanded_overlap_coefficient.csv", row.names = TRUE)
+# ae_type
+ae_type_Expanded_freq_table <- as.matrix(read.csv("data/processed/statistics/ae_type_Expanded_freq_table.csv", row.names = 1, check.names = FALSE))
+ae_type_Expanded_item_counts <- read.csv("data/processed/statistics/counts/ae_type_Expanded_item_counts.csv")
+ae_type_Expanded_item_counts <- setNames(ae_type_Expanded_item_counts$count, ae_type_Expanded_item_counts$item)
+ae_type_Expanded_overlap <- calculateOverlapCoefficient(ae_type_Expanded_freq_table, ae_type_Expanded_item_counts)
+write.csv(ae_type_Expanded_overlap, "data/processed/statistics/overlap/ae_type_Expanded_overlap_coefficient.csv", row.names = TRUE)
 
-# Cancer Type
-cancer_type_freq_table <- as.matrix(read.csv("data/processed/statistics/cancer_type_freq_table.csv", row.names = 1, check.names = FALSE))
-cancer_type_item_counts <- read.csv("data/processed/statistics/counts/cancer_type_item_counts.csv")
-cancer_type_item_counts <- setNames(cancer_type_item_counts$count, cancer_type_item_counts$item)
-cancer_type_overlap <- calculateOverlapCoefficient(cancer_type_freq_table, cancer_type_item_counts)
-write.csv(cancer_type_overlap, "data/processed/statistics/overlap/cancer_type_overlap_coefficient.csv", row.names = TRUE)
+# Tumor Type
+tumor_type_freq_table <- as.matrix(read.csv("data/processed/statistics/tumor_type_freq_table.csv", row.names = 1, check.names = FALSE))
+tumor_type_item_counts <- read.csv("data/processed/statistics/counts/tumor_type_item_counts.csv")
+tumor_type_item_counts <- setNames(tumor_type_item_counts$count, tumor_type_item_counts$item)
+tumor_type_overlap <- calculateOverlapCoefficient(tumor_type_freq_table, tumor_type_item_counts)
+write.csv(tumor_type_overlap, "data/processed/statistics/overlap/tumor_type_overlap_coefficient.csv", row.names = TRUE)
 
 # Drug Category
 drug_category_freq_table <- as.matrix(read.csv("data/processed/statistics/drug_category_freq_table.csv", row.names = 1, check.names = FALSE))

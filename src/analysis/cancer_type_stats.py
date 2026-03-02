@@ -5,7 +5,7 @@
 #     <th colspan="4">AE</th>
 #   </tr>
 #   <tr>
-#     <th rowspan="4">Cancer Type</th>
+#     <th rowspan="4">Tumor Type</th>
 #     <th></th>
 #     <th>yes</th>
 #     <th>no</th>
@@ -40,7 +40,7 @@ from tqdm import tqdm
 # #### Read in data
 
 # %%
-df = pd.read_csv('data/processed/cleaned/merged_formatted.csv', sep='$')
+df = pd.read_csv('data/processed/data.csv', sep='$')
 
 
 
@@ -48,23 +48,23 @@ df = pd.read_csv('data/processed/cleaned/merged_formatted.csv', sep='$')
 # #### Setup
 
 # %%
-cancer_type_series = df['cancerType'].fillna('').astype(str)
+tumor_type_series = df['tumor_type'].fillna('').astype(str)
 ae_series = df['AE'].fillna('').astype(str)
 
-cancerTypeSet = set(
-    cancer_type_series.str.split(',').explode().str.strip()
+tumorTypeSet = set(
+    tumor_type_series.str.split(',').explode().str.strip()
 ) - {'Other', 'nan', ''}
 
 AESet = set(
     ae_series.str.split(',').explode().str.strip()
 ) - {'Other', 'nan', ''}
 
-cancerTypeList = list(cancerTypeSet)
+tumorTypeList = list(tumorTypeSet)
 AEList = list(AESet)
 
-cancer_type_masks = {
-    cancerType: cancer_type_series.str.contains(cancerType, regex=False, na=False).to_numpy()
-    for cancerType in cancerTypeList
+tumor_type_masks = {
+    tumorType: tumor_type_series.str.contains(tumorType, regex=False, na=False).to_numpy()
+    for tumorType in tumorTypeList
 }
 
 ae_masks = {
@@ -76,10 +76,10 @@ statTable = pd.DataFrame()
 
 
 # %%
-def compute_stats(cancerType, AE, num_cancer_types, num_aes):
+def compute_stats(tumorType, AE, num_tumor_types, num_aes):
     filterCount = 5
 
-    cancer_mask = cancer_type_masks[cancerType]
+    cancer_mask = tumor_type_masks[tumorType]
     ae_mask = ae_masks[AE]
     not_cancer_mask = np.logical_not(cancer_mask)
     not_ae_mask = np.logical_not(ae_mask)
@@ -101,7 +101,7 @@ def compute_stats(cancerType, AE, num_cancer_types, num_aes):
 
     result = fisher_exact([[a, b], [c, d]])
     pvalue = result.pvalue
-    adjpvalue = pvalue * num_cancer_types * num_aes
+    adjpvalue = pvalue * num_tumor_types * num_aes
 
     PRRFilter = 'pass'
     RORFilter = 'pass'
@@ -139,7 +139,7 @@ def compute_stats(cancerType, AE, num_cancer_types, num_aes):
         filterCount -= 1
 
     return {
-        'cancer_type': cancerType,
+        'tumor_type': tumorType,
         'AE': AE,
         'BCPNN': bcpnnVal,
         'BCPNN lower bound': bcpnnLB,
@@ -164,16 +164,16 @@ def compute_stats(cancerType, AE, num_cancer_types, num_aes):
     }
 
 # Prepare all combinations
-num_cancer_types = len(cancerTypeList)
+num_tumor_types = len(tumorTypeList)
 num_aes = len(AEList)
 combinations = [
-    (cancerType, AE, num_cancer_types, num_aes)
-    for cancerType in cancerTypeList
+    (tumorType, AE, num_tumor_types, num_aes)
+    for tumorType in tumorTypeList
     for AE in AEList
 ]
 
 # Run in parallel
-num_cores = min(32, num_cancer_types * num_aes)
+num_cores = min(32, num_tumor_types * num_aes)
 results = Parallel(
     n_jobs=num_cores,
     batch_size=256,
@@ -185,12 +185,11 @@ results = Parallel(
 # Convert to DataFrame
 statTable = pd.DataFrame(results)
 # statTable = statTable.sort_values(by='N', ascending=False)
-# statTable.to_csv(f'data/processed/statistics/cancer_type_stats.csv', sep=',', index=False)
+# statTable.to_csv(f'data/processed/statistics/tumor_type_stats.csv', sep=',', index=False)
 
 # %%
 statTable = statTable.sort_values(by='N', ascending=False)
-statTable.to_csv(f'data/processed/statistics/cancer_type_stats.csv', sep=',', index=False)
-
+statTable.to_csv(f'data/processed/statistics/tumor_type_stats.csv', sep=',', index=False)
 
 
 

@@ -4,13 +4,13 @@ library(RJSONIO)
 library(viridis)  # Add viridis library
 
 # Read in the data
-data_path <- "data/processed/cleaned/merged_formatted.csv"
+data_path <- "data/processed/data.csv"
 data <- fread(data_path, sep = "$")
 
-# Make palette for AE_Category
+# Make palette for ae_type
 
-# Get unique values from AE_Category column
-unique_categories <- unique(data$AE_Category)
+# Get unique values from ae_type column
+unique_categories <- unique(data$ae_type)
 # Remove NA values from unique categories
 unique_categories <- unique_categories[!is.na(unique_categories)]
 # Remove empty strings from unique categories
@@ -23,7 +23,7 @@ palette <- turbo(length(unique_categories))
 named_palette <- setNames(palette, unique_categories)
 
 # Write the palette to a JSON file with names and colors as key-value pairs (colors as strings)
-palette_output_path <- "data/processed/palettes/ae_categories.json"
+palette_output_path <- "data/processed/palettes/ae_type.json"
 
 jsonPal <- toJSON(named_palette)
 write(jsonPal, palette_output_path)

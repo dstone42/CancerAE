@@ -3,8 +3,8 @@ import numpy as np
 import swifter
 
 # Load your dataframes
-DRUG = pd.read_csv('data/processed/cleaned/DRUG_mapped.csv', sep='$', date_format='%Y-%m-%d')
-DEMO = pd.read_csv('data/processed/cleaned/DEMO_mapped.csv', sep='$', date_format='%Y-%m-%d')
+DRUG = pd.read_csv('data/processed/cleaned/DRUG.csv', sep='$', date_format='%Y-%m-%d')
+DEMO = pd.read_csv('data/processed/cleaned/DEMO.csv', sep='$', date_format='%Y-%m-%d')
 
 # Ensure date columns are in datetime format
 DRUG['start_dt'] = pd.to_datetime(DRUG['start_dt'], errors='coerce')
@@ -47,4 +47,4 @@ time_to_onset_per_case = (
 DEMO = DEMO.merge(time_to_onset_per_case, on='caseid', how='left')
 
 # Save or inspect the updated DEMO dataframe
-DEMO.to_csv('data/processed/cleaned/DEMO_mapped.csv', index=False, sep='$')
+DEMO.to_csv('data/processed/cleaned/DEMO.csv', index=False, sep='$')

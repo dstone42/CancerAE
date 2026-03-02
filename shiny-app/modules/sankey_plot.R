@@ -44,8 +44,8 @@ renderSankeyPlot <- function(data, input, output, session) {
     
     # Determine color palette for nodes and links
     column_palettes <- list(
-        "outc_cod" = if (exists("outcomes_palette", envir = .GlobalEnv)) outcomes_palette else NULL,
-        "AE_Category" = if (exists("ae_category_palette", envir = .GlobalEnv)) ae_category_palette else NULL,
+        "outcome" = if (exists("outcomes_palette", envir = .GlobalEnv)) outcomes_palette else NULL,
+        "ae_type" = if (exists("ae_type_palette", envir = .GlobalEnv)) ae_type_palette else NULL,
         "drug_category" = if (exists("drug_category_palette", envir = .GlobalEnv)) drug_category_palette else NULL
     )
 

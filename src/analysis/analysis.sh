@@ -17,7 +17,7 @@ echo "Making drug category stats..."
 python -m src.analysis.drug_category_stats
 echo "Drug category stats completed."
 
-# Cancer type stats
-echo "Making cancer type stats..."
+# Tumor type stats
+echo "Making tumor type stats..."
 python -m src.analysis.cancer_type_stats
-echo "Cancer type stats completed."
+echo "Tumor type stats completed."

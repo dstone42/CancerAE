@@ -40,7 +40,7 @@ from tqdm import tqdm
 # #### Read in data
 
 # %%
-df = pd.read_csv('data/processed/cleaned/merged_formatted.csv', sep='$')
+df = pd.read_csv('data/processed/data.csv', sep='$')
 
 
 # %% [markdown]

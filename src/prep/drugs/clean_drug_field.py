@@ -67,7 +67,7 @@ def parseDate(start, end, num, unit):
 # %%
 
 # Read in the processed file
-cancer_patients_df = pd.read_csv('data/processed/cleaned/INDI_mapped.csv', sep='$')
+cancer_patients_df = pd.read_csv('data/processed/cleaned/INDI.csv', sep='$')
 
 # Read in the drug mapping file
 drug_mapping_df = pd.read_csv('data/processed/drugs/drug_mapping.csv')
@@ -199,4 +199,4 @@ if __name__ == '__main__':
     all_drug_data['end_dt'] = all_drug_data['end_dt'].dt.strftime('%Y-%m-%d')
 
     # Save the combined cleaned drug data to a new file
-    all_drug_data.to_csv('data/processed/cleaned/DRUG_mapped.csv', sep='$', index=False)
+    all_drug_data.to_csv('data/processed/cleaned/DRUG.csv', sep='$', index=False)

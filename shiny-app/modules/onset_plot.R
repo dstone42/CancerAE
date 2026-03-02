@@ -52,19 +52,19 @@ renderOnsetPlot <- function(data, input, output, session, custom_palette = NULL)
       plot <- plot +
         scale_fill_manual(values = custom_palette, na.translate = FALSE) +
         scale_color_manual(values = alpha(custom_palette, 1), na.translate = FALSE)
-    } else if (input$facetVarRow == "AE_Category") {
-      plot <- plot + scale_fill_manual(values = ae_category_palette) +
-                    scale_color_manual(values = alpha(ae_category_palette, 1))
-    } else if (input$facetVarRow == "outc_cod") {
+    } else if (input$facetVarRow == "ae_type") {
+      plot <- plot + scale_fill_manual(values = ae_type_palette) +
+                    scale_color_manual(values = alpha(ae_type_palette, 1))
+    } else if (input$facetVarRow == "outcome") {
       plot <- plot + scale_fill_manual(values = outcomes_palette) +
                     scale_color_manual(values = alpha(outcomes_palette, 1))
     } else if (input$facetVarRow == "drug_category") {
       plot <- plot + scale_fill_manual(values = drug_category_palette) +
                     scale_color_manual(values = alpha(drug_category_palette, 1))
-    } else if (input$facetVarCol == "AE_Category") {
-      plot <- plot + scale_fill_manual(values = ae_category_palette) +
-                    scale_color_manual(values = alpha(ae_category_palette, 1))
-    } else if (input$facetVarCol == "outc_cod") {
+    } else if (input$facetVarCol == "ae_type") {
+      plot <- plot + scale_fill_manual(values = ae_type_palette) +
+                    scale_color_manual(values = alpha(ae_type_palette, 1))
+    } else if (input$facetVarCol == "outcome") {
       plot <- plot + scale_fill_manual(values = outcomes_palette) +
                     scale_color_manual(values = alpha(outcomes_palette, 1))
     } else if (input$facetVarCol == "drug_category") {

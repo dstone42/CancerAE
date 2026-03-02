@@ -5,7 +5,7 @@ import os
 import json
 
 # Paths to the files
-indications = 'data/processed/cleaned/INDI_mapped.csv'
+indications = 'data/processed/cleaned/INDI.csv'
 faers_quarters_path = 'data/raw/FAERS_quarters'
 meddra_file_path = 'data/raw/AEs/MedDRA_28_0_English/MedAscii/pt.asc'
 
@@ -39,12 +39,6 @@ ctcae_dict = dict(zip(ctcae_df['MedDRA Code'], ctcae_df['CTCAE Term']))
 
 ctcae_meddra_soc_dict = dict(zip(ctcae_df['CTCAE Term'], ctcae_df['MedDRA SOC']))
 
-# Read the ASCO file
-asco_df = pd.read_csv('data/processed/AEs/ASCO_with_Meddra.csv')
-
-# Create a mapping from Meddra terms to ASCO terms
-asco_meddra_dict = dict(zip(asco_df['Meddra Term'], asco_df['Adverse Event']))
-
 # %%
 
 # Function to process each quarter
@@ -76,9 +70,6 @@ def process_quarter(quarter):
     # Map MedDRA SOC based on CTCAE Term
     cancer_reac_df['MedDRA SOC'] = cancer_reac_df['CTCAE Term'].map(ctcae_meddra_soc_dict)
 
-    # Map ASCO terms based on MedDRA terms
-    cancer_reac_df['irAE'] = cancer_reac_df['pt'].map(asco_meddra_dict)
-
     return cancer_reac_df
 
 # %%
@@ -95,20 +86,20 @@ final_results = pd.concat(results, ignore_index=True)
 
 # %%
 
-final_results = final_results[['caseid', 'CTCAE Term', 'MedDRA SOC', 'irAE']]
+final_results = final_results[['caseid', 'CTCAE Term', 'MedDRA SOC']]
 # Rename columns
-final_results.columns = ['caseid', 'AE', 'AE_Category', 'irAE']
+final_results.columns = ['caseid', 'AE', 'ae_type']
 
 # %%
 
-# Remove commas from the AE and AE_Category columns
+# Remove commas from the AE and ae_type columns
 final_results['AE'] = final_results['AE'].str.replace(',', '', regex=False)
-final_results['AE_Category'] = final_results['AE_Category'].str.replace(',', '', regex=False)
+final_results['ae_type'] = final_results['ae_type'].str.replace(',', '', regex=False)
 
 # %%
 
 # Output the results
-final_results.to_csv('data/processed/cleaned/REAC_mapped.csv', sep='$', index=False)
+final_results.to_csv('data/processed/cleaned/REAC.csv', sep='$', index=False)
 
 
 # %%
