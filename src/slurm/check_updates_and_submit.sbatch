@@ -9,8 +9,9 @@
 #SBATCH --error=data/logs/slurm/%x_%j.err
 #SBATCH --mail-type=END,FAIL
 #SBATCH --mail-user=u1025397@utah.edu
-##SBATCH --partition=<your_partition>
-##SBATCH --account=<your_account>
+#SBATCH --partition=notchpeak-freecycle
+#SBATCH --account=actan
+#SBATCH --qos=notchpeak-freecycle
 
 set -euo pipefail
 
